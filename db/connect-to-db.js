@@ -3,7 +3,7 @@ import mysql from 'mysql2/promise';
 import { readFile } from 'fs/promises';
 
 // Read the JSON file manually
-const jsonText = await readFile('./connection.json', 'utf-8');
+const jsonText = await readFile('../connection.json', 'utf-8');
 const data = JSON.parse(jsonText);
 
 console.log(`hostname ${data.host}`); // output 'testing'
