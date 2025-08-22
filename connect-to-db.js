@@ -23,6 +23,19 @@ async function query(sql){
    return result[0];
 }
 
+let allPersons = await query('SELECT * FROM test-hbg-grupp2');
+
+// Show the result
+ console.log('allPersons',allPersons);
+
+ let personsWithLongerNames = await query(`
+      SELECT * 
+    FROM test-hbg-grupp2 
+     WHERE LENGTH(name) >= 10
+ `);
+
+// console.log('personsWithLongerNames', personsWithLongerNames);
+
 // let allPersons = await query('SELECT * FROM persons');
 
 // // Show the result
