@@ -1,6 +1,7 @@
 const form = document.getElementById("searchForm");
 const input = document.getElementById("searchInput");
 const resultsDiv = document.getElementById("results");
+const filterBtn = document.getElementById("filterBtn");
 
 const fakeResults = [
   { title: "Fil 1", description: "Detta är en testfil med metadata." },
@@ -8,11 +9,14 @@ const fakeResults = [
   { title: "Bok om metadata", description: "ISBN 123-456, testdata" },
 ];
 
-form.addEventListener("submit", function(event) {
-  event.preventDefault(); 
+// Funktion som kör sökningen
+function performSearch() {
+  const query = input.value.toLowerCase();
+  resultsDiv.innerHTML = "";
 
-  const query = input.value.toLowerCase(); 
-  resultsDiv.innerHTML = ""; 
+  if (input.value.trim() !== "") {
+    filterBtn.style.display = "inline-block"; // visa filterknappen
+  }
 
   const results = fakeResults.filter(r =>
     r.title.toLowerCase().includes(query) ||
@@ -30,5 +34,13 @@ form.addEventListener("submit", function(event) {
     card.innerHTML = `<h2>${r.title}</h2><p>${r.description}</p>`;
     resultsDiv.appendChild(card);
   });
+}
+
+// Submit på formuläret (Enter eller klick)
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  performSearch();
 });
+
+
 
