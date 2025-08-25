@@ -28,10 +28,17 @@ let allPersons = await query('SELECT * FROM`test-hbg-grupp2`');
 // Show the result
  console.log('allPersons',allPersons);
 
- let personsWithLongerNames = await query("SELECT * FROM `test-hbg-grupp2` WHERE LENGTH(firstName) >= 10 ");
+ let personsWithLongerNames = await query("SELECT * FROM `test-hbg-grupp2` WHERE LENGTH(firstName) %2 = 0 ");
 
 console.log('personsWithLongerNames', personsWithLongerNames);
 
+ db.end(err => {
+    if (err) {
+      console.error('Error closing the connection:', err);
+    } else {
+      console.log('Connection closed.');
+    }
+  });
 // let allPersons = await query('SELECT * FROM persons');
 
 // // Show the result
