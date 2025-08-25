@@ -1,23 +1,25 @@
-const form = document.getElementById("searchForm");
-const input = document.getElementById("searchInput");
-const resultsDiv = document.getElementById("results");
-const filterBtn = document.getElementById("filterBtn");
+const form = document.getElementById("searchForm"); // Hittar formuläret
+const input = document.getElementById("searchInput"); // Hittar sökfältet
+const resultsDiv = document.getElementById("results"); // Div där resultat visas
+const filterBtn = document.getElementById("filterBtn"); // Filtreringsknappen
 
+// Mockdata
 const fakeResults = [
   { title: "Fil 1", description: "Detta är en testfil med metadata." },
   { title: "Fil 2", description: "Här är en annan fil med info." },
   { title: "Bok om metadata", description: "ISBN 123-456, testdata" },
 ];
 
-// Funktion som kör sökningen
+// Funktion som kör själva sökningen
 function performSearch() {
   const query = input.value.toLowerCase();
   resultsDiv.innerHTML = "";
 
   if (input.value.trim() !== "") {
-    filterBtn.style.display = "inline-block"; // visa filterknappen
+    filterBtn.style.display = "inline-block"; // visa filterknappen när något söks
   }
 
+  // Filtrera data efter titel eller beskrivning
   const results = fakeResults.filter(r =>
     r.title.toLowerCase().includes(query) ||
     r.description.toLowerCase().includes(query)
@@ -28,6 +30,7 @@ function performSearch() {
     return;
   }
 
+  // Resultatkort
   results.forEach(r => {
     const card = document.createElement("div");
     card.classList.add("result-card");
@@ -36,7 +39,7 @@ function performSearch() {
   });
 }
 
-// Submit på formuläret (Enter eller klick)
+// Kör sökningen när formuläret skickas (enter, sök-knappen)
 form.addEventListener("submit", function(event) {
   event.preventDefault();
   performSearch();
