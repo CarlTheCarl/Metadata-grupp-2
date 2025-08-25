@@ -1,6 +1,6 @@
   body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #fcfdfd, #bbe1ef); 
+    background: linear-gradient(135deg, #f1f3f5, #b4d2f3); 
     color: #1373a7;
     text-align: center;
     margin: 0;
@@ -69,7 +69,7 @@
   
   .result-card {
     background: white;
-    color: #1373a7;
+    color: #333;
     padding: 20px 30px;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
