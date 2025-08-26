@@ -1,7 +1,8 @@
-const form = document.getElementById("searchForm"); // Hittar formuläret
-const input = document.getElementById("searchInput"); // Hittar sökfältet
-const resultsDiv = document.getElementById("results"); // Div där resultat visas
-const filterBtn = document.getElementById("filterBtn"); // Filtreringsknappen
+const form = document.getElementById("searchForm");
+const input = document.getElementById("searchInput");
+const resultsDiv = document.getElementById("results");
+const filterBtn = document.getElementById("filterBtn");
+const categoryScroll = document.getElementById("categoryScroll");
 
 // Mockdata
 const fakeResults = [
@@ -10,7 +11,7 @@ const fakeResults = [
   { title: "Bok om metadata", description: "ISBN 123-456, testdata" },
 ];
 
-// Skapa filtermenyn dynamiskt
+// Skapa filtermeny
 const filterMenu = document.createElement("div");
 filterMenu.id = "filterMenu";
 filterMenu.classList.add("filter-menu");
@@ -20,31 +21,37 @@ filterMenu.innerHTML = `
   <label><input type="checkbox" value="bok" class="filterOption"> Endast böcker</label><br>
   <button id="applyFilter">Tillämpa</button>
 `;
-document.body.appendChild(filterMenu); // Lägg till i body
-
+document.body.appendChild(filterMenu);
 const applyFilterBtn = document.getElementById("applyFilter");
 
-// Funktion som kör själva sökningen
+
+// Funktion för att söka
 function performSearch() {
-  const query = input.value.toLowerCase();
+  const query = input.value.toLowerCase().trim();
   resultsDiv.innerHTML = "";
 
-  if (input.value.trim() !== "") {
-    filterBtn.style.display = "inline-block"; // visa filterknappen när något söks
+  // Visa eller göm filtersektionen
+  const filterWrapper = document.querySelector(".filter-wrapper");
+  if (query !== "") {
+    filterWrapper.classList.add("visible");
+    filterBtn.style.display = "inline-block"; // Visa knappen
+  } else {
+    filterWrapper.classList.remove("visible");
+    filterBtn.style.display = "none"; // Dölj knappen
   }
 
-  // Filtrera data efter titel eller beskrivning
+  // Filtrera resultat
   const results = fakeResults.filter(r =>
     r.title.toLowerCase().includes(query) ||
     r.description.toLowerCase().includes(query)
   );
 
+  // Visa resultat
   if (results.length === 0) {
     resultsDiv.innerHTML = "<p>Inga resultat hittades.</p>";
     return;
   }
 
-  // Resultatkort
   results.forEach(r => {
     const card = document.createElement("div");
     card.classList.add("result-card");
@@ -53,18 +60,17 @@ function performSearch() {
   });
 }
 
-// Kör sökningen när formuläret skickas (enter, sök-knappen)
+// Starta sök när formuläret skickas
 form.addEventListener("submit", function(event) {
   event.preventDefault();
   performSearch();
 });
 
-// Visa/göm filtermeny när filterknappen klickas
+// Visa/göm filtermenyn
 filterBtn.addEventListener("click", function() {
   if (filterMenu.style.display === "block") {
     filterMenu.style.display = "none";
   } else {
-    // Placera menyn nära sökfältet
     const rect = filterBtn.getBoundingClientRect();
     filterMenu.style.top = rect.bottom + window.scrollY + "px";
     filterMenu.style.left = rect.left + window.scrollX + "px";
@@ -72,23 +78,23 @@ filterBtn.addEventListener("click", function() {
   }
 });
 
-// När Tillämpa klickas i menyn
+// Tillämpa filter
 applyFilterBtn.addEventListener("click", function() {
-  const checkedOptions = Array.from(document.querySelectorAll(".filterOption:checked"))
-                             .map(cb => cb.value.toLowerCase());
+  const checkedOptions = Array.from(
+    document.querySelectorAll(".filterOption:checked")
+  ).map(cb => cb.value.toLowerCase());
 
   const query = input.value.toLowerCase();
-
   const filteredResults = fakeResults.filter(r => {
-    let matchesSearch = r.title.toLowerCase().includes(query) || r.description.toLowerCase().includes(query);
+    const matchesSearch =
+      r.title.toLowerCase().includes(query) ||
+      r.description.toLowerCase().includes(query);
 
-    if (checkedOptions.length === 0) return matchesSearch; // inga filter valda, visa allt
-    let matchesFilter = false;
-    checkedOptions.forEach(opt => {
-      if (r.title.toLowerCase().includes(opt)) matchesFilter = true;
-    });
+    if (checkedOptions.length === 0) return matchesSearch;
 
-    return matchesSearch && matchesFilter;
+    return checkedOptions.some(opt =>
+      r.title.toLowerCase().includes(opt)
+    );
   });
 
   resultsDiv.innerHTML = "";
@@ -104,6 +110,6 @@ applyFilterBtn.addEventListener("click", function() {
     resultsDiv.appendChild(card);
   });
 
-  // stäng menyn efter filtrering
-  filterMenu.style.display = "none"; 
+  // Göm menyn efter att filtren tillämpats
+  filterMenu.style.display = "none";
 });
