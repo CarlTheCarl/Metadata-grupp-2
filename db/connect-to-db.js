@@ -40,17 +40,6 @@ const param = `%${searchTerm}%`;
 const [allPersons] = await db.execute(sql, [param, param, param]);
 console.log('allPersons', allPersons);
 
-// let allPersons = await query('SELECT * FROM`test-hbg-grupp2`');
-
-// // Show the result
-//  console.log('allPersons',allPersons);
-
-//  let personsWithLongerNames = await query("SELECT * FROM `test-hbg-grupp2` WHERE LENGTH(firstName) %2 = 0 ");
-
-// console.log('personsWithLongerNames', personsWithLongerNames);
-
-
-
  db.end(err => {
     if (err) {
       console.error('Error closing the connection:', err);
@@ -58,15 +47,3 @@ console.log('allPersons', allPersons);
       console.log('Connection closed.');
     }
   });
-// let allPersons = await query('SELECT * FROM persons');
-
-// // Show the result
-// console.log('allPersons',allPersons);
-
-// let personsWithLongerNames = await query(`
-//     SELECT * 
-//     FROM persons 
-//     WHERE LENGTH(name) >= 10
-// `);
-
-// console.log('personsWithLongerNames', personsWithLongerNames);
