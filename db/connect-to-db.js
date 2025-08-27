@@ -1,6 +1,9 @@
 // Import the database driver
 import mysql from 'mysql2/promise';
 import { readFile } from 'fs/promises';
+import promptSync from 'prompt-sync';
+
+const prompt = promptSync();
 
 // Read the JSON file manually
 const jsonText = await readFile('../connection.json', 'utf-8');
@@ -23,14 +26,30 @@ async function query(sql){
    return result[0];
 }
 
-let allPersons = await query('SELECT * FROM`test-hbg-grupp2`');
+const searchTerm = prompt("enter search term: ")
 
-// Show the result
- console.log('allPersons',allPersons);
+const sql = `
+  SELECT * FROM \`test-hbg-grupp2\`
+  WHERE firstName LIKE ?
+     OR lastName LIKE ?
+     OR email LIKE ?
+`;
 
- let personsWithLongerNames = await query("SELECT * FROM `test-hbg-grupp2` WHERE LENGTH(firstName) %2 = 0 ");
+const param = `%${searchTerm}%`;
 
-console.log('personsWithLongerNames', personsWithLongerNames);
+const [allPersons] = await db.execute(sql, [param, param, param]);
+console.log('allPersons', allPersons);
+
+// let allPersons = await query('SELECT * FROM`test-hbg-grupp2`');
+
+// // Show the result
+//  console.log('allPersons',allPersons);
+
+//  let personsWithLongerNames = await query("SELECT * FROM `test-hbg-grupp2` WHERE LENGTH(firstName) %2 = 0 ");
+
+// console.log('personsWithLongerNames', personsWithLongerNames);
+
+
 
  db.end(err => {
     if (err) {
