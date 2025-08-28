@@ -3,7 +3,9 @@ import path from 'path';
 import { createInterface } from 'readline';
 import { createWriteStream, existsSync, mkdirSync } from 'fs';
 import sizeOf from 'image-size';
-import { ExifReader } from 'exif-reader';
+import { ExifReader } from 'exifr';
+import exif from 'exif-reader';
+import exif from 'exif-reader';
 
 // --- Logging Setup ---
 const LOG_DIR = 'logs';
@@ -22,6 +24,7 @@ function getLogFilePath() {
 //   return path.join(LOG_DIR, `${LOG_PREFIX}${dateStr}.log`);
 }
 
+// Write to log file
 function log(level, message) {
   const timestamp = new Date().toISOString();
   const logMessage = `[${timestamp}] [${level}] image_metadata ${message}\n`;
@@ -40,7 +43,7 @@ const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.web
 async function getImageFiles(dir, fileList = []) {
   try {
     const files = await fs.readdir(dir);
-    for (const file of files) {
+    for (let file of files) {
       const filePath = path.join(dir, file);
       const fileStat = await fs.stat(filePath);
       if (fileStat.isDirectory()) {
@@ -50,17 +53,22 @@ async function getImageFiles(dir, fileList = []) {
       }
     }
   } catch (err) {
-    log(LOG_LEVELS.ERROR, `Error reading directory ${dir}: ${err.message}`);
+    log(LOG_LEVELS.ERROR, `Error reading directory ${dir}. ${err}`);
+    // log(LOG_LEVELS.ERROR, `Error reading directory ${dir}: ${err.message}`);
   }
+  log(LOG_LEVELS.INFO, `getImageFiles. Successfully retrieving ${dir}`);
   return fileList;
 }
 
 async function getImageMetadata(filePath) {
   try {
+    // file size in bytes, last modified, permissions, creation time etc
     const fileStat = await fs.stat(filePath);
+    
+    // size, exifdata, width / height, type
     const buffer = await fs.readFile(filePath);
     const dimensions = sizeOf(buffer);
-    const exif = ExifReader.load(buffer);
+    const exif_data = exif(buffer);
 
     return {
       filename: path.basename(filePath),
