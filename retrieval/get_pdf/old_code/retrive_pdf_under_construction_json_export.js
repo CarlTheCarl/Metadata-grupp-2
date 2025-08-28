@@ -4,16 +4,16 @@ import fs from "fs"
 import pdfParse from "pdf-parse/lib/pdf-parse.js"
 
 // ---- directory constants ----
-const DIRECTORY = "small_subset_pdfs/";
+const DIRECTORY = "../small_subset_pdfs/";
 
 const files = await fs.readdirSync(DIRECTORY)
 
 // constants
 let combined_data = []
-let csv_metadata_file = "csv_metadata_file.csv"
+let csv_filename = "csv_metadata_file.csv"
 
 
-const generate_metadata = async function (csv_filename){
+async function generate_metadata(){
     for ( let file of files) {
         console.log("Now reading file: ", file)
 
@@ -39,8 +39,10 @@ const generate_metadata = async function (csv_filename){
                 text: pdf.text, // if no text is saved, then a lot less context. Perhaps strip in ETL?
             });
 
+
+
             // write to csv
-            fs.appendFile(csv_filename, combined_data, 'utf8', function (err) {
+            await fs.promises.appendFile(csv_filename, combined_data, await function (err) {
                 if (err) {
                     console.log('Some error occured - file either not saved or corrupted file saved.');
                 } else{
@@ -61,7 +63,7 @@ const generate_metadata = async function (csv_filename){
 // console.log("presenting the full metadataset")
 // console.log(combined_data);
 
-generate_metadata(csv_metadata_file)
+await generate_metadata()
 
-const csv_file = await fs.readFileSync(csv_metadata_file);
+const csv_file = await fs.readFileSync(csv_filename);
 console.log(csv_file)
