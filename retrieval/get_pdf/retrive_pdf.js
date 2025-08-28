@@ -4,7 +4,7 @@ import fs from "fs"
 import pdfParse from "pdf-parse/lib/pdf-parse.js"
 
 // ---- directory constants ----
-const DIRECTORY = "pdfs/";
+const DIRECTORY = "small_subset_pdfs/";
 
 const files = await fs.readdirSync(DIRECTORY)
 
@@ -12,20 +12,38 @@ const files = await fs.readdirSync(DIRECTORY)
 let combined_data = []
 
 for ( let file of files) {
-    console.log(file)
+    console.log("Now reading file: ", file)
 
-    // Read pdf-file "kursplan.pdf" from the root 
-    const data = await fs.readFileSync(DIRECTORY + file);
-    // Extract the data from the pdf-file using pdfParse
-    const pdf = await pdfParse(data);
+    // // Extract fs.stat-data
+    // const stats = fs.statSync(file)
+    
+    try {
+        // Read pdf-file 
+        const data = await fs.readFileSync(DIRECTORY + file);
 
-    // Write the data to the console.
-    // console.log(pdf.info);
-    combined_data.push({
-        filename: file,
-        info: pdf.info,
-        
-    });
+        // Extract the data from the pdf-file using pdfParse
+        const pdf = await pdfParse(data);
+
+        // Write the data to the console.
+        // console.log(pdf);
+        // console.log(stats.size)
+        // console.log("is this seen?")
+        combined_data.push({
+            filename: file,
+            // size: stats.size,
+            numpages: pdf.numpages,
+            metadata: pdf.info,
+            text: pdf.text, // if no text is saved, then a lot less context. Perhaps strip in ETL?
+        });
+    }
+    catch(err){
+        if (err.message == "Invalid PDF structure"){
+            console.log("invalidooooooooooooooooooooooooooooooooooooooooooooooooooooooo")
+        }
+        // console.log(err)
+    }
 }
 
+console.log("")
+console.log("presenting the full metadataset")
 console.log(combined_data);
