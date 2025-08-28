@@ -4,7 +4,7 @@ import fs from "fs"
 import pdfParse from "pdf-parse/lib/pdf-parse.js"
 
 // ---- directory constants ----
-const DIRECTORY = "";
+const DIRECTORY = "pdfs/";
 
 const files = await fs.readdirSync(DIRECTORY)
 
