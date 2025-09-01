@@ -1,5 +1,6 @@
 // Import the built-in Node.js file system module
-import fs from "fs"
+import fs, { write } from "fs"
+// import 
 // Import the pdfParse library for extracting metadata from pdf files
 import pdfParse from "pdf-parse/lib/pdf-parse.js"
 
@@ -47,3 +48,19 @@ for ( let file of files) {
 console.log("")
 console.log("presenting the full metadataset")
 console.log(combined_data);
+
+async function writeToFile() {
+    let now = Date.now();
+    let filename = `../csvs/pdf_metadata_${now}.json`
+
+    try {
+        await fs.writeFileSync(filename, JSON.stringify(combined_data, null, 2));
+        console.log(`JSON-file written successfully: ${filename}`);
+    } catch (err) {
+        console.log(`error occurred:`);
+        console.log(err);
+        console.log(`While writing file ${filename}`);
+    }
+}
+
+writeToFile()
