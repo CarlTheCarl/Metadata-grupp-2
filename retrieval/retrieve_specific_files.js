@@ -1,4 +1,5 @@
-import { search } from 'duckduckgo-search';
+import { search, safeSearch } from 'duckduckgo-scrape';
+// const duckduckgoSearch = require("duckduckgo-search");
 import axios from 'axios';
 import fs from 'fs/promises';
 import path from 'path';
@@ -11,7 +12,7 @@ async function saveResults(url, outputFile = "audio_search_output.txt") {
 }
 
 // --- Load search keywords ---
-async function loadKeywords(filename = "search_words.txt") {
+async function loadKeywords(filename = "./search_words.txt") {
     try {
         const data = await fs.readFile(filename, 'utf8');
         return data.split('\n').filter(line => line.trim() !== '');
@@ -38,55 +39,56 @@ async function findAudioFiles(query, maxResults = 20, download = true, downloadD
         console.error(`Error creating directory: ${err}`);
     }
 
-    const results = await search(query, { safeSearch: 'off', time: 'y', maxResults });
-    for (const r of results) {
-        const url = r.link;
-        if (!url) continue;
+    const results = await duckduckgoSearch.images(query, { safeSearch: 'off', time: 'y', maxResults });
 
-        const isAudio = url.toLowerCase().endsWith('.mp3') ||
-                        url.toLowerCase().endsWith('.wav') ||
-                        url.toLowerCase().endsWith('.ogg') ||
-                        url.toLowerCase().endsWith('.flac');
+//     for (const r of results) {
+//         const url = r.link;
+//         if (!url) continue;
 
-        if (!isAudio) {
-            try {
-                const response = await axios.head(url, { timeout: 5000, maxRedirects: 5 });
-                const contentType = response.headers['content-type'] || '';
-                if (contentType.startsWith('audio/')) {
-                    audioLinks.push(url);
-                }
-            } catch (err) {
-                continue;
-            }
-        } else {
-            audioLinks.push(url);
-        }
-    }
+//         const isAudio = url.toLowerCase().endsWith('.mp3') ||
+//                         url.toLowerCase().endsWith('.wav') ||
+//                         url.toLowerCase().endsWith('.ogg') ||
+//                         url.toLowerCase().endsWith('.flac');
 
-    // Download files
-    if (download) {
-        for (let i = 0; i < audioLinks.length; i++) {
-            const url = audioLinks[i];
-            try {
-                console.log(`Downloading: ${url}`);
-                const response = await axios.get(url, { responseType: 'arraybuffer', timeout: 15000 });
+//         // if (!isAudio) {
+//         //     try {
+//         //         const response = await axios.head(url, { timeout: 5000, maxRedirects: 5 });
+//         //         const contentType = response.headers['content-type'] || '';
+//         //         if (contentType.startsWith('audio/')) {
+//         //             audioLinks.push(url);
+//         //         }
+//         //     } catch (err) {
+//         //         continue;
+//         //     }
+//         // } else {
+//             audioLinks.push(url);
+//         // }
+//     }
 
-                const localName = getFilenameFromUrl(url, `${query}_${i + 1}.mp3`);
-                const filePath = path.join(downloadDir, localName);
+//     // // Download files
+//     // if (download) {
+//     //     for (let i = 0; i < audioLinks.length; i++) {
+//     //         const url = audioLinks[i];
+//     //         try {
+//     //             console.log(`Downloading: ${url}`);
+//     //             const response = await axios.get(url, { responseType: 'arraybuffer', timeout: 15000 });
 
-                if (!fs.existsSync(filePath)) {
-                    await fs.writeFile(filePath, response.data);
-                    await saveResults(url);
-                } else {
-                    console.log(`File ${localName} already exists!`);
-                }
-            } catch (err) {
-                console.error(`Failed to download ${url}: ${err}`);
-            }
-        }
-    }
+//     //             const localName = getFilenameFromUrl(url, `${query}_${i + 1}.mp3`);
+//     //             const filePath = path.join(downloadDir, localName);
 
-    return audioLinks;
+//     //             if (!fs.existsSync(filePath)) {
+//     //                 await fs.writeFile(filePath, response.data);
+//     //                 await saveResults(url);
+//     //             } else {
+//     //                 console.log(`File ${localName} already exists!`);
+//     //             }
+//     //         } catch (err) {
+//     //             console.error(`Failed to download ${url}: ${err}`);
+//     //         }
+//     //     }
+//     // }
+//     console.log(audioLinks)
+//     return audioLinks;
 }
 
 // --- Main ---
