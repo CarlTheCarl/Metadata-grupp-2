@@ -40,7 +40,7 @@ app.get('/search', async(req, res) => {
 
   const param = `%${searchTerm}%`;
  try {
-    const [results] = await db.execute(sql, [param, param, param, searchTerm, param]);
+    const [results] = await db.execute(sql, [param, param, param]);
     res.json(results);
   } catch (err) {
     console.error('Query failed:', err);
@@ -49,8 +49,8 @@ app.get('/search', async(req, res) => {
 });
 
 // Start the server
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server is running at http://${data.host}:${port}`);
+app.listen(port, 'localhost', () => {
+  console.log(`Server is running at http://localhost:${port}`);
 });
 
 // // A small function for a query
