@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="cs" xml:lang="cs">
+<head>
+    <title>Chyba | DL 1</title>
+    <link rel="shortcut icon" href="https://dl1.cuni.cz/theme/image.php/boost/theme/1756129578/favicon" />
+    <meta name="apple-itunes-app" content="app-id=633359593, app-argument=https://dl1.cuni.cz/"/><link rel="manifest" href="https://dl1.cuni.cz/admin/tool/mobile/mobile.webmanifest.php" /><style type="text/css">.admin_settingspage_tabs_with_tertiary .dropdown-toggle { font-size: 1.875rem !important; }
+h2:has(+ .admin_settingspage_tabs_with_tertiary) { display: none; }</style><style type="text/css">.admin_settingspage_tabs_with_tertiary .dropdown-toggle { font-size: 1.875rem !important; }
+h2:has(+ .admin_settingspage_tabs_with_tertiary) { display: none; }</style><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Chyba | DL 1" />
+<link rel="stylesheet" type="text/css" href="https://dl1.cuni.cz/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://dl1.cuni.cz/theme/styles.php/boost/1756129578_1722872836/all" />
+<link rel="stylesheet" type="text/css" href="https://dl1.cuni.cz/course/format/onetopic/styles.php" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/dl1.cuni.cz","apibase":"https:\/\/dl1.cuni.cz\/r.php\/api","homeurl":{},"sesskey":"871Jby1mTq","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1756129578","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":-1,"admin":"admin","svgicons":true,"usertimezone":"Evropa\/Berl\u00edn","language":"cs","courseId":1,"courseContextId":2,"contextid":1,"contextInstanceId":0,"langrev":-1,"templaterev":"1756129578","siteId":1,"userId":0,"developerdebug":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":true,"base":"https:\/\/dl1.cuni.cz\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/dl1.cuni.cz\/theme\/yui_combo.php?","combine":true,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/dl1.cuni.cz\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/dl1.cuni.cz\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/dl1.cuni.cz\/theme\/yui_combo.php?m\/-1\/","combine":true,"comboBase":"https:\/\/dl1.cuni.cz\/theme\/yui_combo.php?","ext":false,"root":"m\/-1\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_count-button":{"requires":["io","json-parse","moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/dl1.cuni.cz\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/dl1.cuni.cz\/theme\/yui_combo.php?","ext":false,"root":"gallery\/-1\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/dl1.cuni.cz\/lib\/javascript.php\/-1\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/dl1.cuni.cz\/lib\/javascript.php\/-1\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', function () {
+    console.log("EMBEDDING VIDEOS");
+    const videoLinks = document.querySelectorAll('a.videoadmin-eu, a.fs-video, a.knihovna-video');
+
+    videoLinks.forEach(link => {
+        // Získání videoId s fallbacky jako v originále
+        let videoId = link.dataset.video || '';
+        if (!videoId) {
+            if (link.href.includes('#')) {
+                const hashValue = link.href.split('#')[1] || '';
+                if (hashValue.includes('-')) {
+                    videoId = hashValue.split('-')[0];
+                } else {
+                    videoId = hashValue;
+                }
+            } else {
+                videoId = link.href;
+            }
+        }
+        let embedUrl;
+
+        // Způsob embedování dle třídy
+        if (link.classList.contains('fs-video')) {
+            embedUrl = `https://stream.cuni.cz/cs/Detail/${videoId}`;
+        } else if (link.classList.contains('knihovna-video')) {
+            embedUrl = `https://embed.cuni.fenomio.stream/media/embed/${videoId}`;
+        } else {
+            embedUrl = `https://embed.cuni.fenomio.stream/media/embed/${videoId}`;
+        }
+
+        // Rozměry z datových atributů, jinak stylů, jinak default
+        let width = link.dataset.width || link.style.width || 640;
+        let height = link.dataset.height || link.style.height || 360;
+
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('src', embedUrl);
+        iframe.setAttribute('width', width);
+        iframe.setAttribute('height', height);
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allowfullscreen', 'true');
+        iframe.style.display = 'block';
+
+        link.parentNode.replaceChild(iframe, link);
+        console.log("EMBEDDED: " + embedUrl);
+    });
+});
+</script>
+
+</script><meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-pluginfile" class="format-site  dir-ltr lang-cs yui-skin-sam yui3-skin-sam dl1-cuni-cz pagelayout-base course-1 context-1 notloggedin theme uses-drawers">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Přejít k hlavnímu obsahu</a>
+</div><script src="https://dl1.cuni.cz/lib/javascript.php/-1/lib/polyfills/polyfill.js"></script>
+<script src="https://dl1.cuni.cz/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple.js"></script><script src="https://dl1.cuni.cz/lib/javascript.php/-1/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="Navigace stránek">
+        <div class="container-fluid">
+            <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
+                <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Boční panel</span>
+            </button>
+    
+            <a href="https://dl1.cuni.cz/" class="navbar-brand d-none d-md-flex align-items-center m-0 me-4 p-0 aabtn">
+    
+                    DL 1
+            </a>
+                <div class="primary-navigation">
+                    <nav class="moremenu navigation">
+                        <ul id="moremenu-68af801eb664a-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                                    <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+                                                <a role="menuitem" class="nav-link active "
+                                                    href="https://dl1.cuni.cz/"
+                                                    
+                                                    aria-current="true"
+                                                    data-disableactive="true"
+                                                    
+                                                >
+                                                    Titulní stránka
+                                                </a>
+                                    </li>
+                                    <li class="dropdown nav-item" role="none" data-forceintomoremenu="false">
+                                        <a class="dropdown-toggle nav-link  " id="drop-down-68af801eb63a8" role="menuitem" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-68af801eb63a8"
+                                            
+                                            
+                                            tabindex="-1"
+                                        >
+                                            Podpora uživatelů
+                                        </a>
+                                        <div class="dropdown-menu" role="menu" id="drop-down-menu-68af801eb63a8" aria-labelledby="drop-down-68af801eb63a8">
+                                                        <a class="dropdown-item" role="menuitem" href="https://moodleoffice.cuni.cz/login"  data-disableactive="true" tabindex="-1"
+                                                            title="cs"
+                                                        >
+                                                            Moodleoffice
+                                                        </a>
+                                                        <a class="dropdown-item" role="menuitem" href="https://dl1.cuni.cz/course/view.php?id=5280"  data-disableactive="true" tabindex="-1"
+                                                            title="moodle tutoriál"
+                                                        >
+                                                            Moodle tutoriál
+                                                        </a>
+                                                        <a class="dropdown-item" role="menuitem" href="https://dl.cuni.cz/podpora/"  data-disableactive="true" tabindex="-1"
+                                                            title="cs"
+                                                        >
+                                                            Podpora uživatelů
+                                                        </a>
+                                                        <a class="dropdown-item" role="menuitem" href="https://dl.cuni.cz/podpora/#navody"  data-disableactive="true" tabindex="-1"
+                                                            title="cs"
+                                                        >
+                                                            Návody
+                                                        </a>
+                                                        <a class="dropdown-item" role="menuitem" href="https://dl1.cuni.cz/local/notice_cz.html"  data-disableactive="true" tabindex="-1"
+                                                            title="cs"
+                                                        >
+                                                            GDPR
+                                                        </a>
+                                        </div>
+                                    </li>
+                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-68af801eb664a" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    Další
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-68af801eb664a" role="menu">
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+            <ul class="navbar-nav d-none d-md-flex my-1 px-1">
+                <!-- page_heading_menu -->
+                
+            </ul>
+    
+            <div id="usernavigation" class="navbar-nav ms-auto h-100">
+                    <div class="langmenu">
+                        <div class="dropdown show">
+                            <a href="#" role="button" id="lang-menu-toggle" data-toggle="dropdown" aria-label="Jazyk" aria-haspopup="true" aria-controls="lang-action-menu" class="btn dropdown-toggle">
+                                <i class="icon fa fa-language fa-fw me-1" aria-hidden="true"></i>
+                                <span class="langbutton">
+                                    Čeština ‎(cs)‎
+                                </span>
+                                <b class="caret"></b>
+                            </a>
+                            <div role="menu" aria-labelledby="lang-menu-toggle" id="lang-action-menu" class="dropdown-menu dropdown-menu-right">
+                                        <a href="#" class="dropdown-item ps-5" role="menuitem" aria-current="true"
+                                                >
+                                            Čeština ‎(cs)‎
+                                        </a>
+                                        <a href="https://dl1.cuni.cz/?lang=de" class="dropdown-item ps-5" role="menuitem" 
+                                                lang="de" >
+                                            Deutsch ‎(de)‎
+                                        </a>
+                                        <a href="https://dl1.cuni.cz/?lang=en" class="dropdown-item ps-5" role="menuitem" 
+                                                lang="en" >
+                                            English ‎(en)‎
+                                        </a>
+                                        <a href="https://dl1.cuni.cz/?lang=fr" class="dropdown-item ps-5" role="menuitem" 
+                                                lang="fr" >
+                                            Français ‎(fr)‎
+                                        </a>
+                                        <a href="https://dl1.cuni.cz/?lang=ru" class="dropdown-item ps-5" role="menuitem" 
+                                                lang="ru" >
+                                            Русский ‎(ru)‎
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider border-start h-75 align-self-center mx-1"></div>
+                
+                <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                        <div class="usermenu">
+                                <span class="login ps-2">
+                                        <a href="https://dl1.cuni.cz/login/index.php">Přihlášení</a>
+                                </span>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    
+
+<div  class="drawer drawer-left drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
+    <div class="drawerheader">
+        <button
+            class="btn drawertoggle icon-no-margin hidden"
+            data-toggler="drawers"
+            data-action="closedrawer"
+            data-target="theme_boost-drawers-primary"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Zavřít lištu"
+        >
+            <i class="icon fa fa-xmark fa-fw " aria-hidden="true" ></i>
+        </button>
+                <a
+            href="https://dl1.cuni.cz/"
+            title="DL 1"
+            data-region="site-home-link"
+            class="aabtn text-reset d-flex align-items-center py-1 h-100"
+        >
+                <span class="sitename" title="DL 1">DL 1</span>
+        </a>
+
+        <div class="drawerheadercontent hidden">
+            
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="https://dl1.cuni.cz/" class="list-group-item list-group-item-action active " aria-current="true">
+                    Titulní stránka
+                </a>
+                <a id="drop-down-1" href="#" class="list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" data-toggle="collapse" data-target="#drop-down-menu-1" aria-expanded="false" aria-controls="drop-down-menu-1">
+                    Podpora uživatelů
+                    <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                        <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" ></i>
+                        <span class="sr-only">
+                            Sbalit
+                        </span>
+                    </span>
+                    <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                        <i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" ></i>
+                        <span class="sr-only">
+                            Rozbalit
+                        </span>
+                    </span>
+                </a>
+                <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-1" aria-labelledby="drop-down-1">
+                             <a href="https://moodleoffice.cuni.cz/login" class="ps-5 bg-light list-group-item list-group-item-action">Moodleoffice</a>
+                             <a href="https://dl1.cuni.cz/course/view.php?id=5280" class="ps-5 bg-light list-group-item list-group-item-action">Moodle tutoriál</a>
+                             <a href="https://dl.cuni.cz/podpora/" class="ps-5 bg-light list-group-item list-group-item-action">Podpora uživatelů</a>
+                             <a href="https://dl.cuni.cz/podpora/#navody" class="ps-5 bg-light list-group-item list-group-item-action">Návody</a>
+                             <a href="https://dl1.cuni.cz/local/notice_cz.html" class="ps-5 bg-light list-group-item list-group-item-action">GDPR</a>
+                </div>
+        </div>
+
+    </div>
+</div>
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers   drag-container">
+        <div id="topofscroll" class="main-inner">
+            <div class="drawer-toggles d-flex">
+            </div>
+            <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100">
+        <div class="d-flex flex-wrap">
+            <div id="page-navbar">
+                <nav aria-label="Navigační panel">
+    <ol class="breadcrumb"></ol>
+</nav>
+            </div>
+            <div class="ms-auto d-flex">
+                
+            </div>
+            <div id="course-header">
+                
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+                    <div class="me-auto">
+                        <div class="page-context-header d-flex flex-wrap align-items-center mb-2">
+    <div class="page-header-headings">
+        <h1 class="h2 mb-0">Moodle UK pro výuku 1</h1>
+    </div>
+</div>
+                    </div>
+            <div class="header-actions-container ms-auto" data-region="header-actions-container">
+            </div>
+        </div>
+    </div>
+</header>
+            <div id="page-content" class="pb-3 d-print-block">
+                <div id="region-main-box">
+                    <div id="region-main">
+
+                        <span class="notifications" id="user-notifications"></span>
+                        <div role="main"><span id="maincontent"></span><div data-rel="fatalerror" class="box py-3 errorbox alert alert-danger"><p class="errormessage">V databázové tabulce context nemohu najít žádný záznam.</p><p class="errorcode"><a href="http://docs.moodle.org/405/cs/error/moodle/invalidrecord">Více informací o této chybě</a></p></div><div class="alert alert-danger alert-block fade in  alert-dismissible"  role="alert" data-aria-autofocus="true">
+    <strong>Informace o ladění: </strong> SELECT * FROM {context} WHERE id = ?<br />[array (<br />  0 =&gt; 927976,<br />)]<br />Error code: invalidrecord
+    <button type="button" class="btn-close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Toto oznámení zrušit</span>
+    </button>
+</div><div class="alert alert-danger alert-block fade in  alert-dismissible"  role="alert" data-aria-autofocus="true">
+    <strong>Zásobník trasování: </strong> <ul style="text-align:left;"><li>line 1662 of /lib/dml/moodle_database.php: dml_missing_record_exception thrown</li><li>line 1638 of /lib/dml/moodle_database.php: call to moodle_database-&gt;get_record_select()</li><li>line 482 of /lib/classes/context.php: call to moodle_database-&gt;get_record()</li><li>line 1269 of /lib/accesslib.php: call to core\context::instance_by_id()</li><li>line 4464 of /lib/filelib.php: call to get_context_info_array()</li><li>line 50 of /pluginfile.php: call to file_pluginfile()</li></ul>
+    <button type="button" class="btn-close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Toto oznámení zrušit</span>
+    </button>
+</div><div class="continuebutton">
+    <form method="get" action="https://dl1.cuni.cz/" >
+        <button type="submit" class="btn btn-primary"
+            id="single_button68af801eb6b502"
+            
+            
+            >Pokračovat</button>
+    </form>
+</div></div>
+                        
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="page-footer" class="footer-popover bg-white">
+            <div data-region="footer-container-popover">
+                <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Zobrazit zápatí">
+                    <i class="icon fa fa-question fa-fw " aria-hidden="true" ></i>
+                </button>
+            </div>
+            <div class="footer-content-popover container" data-region="footer-content-popover">
+                    <div class="footer-section p-3 border-bottom">
+        
+        
+                            <div class="footer-support-link"><a href="https://dl.cuni.cz/" target="blank"><i class="icon fa-regular fa-envelope fa-fw " aria-hidden="true" ></i>Kontaktujte podporu stránek<i class="icon fa fa-arrow-up-right-from-square fa-fw ms-1" aria-hidden="true" ></i></a></div>
+                    </div>
+                <div class="footer-section p-3 border-bottom">
+                    <div class="logininfo">
+                        <div class="logininfo">Nejste přihlášeni (<a href="https://dl1.cuni.cz/login/index.php">Přihlášení</a>)</div>
+                    </div>
+                    <div class="tool_usertours-resettourcontainer">
+                    </div>
+        
+                    <div><a class="mobilelink" href="https://download.moodle.org/mobile?version=2024100705.08&amp;lang=cs&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Stáhněte si mobilní aplikaci</a></div>
+                    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://dl1.cuni.cz/lib/requirejs.php/-1/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://dl1.cuni.cz/lib/javascript.php/-1/lib/jquery/jquery-3.7.1',
+        jqueryui: 'https://dl1.cuni.cz/lib/javascript.php/-1/lib/jquery/ui-1.13.2/jquery-ui',
+        jqueryprivate: 'https://dl1.cuni.cz/lib/javascript.php/-1/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://dl1.cuni.cz/lib/javascript.php/-1/lib/requirejs/require.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_glossary/autolinker'); require(['filter_glossary/autolinker'], function(amd) {amd.init(); M.util.js_complete('filter_glossary/autolinker');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('cs');
+});;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"cs"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-68af801eb664a-navbar-nav'));
+    });
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+require(['theme_boost/footer-popover'], function(FooterPopover) {
+    FooterPopover.init();
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"trace"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(null); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?delayStartupUntil=configured"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Naposledy zm\u011bn\u011bno","name":"N\u00e1zev","error":"Chyba","info":"Informace","yes":"Ano","no":"Ne","cancel":"Zru\u0161it","confirm":"Potvrdit","areyousure":"Opravdu?","closebuttontitle":"Zav\u0159\u00edt","unknownerror":"Nezn\u00e1m\u00e1 chyba","file":"Soubor","url":"URL","collapseall":"Sbalit v\u0161e","expandall":"Rozbalit v\u0161e"},"repository":{"type":"Typ","size":"Velikost","invalidjson":"Neplatn\u00fd \u0159et\u011bzec JSON","nofilesattached":"\u017d\u00e1dn\u00e9 p\u0159ilo\u017een\u00e9 soubory","filepicker":"V\u00fdb\u011br souboru","logout":"Odhl\u00e1sit se","nofilesavailable":"\u017d\u00e1dn\u00e9 soubory nejsou dostupn\u00e9","norepositoriesavailable":"Litujeme, ale \u017e\u00e1dn\u00fd z va\u0161ich sou\u010dasn\u00fdch repozit\u00e1\u0159\u016f nem\u016f\u017ee vr\u00e1tit soubory v po\u017eadovan\u00e9m form\u00e1tu.","fileexistsdialogheader":"Soubor existuje","fileexistsdialog_editor":"Soubor s t\u00edmto jm\u00e9nem byl ji\u017e p\u0159ipojen k textu, kter\u00fd upravujete.","fileexistsdialog_filemanager":"Soubor s t\u00edmto jm\u00e9nem byl ji\u017e p\u0159ipojen","renameto":"P\u0159ejmenovat na \"{$a}\"","referencesexist":"Existuje {$a}  odkaz\u016f na tento soubor","select":"Vybrat"},"admin":{"confirmdeletecomments":"Opravdu odstranit vybran\u00e9 koment\u00e1\u0159e?","confirmation":"Potvrzen\u00ed"},"debug":{"debuginfo":"Informace o lad\u011bn\u00ed","line":"\u0158\u00e1dek","stacktrace":"Z\u00e1sobn\u00edk trasov\u00e1n\u00ed"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random68af801eb6b503'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random68af801eb6b503'); });
+})();
+//]]>
+</script>
+
+                </div>
+                <div class="footer-section p-3">
+                    <div>Používá <a href="https://moodle.com"> Moodle </a></div>
+                </div>
+            </div>
+        
+            <div class="footer-content-debugging footer-dark bg-dark text-light">
+                <div class="container-fluid footer-dark-inner">
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</div>
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </body></html>
