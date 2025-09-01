@@ -12,3 +12,6 @@ retrieval/get_images/images/
 
 #This will be automatically created when running "npm install"
 package-lock.json
+
+# Mac specific
+.DS_Store
