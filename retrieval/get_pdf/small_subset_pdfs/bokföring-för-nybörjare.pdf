@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="sv" class="">
+<head>
+    
+<!-- 2025-08-25 11:10-wn0sdwk0001ZG -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store">
+
+    <script>
+        if (!Storage.prototype.setObj) {
+            Storage.prototype.setObj = function (key, obj) {
+                return this.setItem(key, JSON.stringify(obj));
+            };
+        }
+
+        if (!Storage.prototype.getObj) {
+            Storage.prototype.getObj = function (key) {
+                return JSON.parse(this.getItem(key));
+            };
+        }
+    </script>
+
+            <link rel="canonical" href="https://www.spiris.se/blogg/foretagsredovisning/bokforing-guide" />
+
+<meta name="title" property="title" content="Bokföring – vad är det & hur funkar det? Så bokför du! (Guide)" />
+<title>Bokföring – vad är det & hur funkar det? Så bokför du! (Guide)</title>
+<meta name="description" property="description" content="Vår kompletta nybörjarguide lär dig bokföring från grunden; vad bokföring är, varför man ska bokföra, vad lagen säger och hur du faktiskt gör." />
+<meta name="robots" content="INDEX, FOLLOW">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    
+<link rel="stylesheet" href="/Campaign/css/noa-gradients.f85g7uzacz.css" />
+<link rel="stylesheet" href="/Campaign/css/noa-main.mori879se7.css" />
+<link rel="stylesheet" href="/Campaign/css/noa-variables.npis8lktzi.css" />
+<link rel="stylesheet" href="/Campaign/css/noa-typography.j1vqpbyql1.css" />
+
+    <link rel="stylesheet" type="text/css" href="/scss/vendor/bootstrap/bootstrap.min.css?v=D32-OL7aeYnzbr9bXNg2_Qbb4g0" />
+    <link rel="stylesheet" type="text/css" href="/scss/main.css?v=SqBf2fz6-HswqGDNpIz2K-rrqbU" />
+    
+    <link rel="icon" href="https://assets.spiris.se/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.spiris.se/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://assets.spiris.se/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://assets.spiris.se/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://assets.spiris.se/favicons/safari-pinned-tab.svg" color="#F56868">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="theme-color" content="#FFFFFF">
+
+    
+
+<!-- Google Tag Manager -->
+
+<script>
+    (function (w, d, s, l, i) {
+        {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    }}) (window, document, 'script', 'dataLayer', 'GTM-K7KDQN');
+</script>
+
+<!-- End Google Tag Manager -->
+
+    
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/vendors/bootstrap.bundle.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.js?v=HmaPcRAM-CUaUGFrmC_pcQd7m0I"></script>
+
+    <script type="text/javascript" src="/js/vs.js?v=bYXqBRMSIHbzTcMuGfXzicSA3U8"></script>
+    <script type="text/javascript" src="/js/vs.settings.js?v=aNeEsiHMdKxwJtq_DUIO-4PSB0I"></script>
+    <script type="text/javascript" src="/js/vs.ajax.js?v=7d37E_aCjjQno-k809A_9Xf9Nvc"></script>
+    <script type="text/javascript" src="/js/vs.overlay.js?v=aN1ET1OKI9Q1__w0kSCkSa6lkBs"></script>
+    <script type="text/javascript" src="/js/vs.search.js?v=UetXF1ywKQXbOei1OqQ-eNZxUoI"></script>
+    <script type="text/javascript" src="/js/vs.lazy.js?v=_YTQLl-73Ee_LdMQ8v6WXKlb05Y"></script>
+    <script type="text/javascript" src="/js/vs.map.js?v=_f0K5UiGxC8-KsPS-qQPXkipLUk"></script>
+    <script type="text/javascript" src="/js/vs.canvas.js?v=Zr4WbgJl5xKcOtzj5lFihZ_i_dE"></script>
+    <script type="text/javascript" src="/js/vs.cart.js?v=CAFr9PJOyi6f6MQGvHu6kJ0lKAg"></script>
+    <script type="text/javascript" src="/js/vs.modal.js?v=ffJijFgsxY-JhhJeTgCi2nEPrQ8"></script>
+    <script type="text/javascript" src="/js/vs.modal-content-loader.js"></script>
+    <script type="text/javascript" src="/js/vs.integrations.js?v=Z9rqPYUrL4k4EW2P5mOR5KC0Sig"></script>
+    <script type="text/javascript" src="/js/vs.sfl-search.js?v=xCaRWmbhjcQZJvDwptFpSC2Bplo"></script>
+    <script type="text/javascript" src="/js/vs.sfl-article-filter.js?v=qZnj4fuuvVi4HN9HZfFMYlHK3ks"></script>
+    <script type="text/javascript" src="/js/VsModal.js?v=TDy7ketOSPTSQSCpWbGNkwRzlvA"></script>
+    <script type="text/javascript" src="/js/inits.js?v=rtE10PQ3dsm4pYMuUYGdZDe39MA"></script>
+    <script type="text/javascript" src="/js/vs.showcontentpagedividerblock.js?v=Osdu0xn0w3vaApdLY0FPRq1XzjY"></script>
+    <script type="text/javascript" src="/js/vs.selfService.js?v=InweBjCGrjJx8iwvfdQVPCtIDyA"></script>
+    <script type="text/javascript" src="/js/vs.productgridblock.js?v=WSUeG5H7WdprfSZvJz6vpLHCzts"></script>
+    <script type="text/javascript" src="/js/vs.slider.js?v=yUTexCgKqLLqTe62w1M7W2Tbcy4"></script>
+    <script type="text/javascript" src="/js/vendors/RangeSlider/rangeslider.min.js?v=XCUxrb7z-6U-CyN4Sk5XN2IsXIk"></script>
+    <script type="text/javascript" src="/js/vs.coursefilter.js?v=ZWcJupnMz1dZfwUqg6OGFx8Xudc"></script>
+    <script type="text/javascript" src="/js/vs.course.js?v=rCPeo-9CoAoIimHfqN8N5HsM8Oc"></script>
+    <script type="text/javascript" src="/js/vs.downloadfilter.js?v=QxV_eSh63amHC4dQJIAm1ViRsvI"></script>
+    <script type="text/javascript" src="/js/vs.timeticker.js?v=Mt3NdkifPlLj_aV0DmSQr9efikU"></script>
+    <script type="text/javascript" src="/js/vs.eloqua.js?v=JXZWYxf78Eh9Pp6kZpaswzUZEHw"></script>   
+    <script type="text/javascript" src="/js/vs.spinner.js?v=U7ottLHSGJ7aC61MrBF3uphz6cU"></script>
+    <script type="text/javascript" src="/js/vs.autoinvoicecalculator.js"></script>
+    <script type="text/javascript" src="/js/vs.tables.js?v=vNFkhxblXLxU1T-EtfKS0Gq6ODw"></script>
+
+    
+        <script>
+            window.optimizely = window.optimizely || [];
+            window.optimizely.push({ type: "holdEvents" });
+        </script>
+        <script src="https://cdn.optimizely.com/js/27268630025.js"></script>
+        <script type="text/javascript" src="/js/vs.optiwebexperiment.js" defer></script>
+    
+
+
+    <script>
+        var vs = vs || {};
+        vs.search = vs.search || {};
+        vs.search.searchpage = vs.search.searchpage || {};
+
+        vs.settings = vs.settings || {};
+        vs.settings.searchpage = "/sok?query=";
+    </script>
+
+    
+
+
+</head>
+<body class="d-flex flex-column min-vh-100 sfl-page">
+    
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K7KDQN" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+    <div class="loading-box display-none">
+        <div class="loader"></div>
+    </div>
+
+    
+
+    <div class="modal vs-modal" id="drawerModal" tabindex="-1" aria-hidden="true" data-backdrop="false">
+    <div class="container modal-dialog modal-content">
+        <div class="modal-body">
+            <div class="pt-1">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Stäng"></button>
+                    </div>
+                    <div class="modal-inner-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-no-drawer" tabindex="-1" id="contentModal" aria-labelledby="contentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="contentModalClose" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+        
+
+<header class="header" id="noa-main-menu" style="transition: none;">
+    <nav class="header-inner">
+        <div class="container-xxl d-flex justify-content-between">
+            <div class="header-brand-logo-container">
+                <a href="/" title="Gå till startsidan">
+                    <img class="noa-logo header-brand-logo" src="https://assets.spiris.se/campaign/images/logo.eqcs07crjh.svg" alt="Spiris | Visma" width="143" height="40">
+                </a>
+            </div>
+            <div class="header-links-container">
+                <div class="header-desktop-dropdown-menu">
+                    <div class="has-submenu">
+                        <a href="#" class="header-menu-item noa-menu-md">Upptäck Spiris</a>
+                        <div class="header-desktop-dropdown container-xxl">
+                            <div class="header-desktop-dropdown-inner header-desktop-dropdown-lg-third">
+                                <div class="header-desktop-dropdown-subset header-desktop-dropdown-subset-highlighted">
+                                    <div class="w-100 d-xl-flex justify-content-between" style="margin-bottom: var(--noa-spacing-sm);">
+                                        <p class="noa-h6 header-desktop-dropdown-subset-highlighted-heading">Bokföring &amp; Fakturering</p>
+                                        <a href="/prova-gratis" title="Prova gratis" class="btn btn-outline-primary header-desktop-dropdown-subset-highlighted-prova-gratis">Prova gratis</a>
+                                    </div>
+                                    <div class="header-plan-items-container w-100">
+                                        <a href="/starta" title="Starta" class="noa-body-md header-plan-item rounded-4">
+                                            <img src="https://assets.spiris.se/campaign/images/tarta-meny.png" width="73" height="68" alt="Starta">
+                                            <div class="header-plan-item-copy">
+                                                <p class="noa-body-md">
+                                                    Starta
+                                                </p>
+                                                <p class="noa-body-sm">
+                                                    Nystartad och nytänkande? Börja här.
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="/driva" title="Driva" class="noa-body-md header-plan-item rounded-4">
+                                            <img src="https://assets.spiris.se/campaign/images/nycklar-meny.png" width="73" height="68" alt="Driva">
+                                            <div class="header-plan-item-copy">
+                                                <p class="noa-body-md">
+                                                    Driva
+                                                </p>
+                                                <p class="noa-body-sm">
+                                                    Höjda ambitioner? Byt till Spiris.
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="/vaxa" title="Växa" class="noa-body-md header-plan-item rounded-4">
+                                            <img src="https://assets.spiris.se/campaign/images/mobil-meny.png" width="73" height="68" alt="Växa">
+                                            <div class="header-plan-item-copy">
+                                                <p class="noa-body-md">
+                                                    Växa
+                                                </p>
+                                                <p class="noa-body-sm">
+                                                    För företagare i tillväxt. Och med stora drömmar.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-desktop-dropdown-subset">
+                                    <p class="noa-h6">Spiris</p>
+                                    <a href="/ekonomiplattform/bokforing-fakturering" title="Enkelt bokföringsprogram i Spiris plattform" class="noa-body-md">Bokföringsprogram</a>
+                                    <a href="/ekonomiplattform/lonehantering" title="Lönehanteringssystem i Spiris plattform" class="noa-body-md">Lönehantering</a>
+                                    <a href="/ekonomiplattform/tid-projektplanering " title="Tid- och projektplaneringsverktyg i Spiris plattform" class="noa-body-md">Tid &amp; Projektplanering</a>
+                                    <a href="/ekonomiplattform/skatt-bokslut" title="Skatt- och bokslutsprogram i Spiris plattform" class="noa-body-md">Skatt &amp; Bokslut</a>
+                                    <a href="/ekonomiplattform/koncernredovisning" title="Koncernredovisningsystem i Spiris plattform" class="noa-body-md">Koncernredovisning</a>
+                                    <a href="/lagerbolag" title="Köp lagerbolag hos Spiris" class="noa-body-md">Lagerbolag</a>
+                                </div>
+                                <div class="header-desktop-dropdown-subset">
+                                    <p class="noa-h6">För dig som är</p>
+                                    <a href="/redovisningsbyra" title="Spiris för redovisningsbyråer" class="noa-body-md">Redovisningsbyrå</a>
+                                    <a href="/forening" title="Bokföringsprogram för förening från Spiris" class="noa-body-md">Förening</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="/priser" title="Priser" class="header-menu-item noa-menu-md">Priser</a>
+                    </div>
+                    <div>
+                        <a href="#" class="header-menu-item noa-menu-md">Hjälp &amp; Support</a>
+                        <div class="header-desktop-dropdown container-xxl">
+                            <div class="header-desktop-dropdown-inner header-desktop-dropdown-lg-third">
+                                <div class="header-desktop-dropdown-subset">
+                                    <p class="noa-h6">Kunskap</p>
+                                    <a href="/blogg" title="Hitta kunskap och inspiration i Spiris blogg" class="noa-body-md">Blogg</a>
+                                    <a href="/formular/boka/bollplank" title="Gratis Bollplank" class="noa-body-md">Gratis bollplank</a>
+                                    <a href="/blogg/foretagsstart/starta-eget-foretag" class="noa-body-md">Starta eget företag</a>
+                                    <a href="/blogg/affarsmojligheter/affarsideer" title="Färdiga affärsidéer att inspireras av" class="noa-body-md">Affärsidéer</a>
+                                    <a href="/blogg/foretagsstart/affarsplan" title="Gratis affärsplan från Spiris" class="noa-body-md">Affärsplan</a>
+                                </div>
+                                <div class="header-desktop-dropdown-subset">
+                                    <p class="noa-h6">Spiris &amp; Vänner</p>
+                                    <a href="/partner" title="Bli partner till Spiris" class="noa-body-md">Bli partner till Spiris</a>
+                                    <a href="/integrationer" title="Integrationslösningar" class="noa-body-md">Integrationslösningar</a>
+                                    <a href="/skola" title="Spiris i skolan" class="noa-body-md">Spiris i skolan</a>
+                                    <a href="/kontakt/hitta-redovisningsbyra" title="Hitta din redovisningsbyrå" class="noa-body-md">Hitta din redovisningsbyrå</a>
+                                    <a href="https://forum.spiris.se/" title="Forum" class="noa-body-md">Forum</a>
+                                </div>
+                                <div class="header-desktop-dropdown-subset header-desktop-dropdown-subset-highlighted">
+                                    <p class="noa-h6">För dig som är Spiris-kund</p>
+                                    <a href="/support/kom-igang" title="Kom-igång-hjälp" class="noa-body-md">Kom igång-hjälp</a>
+                                    <a href="/villkor/abonnemang-fakturafragor" title="Abonnemang &amp; fakturafrågor" class="noa-body-md">Abonnemang &amp; fakturafrågor</a>
+                                    <a href="/support" title="Support" class="noa-body-md">Support</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="header-menu-item noa-menu-md">Om Spiris</a>
+                        <div class="container-xxl header-desktop-dropdown">
+                            <div class="header-desktop-dropdown-inner header-desktop-dropdown-lg-two">
+                                <div class="header-desktop-dropdown-subset header-desktop-dropdown-subset-image-container">
+                                    <img src="https://assets.spiris.se/campaign/images/OmSpiris-menu.png" alt="" role="presentation">
+                                </div>
+
+                                <div class="header-desktop-dropdown-subset">
+                                    <p class="noa-h6">Spiris</p>
+
+                                    <a class="noa-body-md text-decoration-none text-dark" title="Om Spiris" href="/om-oss">Om Spiris</a>
+
+                                    <a class="noa-body-md text-decoration-none text-dark" title="Lediga jobb" href="/om-oss/lediga-jobb">Lediga jobb</a>
+
+                                    <a class="noa-body-md text-decoration-none text-dark" title="En arbetsplats i världsklass" href="/om-oss/arbetsplats-i-varldsklass">En arbetsplats i världsklass</a>
+
+                                    <a class="noa-body-md text-decoration-none text-dark" title="Hållbarhet" href="/om-oss/hallbarhet">Hållbarhet</a>
+
+                                    <a class="noa-body-md text-decoration-none text-dark" title="Samhällsengagemang" href="/om-oss/samhallsengagemang">Samhällsengagemang</a>
+
+                                    <a class="noa-body-md text-decoration-none text-dark" title="Nyhetsrum" href="/nyhetsrum">Nyhetsrum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <a href="/kontakt" title="Kontakta oss" class="btn btn-outline-primary header-contact-us">Kontakta oss</a>
+                        <a href="https://www.vismaonline.com/" rel="nofollow" title="Logga in" class="btn btn-outline-primary">Logga in</a>
+                <button id="noa-main-menu-burger" class="btn btn-outline-primary noa-btn noa-btn-icon" data-open="">
+                    <svg class="burger" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.888885 7.0013H15.1111M0.888885 1.66797H15.1111M0.888885 12.3346H15.1111" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg class="remove" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.3334 1.66797L1.66669 12.3346M1.66669 1.66797L12.3334 12.3346" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="header-mobile-drawer" class="footer noa-bg-gradient-footer">
+    <div class="container-xxl d-flex flex-column justify-content-between flex-grow-1">
+        <div class="d-lg-none row-md accordion visible-xs-accordion visible-sm-accordion text-dark" id="accordionMobileHeader">
+            <div class="col-12 col-md accordion-item header-mobile-dropdown">
+                <h5 class="accordion-header noa-m-0 border-top border-dark">
+                    <button class="noa-px-0 noa-py-1 noa-menu-md accordion-button collapsed text-start noa-py-3" type="button" data-bs-toggle="collapse" data-bs-target="#headerMobileMenuCollapseOne" aria-expanded="false" aria-controls="collapseColumnOne">
+                        Upptäck Spiris
+                    </button>
+                </h5>
+                <div id="headerMobileMenuCollapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionMobileHeader">
+                    <div class="header-mobile-drawer-accordion-collapse-submenu header-mobile-drawer-accordion-collapse-offers">
+                        <h6 class="noa-h6">Bokföring &amp; Fakturering</h6>
+                        <a href="/prova-gratis" class="btn btn-outline-primary">Prova gratis</a>
+                        <div class="list-unstyled text-small accordion-body header-mobile-drawer-accordion-collapse-offers-list">
+                            <a class="header-mobile-drawer-accordion-collapse-offers-list-item text-decoration-none text-dark" href="/starta">
+                                <img src="https://assets.spiris.se/campaign/images/tarta-meny.png">
+                                <div class="header-mobile-drawer-offer-inner">
+                                    <p class="noa-body-md">Starta</p>
+                                    <p class="noa-body-md header-mobile-drawer-offer-subtitle">Nystartad och nytänkande? Börja här.</p>
+                                </div>
+                            </a>
+                            <a class="header-mobile-drawer-accordion-collapse-offers-list-item text-decoration-none text-dark" href="/driva">
+                                <img src="https://assets.spiris.se/campaign/images/nycklar-meny.png">
+                                <div class="header-mobile-drawer-offer-inner">
+                                    <p class="noa-body-md">Driva</p>
+                                    <p class="noa-body-md header-mobile-drawer-offer-subtitle">Höjda ambitioner? Byt till Spiris.</p>
+                                </div>
+                            </a>
+                            <a class="header-mobile-drawer-accordion-collapse-offers-list-item text-decoration-none text-dark" href="/vaxa">
+                                <img src="https://assets.spiris.se/campaign/images/mobil-meny.png">
+                                <div class="header-mobile-drawer-offer-inner">
+                                    <p class="noa-body-md">Växa</p>
+                                    <p class="noa-body-md header-mobile-drawer-offer-subtitle">För företagare i tillväxt. Och med stora drömmar.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="noa-mb-3 header-mobile-drawer-accordion-collapse-submenu">
+                        <h6 class="noa-h6">Fler funktioner i Spiris</h6>
+                        <div class="list-unstyled text-small accordion-body header-mobile-drawer-accordion-collapse-offers-list">
+                            <a class="noa-body-md text-decoration-none text-dark" href="/ekonomiplattform/bokforing-fakturering">Bokföringsprogram</a>
+                            <a class="noa-body-md text-decoration-none text-dark" href="/ekonomiplattform/lonehantering">Lönehantering</a>
+                            <a class="noa-body-md text-decoration-none text-dark" href="/ekonomiplattform/tid-projektplanering">Tid &amp; Projektplanering</a>
+                            <a class="noa-body-md text-decoration-none text-dark" href="/ekonomiplattform/skatt-bokslut">Skatt &amp; Bokslut</a>
+                            <a class="noa-body-md text-decoration-none text-dark" href="/ekonomiplattform/koncernredovisning">Koncernredovisning</a>
+                            <a class="noa-body-md text-decoration-none text-dark" href="/lagerbolag">Lagerbolag</a>
+                        </div>
+                    </div>
+                    <div class="noa-mb-3 header-mobile-drawer-accordion-collapse-submenu">
+                        <h6 class="noa-h6">För dig som är</h6>
+                        <div class="list-unstyled text-small accordion-body header-mobile-drawer-accordion-collapse-offers-list">
+                            <a class="noa-body-md text-decoration-none text-dark" href="/redovisningsbyra">Redovisningsbyrå</a>
+                            <a class="noa-body-md text-decoration-none text-dark" href="/forening">Förening</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md accordion-item header-mobile-dropdown">
+                <h5 class="noa-menu-md accordion-header noa-m-0 border-top border-dark">
+                    <a class="noa-px-0 noa-py-1 noa-menu-md d-block text-start noa-py-3 text-decoration-none text-dark" href="/priser">
+                        Priser
+                    </a>
+                </h5>
+            </div>
+            <div class="col-12 col-md accordion-item header-mobile-dropdown ">
+                <h5 class="noa-menu-md accordion-header noa-m-0 border-top border-dark">
+                    <button class="noa-px-0 noa-py-1 noa-menu-md accordion-button collapsed text-start noa-py-3" type="button" data-bs-toggle="collapse" data-bs-target="#headerMobileMenuCollapseThree" aria-expanded="false" aria-controls="collapseColumnThree">
+                        Hjälp &amp; Support
+                    </button>
+                </h5>
+                <div id="headerMobileMenuCollapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMobileHeader">
+                    <div class="header-mobile-drawer-accordion-collapse-submenu">
+                        <h6 class="noa-h6">Kunskap</h6>
+                        <ul class="list-unstyled text-small accordion-body">
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/blogg">Blogg</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/formular/boka/bollplank">Gratis bollplank</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/blogg/foretagsstart/starta-eget-foretag">Starta eget företag</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/blogg/affarsmojligheter/affarsideer">Affärsidéer</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/blogg/foretagsstart/affarsplan">Affärsplan</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-mobile-drawer-accordion-collapse-submenu">
+                        <h6 class="noa-h6">Spiris &amp; Vänner</h6>
+                        <ul class="list-unstyled text-small accordion-body">
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/partner">Bli partner till Spiris</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/integrationer">Integrationslösningar</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/skola">Spiris i skolan</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/kontakt/hitta-redovisningsbyra">Hitta din redovisningsbyrå</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="https://forum.spiris.se/">Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-mobile-drawer-accordion-collapse-submenu">
+                        <h6 class="noa-h6">För dig som är Spiris-kund</h6>
+                        <ul class="list-unstyled text-small accordion-body">
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/support/kom-igang">Kom igång-hjälp</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/villkor/abonnemang-fakturafragor">Abonnemang &amp; fakturafrågor</a></li>
+                            <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/support">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md accordion-item header-mobile-dropdown">
+                <h5 class="noa-menu-md accordion-header noa-m-0 border-top border-dark">
+                    <button class="noa-px-0 noa-py-1 noa-menu-md accordion-button collapsed text-start noa-py-3" type="button" data-bs-toggle="collapse" data-bs-target="#headerMobileMenuCollapseFour" aria-expanded="false" aria-controls="collapseColumnFour">
+                        Om Spiris
+                    </button>
+                </h5>
+                <div id="headerMobileMenuCollapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionMobileHeader">
+                    <ul class="list-unstyled text-small accordion-body">
+                        <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/om-oss">Om Spiris</a></li>
+                        <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/om-oss/lediga-jobb">Lediga jobb</a></li>
+                        <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/om-oss/arbetsplats-i-varldsklass">En arbetsplats i världsklass</a></li>
+                        <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/om-oss/hallbarhet">Hållbarhet</a></li>
+                        <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/om-oss/samhallsengagemang">Samhällsengagemang</a></li>
+                        <li class="noa-mb-3"><a class="noa-body-md text-decoration-none text-dark" href="/nyhetsrum">Nyhetsrum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column">
+            <a href="/kontakt" class="btn btn-outline-primary header-contact-us">Kontakta oss</a>
+        </div>
+    </div>
+</div>
+
+<script src="/Campaign/js/noa-header.ciicgrxlba.js"></script>
+
+    <div class="flex-grow-1 flex-shrink-0">
+        
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bokf&#xF6;ring &#x2013; vad &#xE4;r det &amp; hur funkar det? Guide i bokf&#xF6;ringens grunder">
+    <meta name="twitter:description" content="&lt;!--lazyimages--&gt;&#xA;&lt;p&gt;&lt;span&gt;&lt;span&gt;V&amp;#228;lkommen till den kompletta nyb&amp;#246;rjarguiden om bokf&amp;#246;ring! Den &amp;#228;r framtagen f&amp;#246;r dig som beh&amp;#246;ver l&amp;#228;ra dig grunderna inom bokf&amp;#246;ring, till exempel f&amp;#246;r att sk&amp;#246;ta bokf&amp;#246;ringen i ett eget f&amp;#246;retag eller i en f&amp;#246;rening, eller f&amp;#246;r dig som bara &amp;#228;r nyfiken p&amp;#229; vad bokf&amp;#246;ring inneb&amp;#228;r.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;">
+
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="https://www.spiris.se/globalassets/sfl/bokforing.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Bokf&#xF6;ring &#x2013; vad &#xE4;r det &amp; hur funkar det? Guide i bokf&#xF6;ringens grunder" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.spiris.se/blogg/foretagsredovisning/bokforing-guide" />
+    <meta property="og:description" content="&#xA;V&amp;#228;lkommen till den kompletta nyb&amp;#246;rjarguiden om bokf&amp;#246;ring! Den &amp;#228;r framtagen f&amp;#246;r dig som beh&amp;#246;ver l&amp;#228;ra dig grunderna inom bokf&amp;#246;ring, till exempel f&amp;#246;r att sk&amp;#246;ta bokf&amp;#246;ringen i ett eget f&amp;#246;retag eller i en f&amp;#246;rening, eller f&amp;#246;r dig som bara &amp;#228;r nyfiken p&amp;#229; vad bokf&amp;#246;ring inneb&amp;#228;r." />
+
+
+<div>
+    
+
+
+<main id="sfl--article-page" aria-labelledby="article-header">
+    <div class="container pt-1 pt-md-2">
+        <div class="row pb-2">
+            <div class="col-12 col-lg-8 col-xxl-6 offset-xxl-1">
+                
+
+    <nav aria-label="Brödsmulor" class="bg-transparent">
+        <ol class="breadcrumb mt-1">
+                <li class="breadcrumb-item"><a href="/blogg">Blogg</a></li>
+                <li class="breadcrumb-item"><a href="/blogg/foretagsredovisning">F&#xF6;retagsredovisning</a></li>
+
+            <li class="breadcrumb-item active" aria-current="page">Bokf&#xF6;ring</li>
+        </ol>
+    </nav>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Blogg",
+        "item": "/blogg"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "F&#xF6;retagsredovisning",
+        "item": "/blogg/foretagsredovisning"
+      },    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bokf&#xF6;ring",
+      "item": "/blogg/foretagsredovisning/bokforing-guide"
+    }]
+  }
+</script>
+
+            </div>
+        </div>
+        <section class="row" aria-label="Artikelinformation">
+            <header class="col-12 col-lg-8 col-xxl-6 offset-xxl-1">
+                    <h1 class="h2 mt-0" id="article-header">Bokf&#xF6;ring &#x2013; vad &#xE4;r det &amp; hur funkar det? Guide i bokf&#xF6;ringens grunder</h1>
+                <div class="sfl--article--meta-data">
+
+                        <a href="/blogg/forfattare/redaktionen" title="Redaktionen" class="sfl--article--author">Redaktionen</a>
+
+                    <time class="sfl--article--date" datetime="2024-07-03">
+                        2024-07-03
+                    </time>
+
+
+                </div>
+            </header>
+        </section>
+        <div class="row justify-content-evenly mt-1">
+            <div class="col-12 col-lg-8 col-xxl-6 sfl--article--main-content">
+                <article id="sfl-page--content" aria-label="Artikel innehåll">
+                    <header>
+<img alt="En laptop st&#xE5;r uppf&#xE4;lld p&#xE5; ett bord och sk&#xE4;rmen visar ett program f&#xF6;r bokf&#xF6;ring." class="border-rounded" sizes="(max-width: 799px) 288px, (min-width: 800px) 800px" src="/globalassets/img/sfl/lg-bokforing.jpg" srcset="/globalassets/img/sfl/xs-bokforing.jpg 184w,/globalassets/img/sfl/sm-bokforing.jpg 288w,/globalassets/img/sfl/md-bokforing.jpg 480w,/globalassets/img/sfl/lg-bokforing.jpg 800w,/globalassets/img/sfl/xl-bokforing.jpg 1280w"></img>
+                            <div class="btn-group share-group social-share">
+                                <a data-toggle="dropdown" class="btn btn-info" title="Dela">
+                                    <span class="icon icon-process2"></span>
+                                </a>
+                                <button href="#" data-bs-toggle="dropdown" class="btn btn-info dropdown-toggle share" title="Dela"></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.spiris.se%2Fblogg%2Fforetagsredovisning%2Fbokforing-guide"
+                                           target="_blank" title="Dela på Facebook" data-original-title="Facebook" rel="tooltip"
+                                           class="btn btn-facebook" data-placement="left">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+
+                                        <a href="https://twitter.com/home?status=https%3A%2F%2Fwww.spiris.se%2Fblogg%2Fforetagsredovisning%2Fbokforing-guide"
+                                           target="_blank" title="Dela på Twitter" data-original-title="Twitter" rel="tooltip"
+                                           class="btn btn-twitter" data-placement="left">
+                                            <span class="icon-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.spiris.se%2Fblogg%2Fforetagsredovisning%2Fbokforing-guide"
+                                           target="_blank" title="Dela på Google+" data-original-title="Google+" rel="tooltip"
+                                           class="btn btn-google" data-placement="left">
+                                            <span class="icon-googleplus"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.spiris.se%2Fblogg%2Fforetagsredovisning%2Fbokforing-guide&title=Bokf%C3%B6ring&#x2B;%E2%80%93&#x2B;vad&#x2B;%C3%A4r&#x2B;det&#x2B;%26&#x2B;hur&#x2B;funkar&#x2B;det%3F&#x2B;Guide&#x2B;i&#x2B;bokf%C3%B6ringens&#x2B;grunder&summary=%3C!--lazyimages--%3E%0A%3Cp%3E%3Cspan%3E%3Cspan%3EV%26%23228%3Blkommen&#x2B;till&#x2B;den&#x2B;kompletta&#x2B;nyb%26%23246%3Brjarguiden&#x2B;om&#x2B;bokf%26%23246%3Bring!&#x2B;Den&#x2B;%26%23228%3Br&#x2B;framtagen&#x2B;f%26%23246%3Br&#x2B;dig&#x2B;som&#x2B;beh%26%23246%3Bver&#x2B;l%26%23228%3Bra&#x2B;dig&#x2B;grunderna&#x2B;inom&#x2B;bokf%26%23246%3Bring%2C&#x2B;till&#x2B;exempel&#x2B;f%26%23246%3Br&#x2B;att&#x2B;sk%26%23246%3Bta&#x2B;bokf%26%23246%3Bringen&#x2B;i&#x2B;ett&#x2B;eget&#x2B;f%26%23246%3Bretag&#x2B;eller&#x2B;i&#x2B;en&#x2B;f%26%23246%3Brening%2C&#x2B;eller&#x2B;f%26%23246%3Br&#x2B;dig&#x2B;som&#x2B;bara&#x2B;%26%23228%3Br&#x2B;nyfiken&#x2B;p%26%23229%3B&#x2B;vad&#x2B;bokf%26%23246%3Bring&#x2B;inneb%26%23228%3Br.%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fp%3E"
+                                           title="Dela på LinkedIn" target="_blank" data-original-title="LinkedIn" rel="tooltip"
+                                           class="btn btn-linkedin" data-placement="left">
+                                            <span class="icon-linkedin"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a title="Dela via mail" target="_blank" data-original-title="Email" rel="tooltip" class="btn btn-mail" data-placement="left" href="/cdn-cgi/l/email-protection#142b6761767e71776029567b7f72315727315622667d7a7332376c26562f315126312c24312d2732376c26562f62757032376c26562f3157273155206632376c26562f70716032376c26562f31262232376c26562f7c616632376c26562f72617a7f756632376c26562f70716031275232376c26562f53617d707132376c26562f7d32376c26562f767b7f72315727315622667d7a73717a6732376c26562f7366617a707166327579642f767b706d297c606064673127553126523126526363633a67647d667d673a677131265276787b7373312652727b6671607573676671707b627d677a7d7a73312652767b7f727b667d7a733973617d7071">
+                                            <span class="icon-email"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sfl--article--intro" >
+                                
+<!--lazyimages-->
+<p><span><span>V&#228;lkommen till den kompletta nyb&#246;rjarguiden om bokf&#246;ring! Den &#228;r framtagen f&#246;r dig som beh&#246;ver l&#228;ra dig grunderna inom bokf&#246;ring, till exempel f&#246;r att sk&#246;ta bokf&#246;ringen i ett eget f&#246;retag eller i en f&#246;rening, eller f&#246;r dig som bara &#228;r nyfiken p&#229; vad bokf&#246;ring inneb&#228;r.</span></span></p>
+                            </div>
+                        </header>
+                        <div class="sfl--article--content">
+                            
+<!--lazyimages-->
+
+<p>H&#228;r g&#229;r vi igenom de termer du beh&#246;ver k&#228;nna till, hur du sk&#246;ter den dagliga bokf&#246;ringen och grunden till hur du r&#228;knar ut resultat. Vi visar hur allt detta fungerar genom att anv&#228;nda oss av ett antal vanliga bokf&#246;ringsexempel. De exempel vi tar upp &#228;r de vanligast f&#246;rekommande bokf&#246;ringsmomenten i svenska sm&#229;f&#246;retag, vilket g&#246;r att du enkelt kan &#246;vers&#228;tta dem till din egen bokf&#246;ring.</p>
+<p>F&#246;r dig som vill l&#228;ra dig mer och f&#246;rdjupa dina kunskaper erbjuder Spiris kurser inom bokf&#246;ring, men du kommer l&#229;ngt p&#229; det vi tar upp h&#228;r.</p>
+<p>Eftersom det idag &#228;r m&#246;jligt att sk&#246;ta st&#246;rre delen av sin bokf&#246;ring i elektronisk form kan du g&#246;ra det mesta i ett&#160;bokf&#246;ringsprogram i din dator eller p&#229; n&#228;tet. I vissa fall sk&#246;ts bokf&#246;ringen till och med automatiskt n&#228;r du skapar en kundfaktura eller registrerar en leverant&#246;rsfaktura.</p>
+<p><em><span class="icon-idea-mce">&#58937;</span> Uppt&#228;ck bokf&#246;ring i Spiris, b&#229;de f&#246;r nyb&#246;rjare och mer erfarna.</em></p>
+<p>&#196;ven om du har ett effektivt bokf&#246;ringsprogram till din hj&#228;lp &#228;r det viktigt att du vet hur du hanterar bokf&#246;ringsmaterial b&#229;de i pappersform och i elektronisk form, eftersom det &#228;r s&#229; det fungerar i de flesta verksamheter idag. Hur det g&#229;r till ska vi titta n&#228;rmare p&#229; nu.</p>
+<p>Vi har tagit fram kursen tillsammans med v&#229;ra egna bokf&#246;ringsexperter, som regelbundet utbildar Sveriges f&#246;retagare i bokf&#246;ring och redovisning. Mycket n&#246;je att l&#228;ra dig bokf&#246;ra i Spiris!</p>
+<div class="p-2 p-md-3 bg-color-red-10 my-2">
+<h6>G&#229; direkt till avsnitt:</h6>
+<ul>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#1">Vad &#228;r bokf&#246;ring?</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#2">Varf&#246;r ska man bokf&#246;ra? </a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#3">Alla f&#246;retag b&#246;rjar med en budget</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#4">Vad beh&#246;ver du f&#246;r att bokf&#246;ra?</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#5">Dags att b&#246;rja bokf&#246;ra</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#6">7 vanliga bokf&#246;ringsexempel</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#7">Bokf&#246;ra och deklarera moms</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#8">Bokf&#246;ra periodiseringar</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#9">Avst&#228;mningar och uppf&#246;ljning av bokf&#246;ring</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#10">F&#246;lj upp f&#246;retagets resultat i bokf&#246;ringen &#160;</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#11">Avsluta bokf&#246;rings&#229;ret</a></li>
+<li><a href="/blogg/foretagsredovisning/bokforing-guide#12">Spara r&#228;kenskapsinformationen</a></li>
+</ul>
+</div>
+<h2>Inledning</h2>
+<h3>Begr&#228;nsningar i denna guide</h3>
+<p>Det finns omr&#229;den som vi inte ber&#246;r eftersom reglerna&#160;&#228;r omfattande och det finns m&#229;nga undantag och&#160;specialregler. Det g&#228;ller t ex <a href="/blogg/loner/vad-ar-lon" title="Vad &#228;r l&#246;n?">l&#246;n</a>. Det finns billiga&#160;och bra l&#246;neprogram som det ofta l&#246;nar sig att k&#246;pa&#160;&#228;ven om du bara har n&#229;gra f&#229; anst&#228;llda. P&#229; s&#229; s&#228;tt f&#229;r&#160;du hj&#228;lp med regler f&#246;r t ex fr&#229;nvaro och semestrar,&#160;och bokf&#246;ringsunderlagen skapas automatiskt.</p>
+<p>Ett&#160;annat omr&#229;de med m&#229;nga regler &#228;r <a href="/blogg/foretagsredovisning/vad-ar-anlaggningstillgang" title="Vad &#228;r en anl&#228;ggningstillg&#229;ng?">anl&#228;ggningstillg&#229;ngar</a>. Det kan t ex vara maskiner, <a href="/blogg/foretagsredovisning/vad-ar-inventarier" title="Vad &#228;r inventarier?">inventarier</a>, bilar och fastigheter. Om du bara har n&#229;gra f&#229; anl&#228;ggningstillg&#229;ngar r&#228;cker det med att du samlar kopior av leverant&#246;rsfakturorna du fick n&#228;r du k&#246;pte tillg&#229;ngen i en s&#228;rskild p&#228;rm. B&#228;st &#228;r det att ha det direkt i ditt bokf&#246;ringsprogram&#160;s&#229; att du f&#229;r kontroll p&#229;&#160;vilka tillg&#229;ngar du har. D&#229; f&#229;r du ocks&#229; automatiska&#160;bokf&#246;ringsunderlag med avskrivningar per m&#229;nad och&#160;underlag f&#246;r bokf&#246;ring av resultat om du s&#228;ljer eller&#160;skrotar en anl&#228;ggningstillg&#229;ng.</p>
+<h3>Tumregeln: Skilj p&#229; egna och f&#246;retagets pengar!</h3>
+<p>B&#229;de f&#246;r din egen skull och f&#246;r att f&#246;lja lagen &#228;r det viktigt att du skiljer p&#229; vad som &#228;r dina egna pengar och f&#246;retagets. Genom att bokf&#246;ra regelbundet underl&#228;ttar du det. Allt i f&#246;retaget ska bokf&#246;ras, &#228;ven s&#229;dant som du sj&#228;lv tar ut eller s&#228;tter in i f&#246;retaget.</p>
+<h3>N&#228;r du inte vill eller kan g&#246;ra allt sj&#228;lv</h3>
+<p>Det &#228;r bara lite st&#246;rre f&#246;retag som m&#229;ste ha en <a href="/blogg/foretagsredovisning/vad-ar-revisor" title="Vad &#228;r en revisor?">revisor</a> enligt lag. Men det kan l&#246;na sig att ha en <a href="/blogg/foretagsredovisning/vad-ar-redovisningskonsult" title="Vad &#228;r en redovisningskonsult?">redovisningskonsult</a> eller revisor till sin hj&#228;lp i alla fall. Samarbetet kan se ut p&#229; olika s&#228;tt. H&#228;r &#228;r n&#229;gra exempel:</p>
+<ul>
+<li>Du kan f&#229; r&#229;dgivning n&#228;r du b&#246;rjar bokf&#246;ra och sedan f&#229; hj&#228;lp n&#228;r det uppst&#229;r fr&#229;getecken.</li>
+<li>Du kan sk&#246;ta all bokf&#246;ring sj&#228;lv men f&#229; hj&#228;lp med avst&#228;mning och bokslut.</li>
+<li>Du kan sk&#246;ta fakturering sj&#228;lv i ett faktureringsprogram men &#246;verl&#229;ter resten till redovisningskonsulten.</li>
+<li>Du kan l&#229;ta redovisningskonsulten sk&#246;ta allt som har med fakturering och bokf&#246;ring att g&#246;ra.</li>
+</ul>
+<h2 id="1">Vad &#228;r bokf&#246;ring?</h2>
+<p>Bokf&#246;ring &#228;r helt enkelt en sammanst&#228;llning av de inkomster och utgifter som en verksamhet har. I bokf&#246;ringstermer brukar man fr&#228;mst prata om <a href="/blogg/foretagsredovisning/vad-ar-intakt" title="Vad &#228;r en int&#228;kt?">int&#228;kter</a> och <a href="/blogg/foretagsredovisning/vad-ar-kostnad" title="Vad &#228;r en kostnad?">kostnader</a>. Int&#228;kter och kostnader kan utg&#246;ras av pengar, varor, arbete utf&#246;rt av personal, skatter med mera. Varje <a href="/blogg/foretagsredovisning/vad-ar-affarshandelse" title="Vad &#228;r en aff&#228;rsh&#228;ndelse?">aff&#228;rsh&#228;ndelse</a> som sker i en bokf&#246;ringsskyldig verksamhet ska bokf&#246;ras. Aff&#228;rsh&#228;ndelser inkluderar till exempel k&#246;p, f&#246;rs&#228;ljningar, utbetalning av l&#246;n, skatter, n&#228;r verksamheten tar ett l&#229;n eller ger en kund kredit. F&#246;r varje aff&#228;rsh&#228;ndelse ska det finnas ett dokument som styrker att en <a href="/blogg/foretagsredovisning/vad-ar-transaktion" title="Vad &#228;r en transaktion?">transaktion</a> har genomf&#246;rts, till exempel ett kvitto eller en faktura. Denna handling kallas i bokf&#246;ringstermer f&#246;r <a href="/blogg/foretagsredovisning/vad-ar-verifikation" title="Vad &#228;r en verifikation?">verifikation</a>.&#160;</p>
+<h3>Bokf&#246;ring hanterar aff&#228;rsh&#228;ndelser</h3>
+<p>Att bokf&#246;ra inneb&#228;r att ordna, sammanst&#228;lla, v&#228;rdera och rapportera aff&#228;rsh&#228;ndelser. Aff&#228;rsh&#228;ndelser &#228;r in- eller utbetalningar som direkt p&#229;verkar ett f&#246;retags resultat och st&#228;llning. Aff&#228;rsh&#228;ndelserna ska vara dokumenterade som verifikationer s&#229; som kvitton och fakturor. Bokf&#246;ring anv&#228;nds som ett &#246;vergripande begrepp och &#228;ven f&#246;r att beskriva sj&#228;lva handlingen att bokf&#246;ra. Hur bokf&#246;ringen ska sk&#246;tas &#228;r best&#228;mt i <a href="/blogg/lagar-regler/vad-ar-bokforingslagen" title="Vad &#228;r Bokf&#246;ringslagen?">Bokf&#246;ringslagen</a> (1999:1078).</p>
+<p>Bokf&#246;ringen ska sk&#246;tas l&#246;pande. Det vanligaste &#228;r att till&#228;mpa <a href="/blogg/foretagsredovisning/vad-ar-dubbel-bokforing" title="Vad &#228;r dubbel bokf&#246;ring?">dubbel bokf&#246;ring</a> d&#228;r ett belopp bokf&#246;rs p&#229; tv&#229; olika konton. D&#229; bokf&#246;rs en aff&#228;rsh&#228;ndelse en g&#229;ng p&#229; ett konto i kredit och en g&#229;ng p&#229; ett konto i debet. Kontanta in- och utbetalningar ska bokf&#246;ras senast p&#229;f&#246;ljande arbetsdag och andra aff&#228;rsh&#228;ndelser s&#229; snart som m&#246;jligt men senast p&#229;f&#246;ljande m&#229;nad.</p>
+<p>Man ska kunna f&#246;lja samtliga bokf&#246;ringshandlingar och dessa ska sparas i sju &#229;r. De ska dessutom finnas i l&#228;sbar form, antingen som fysiska eller elektroniska dokument.</p>
+<h3>Bokf&#246;ringsskyldighet &#8211; alla som driver n&#228;ringsverksamhet ska uppr&#228;tta bokf&#246;ring</h3>
+<p>Att bokf&#246;ra &#228;r en lagstadgad skyldighet, kallad <a href="/blogg/foretagsredovisning/vad-ar-bokforingsskyldighet" title="Vad &#228;r bokf&#246;ringsskyldighet?">bokf&#246;ringsskyldighet</a>, som &#228;r best&#228;md enligt Bokf&#246;ringslagn. Alla juridiska personer s&#229; som aktiebolag, handelsbolag och ekonomiska f&#246;reningar samt fysiska personer som bedriver enskild firma &#228;r bokf&#246;ringsskyldiga. Det vill s&#228;ga att om alla i Sverige som driver n&#228;ringsverksamhet ska uppr&#228;tta en bokf&#246;ring.</p>
+<p>I bokf&#246;ringslagen 5 kap. 1 &#167; 1 st. &#228;r bokf&#246;ringsskyldigheten definierad som f&#246;ljande:</p>
+<blockquote>"Aff&#228;rsh&#228;ndelserna skall bokf&#246;ras s&#229; att de kan presenteras i registreringsordning (grundbokf&#246;ring) och i systematisk ordning (huvudbokf&#246;ring). Detta skall ske p&#229; ett s&#229;dant s&#228;tt att det &#228;r m&#246;jligt att kontrollera fullst&#228;ndigheten i bokf&#246;ringsposterna och &#246;verblicka verksamhetens f&#246;rlopp, st&#228;llning och resultat."</blockquote>
+<h3><span class="h3">Tv&#229; bokf&#246;ringsmetoder</span></h3>
+<p>Bokf&#246;ringen kan ske enligt tv&#229; metoder, <a href="/blogg/foretagsredovisning/vad-ar-fakturametoden" title="Vad &#228;r fakturametoden?">fakturametoden</a> och <a href="/blogg/foretagsredovisning/vad-ar-kontantmetoden" title="Vad &#228;r kontantmetoden?">kontantmetoden</a>.</p>
+<p>Fakturametoden inneb&#228;r att alla kundfakturor ska bokf&#246;ras n&#228;r de skapas och alla leverant&#246;rsfakturor bokf&#246;rs n&#228;r de inkommer. N&#228;r dessa sedan har betalats bokf&#246;rs sj&#228;lva betalningen separat. Metoden &#228;r obligatorisk f&#246;r verksamheter med en &#229;rsoms&#228;ttning p&#229; &#246;ver tre miljoner eller mer.</p>
+<p>Kontantmetoden, &#228;ven kallad bokslutsmetoden, inneb&#228;r att bokf&#246;ring av inkomster och utgifter bokf&#246;rs n&#228;r in- och utbetalningarna sker. Kontantmetoden anv&#228;nds av verksamheter som oms&#228;tter mindre &#228;n tre miljoner kronor. &#196;ven verksamheter som inte har s&#229; m&#229;nga transaktioner per &#229;r brukar till&#228;mpa denna metod.</p>
+<h3><span class="h3">Grundbok och huvudbok</span></h3>
+<p>Alla aff&#228;rsh&#228;ndelser &#228;r bokf&#246;ringsposter och f&#246;rs in en s&#229; kallad <a href="/blogg/foretagsredovisning/vad-ar-grundbok" title="Vad &#228;r en grundbok?">grundbok</a> och i en <a href="/blogg/foretagsredovisning/vad-ar-huvudbok" title="Vad &#228;r en huvudbok?">huvudbok</a>. I grundboken &#228;r aff&#228;rsh&#228;ndelserna strukturerade i en kronologisk ordning med de &#228;ldsta aff&#228;rsh&#228;ndelserna f&#246;rst. Huvudboken &#228;r strukturerad som en systematisk kontonummerordning med de l&#228;gsta kontonumret f&#246;rst. Grundboken och huvudboken inneh&#229;ller allts&#229; samma information men har olika strukturer.</p>
+<h3><span class="h3">God redovisningssed</span></h3>
+<p>All bokf&#246;ring ska ske enligt <a href="/blogg/foretagsredovisning/vad-ar-god-redovisningssed" title="Vad &#228;r god redovisningssed?">god redovisningssed</a>. God redovisningssed inneb&#228;r att g&#228;llande redovisningslagar och vedertagen praxis ska f&#246;ljas. Det &#228;r Bokf&#246;ringsn&#228;mnden (BFN) som har det &#246;vergripande ansvaret f&#246;r utvecklingen av god redovisningssed.</p>
+<p>Vid r&#228;kenskaps&#229;rets slut granskas bokf&#246;ringen av revisorer f&#246;r att se om bokf&#246;ringen har skett enligt god redovisningssed. Om god redovisningssed inte har f&#246;ljts kan det leda till att f&#246;retaget eller n&#228;ringsidkaren i v&#228;rsta fall f&#229;r b&#246;ta.</p>
+<h3><span class="h3">Bokslut</span></h3>
+<p>Alla f&#246;retag ska vid r&#228;kenskaps&#229;rets slut avsluta sin bokf&#246;ring med ett <a href="/blogg/foretagsredovisning/checklista-infor-bokslut" title="Vad &#228;r bokslut?">bokslut</a>. Ett bokslut &#228;r en sammanst&#228;llning av bokf&#246;ringen och kan vara i form av ett &#229;rsbokslut eller en <a href="/blogg/foretagsredovisning/vad-ar-arsredovisning" title="Vad &#228;r en &#229;rsredovisning?">&#229;rsredovisning</a>. Att uppr&#228;tta ett &#229;rsbokslut inneb&#228;r att sammanst&#228;lla aff&#228;rsh&#228;ndelserna i en <a href="/blogg/foretagsredovisning/vad-ar-resultatrakning" title="Vad &#228;r resultatr&#228;kning?">resultatr&#228;kning</a> och en <a href="/blogg/foretagsredovisning/vad-ar-balansrakning" title="Vad &#228;r balansr&#228;kning?">balansr&#228;kning</a>. Resultatr&#228;kningen inneh&#229;ller en &#246;versikt &#246;ver int&#228;kter och kostnader och visar f&#246;retagets resultat. Balansr&#228;kningen ger &#246;versikt &#246;ver tillg&#229;ngar och <a href="/blogg/finansiell-analys/vad-ar-eget-kapital" title="Vad &#228;r eget kapital?">eget kapital</a> och <a href="/blogg/finansiering-finans/vad-ar-skuld" title="Vad &#228;r skuld?">skulder</a>. Dessutom ska det finnas till&#228;ggsuppgifter till b&#229;de resultat- och balansr&#228;kningen.</p>
+<p>Om ett f&#246;retag har en nettooms&#228;ttning som inte &#246;verstiger tre miljoner kan f&#246;retaget v&#228;lja att g&#246;ra ett s&#229; kallat f&#246;renklat bokslut som endast inneh&#229;ller resultat- och balansr&#228;kning.</p>
+<h2 id="2">Varf&#246;r<span class="h2"> ska man bokf&#246;ra?</span></h2>
+<p>Alla f&#246;retag ska uppr&#228;tta en bokf&#246;ring enligt Bokf&#246;ringslagen. Men det &#228;r inte bara f&#246;r att f&#246;lja lagen du ska bokf&#246;ra. Bokf&#246;ring utg&#246;r en av grunderna i att driva f&#246;retag och har varit s&#229; &#228;nda sedan m&#228;nniskan b&#246;rjade g&#246;ra aff&#228;rer. Med ordning och reda p&#229; siffrorna kan du som f&#246;retagare hela tiden f&#246;lja hur din verksamhet m&#229;r och utvecklas. Bokf&#246;ringen &#228;r ocks&#229; till f&#246;r att andra som vill ha inblick i verksamheten ska f&#229; det p&#229; ett s&#228;tt som g&#229;r att f&#246;rst&#229;. Det kan t ex vara Skatteverket som beh&#246;ver underlag till <a href="/blogg/foretagsdeklaration/vad-ar-inkomstdeklaration" title="Vad &#228;r inkomstdeklaration?">inkomstdeklarationen</a> eller <a href="/blogg/skatter/vad-ar-momsdeklaration" title="Vad &#228;r en momsdeklaration?">momsdeklarationen</a>, banken som vill ha underlag f&#246;r att kunna bevilja l&#229;n eller aktie&#228;gare som vill ha insyn. P&#229; Skatteverkets hemsida finns en kort och bra sammanfattning av bokf&#246;ringskravet.</p>
+<p><em><span class="icon-idea-mce">&#58937;</span>&#160;L&#228;s ocks&#229;: <a href="/blogg/lagar-regler/bokforingsbrott" title="Bokf&#246;ringsbrott, vad &#228;r det? Ekobrottsmyndigheten svarar">Bokf&#246;ringsbrott, vad &#228;r det? Ekobrottsmyndigheten svarar</a></em></p>
+<p>Om du v&#228;ljer att sj&#228;lv sk&#246;ta bokf&#246;ringen kan du ocks&#229; l&#228;ra dig mycket om f&#246;retagande p&#229; v&#228;gen. Det beh&#246;ver inte vara sv&#229;rt och kr&#229;ngligt att sj&#228;lv sk&#246;ta ekonomin och bokf&#246;ringen. Med r&#228;tt ekonomi- och bokf&#246;ringsprogram f&#229;r du god hj&#228;lp. Har du sv&#229;rt att hinna med bokf&#246;ringen eller &#228;r os&#228;ker p&#229; vissa delar kan det vara bra att anlita en redovisningskonsult. Kanske vill du bokf&#246;ra sj&#228;lv men ha hj&#228;lp att g&#246;ra bokslut och deklaration, eller bara sk&#246;ta faktureringen sj&#228;lv och &#246;verl&#229;ta bokf&#246;ringen till redovisningskonsulten. I s&#229; fall finns det webbaserade <a href="/ekonomiplattform/bokforing-fakturering" title="V&#229;ra bokf&#246;ringsprogram">bokf&#246;ringsprogram</a> d&#228;r du och redovisningskonsulten kan arbeta i samma program, utan att skicka en massa uppgifter mellan er.</p>
+<p>F&#246;r att kunna f&#229; ut maximal nytta av ditt ekonomiprogram beh&#246;ver du l&#228;ra dig grunderna i bokf&#246;ring. &#196;ven om det numera finns program d&#228;r bokf&#246;ringen sker mer eller mindre automatiskt och du aldrig beh&#246;ver t&#228;nka p&#229; debet och kredit, &#228;r det bra att f&#246;rst&#229; vad som h&#228;nder vid bokf&#246;ringen. Detta &#228;r en handledning och introduktion f&#246;r dig som &#228;r nyfiken p&#229; att b&#246;rja bokf&#246;ra. Handledningen passar dig som driver ett aktiebolag, handelsbolag eller enskild firma, men fungerar ocks&#229; som en v&#228;gledning f&#246;r till exempel ideella f&#246;reningar och stiftelser som &#228;r bokf&#246;ringsskyldiga.</p>
+<p><em><span class="icon-idea-mce">&#58937;</span>&#160;Relaterad l&#228;sning: <a href="/blogg/teknik-sakerhet/automatisk-bokforing" title="Automatisk bokf&#246;ring">Automatisk bokf&#246;ring</a></em></p>
+<h2 id="3"><span class="h2">Alla</span> f&#246;retag<span class="h2"> b&#246;rjar med en budget</span></h2>
+<p>N&#228;r du t&#228;nker starta ett f&#246;retag &#228;r det viktigt att du g&#246;r en ber&#228;kning s&#229; att du ser om din aff&#228;rsid&#233; &#228;r l&#246;nande. I ekonomisammanhang kallas det f&#246;r <a href="/blogg/finansiell-analys/vad-ar-budget" title="Vad &#228;r en budget?">budget</a>. Det finns tv&#229; sorters budgetar som &#228;r mest intressanta i ett f&#246;retag. Dels en resultatbudget som visar hur f&#246;retaget g&#229;r och dels en likviditetsbudget som visar hur pengarna g&#229;r in och ut ur f&#246;retaget.&#160;</p>
+<h3><span">Resultatbudget</span"></h3>
+<p>B&#246;rja med att g&#246;ra en resultatbudget. Det underl&#228;ttar om du budgeterar p&#229; samma konton som du sedan kommer att anv&#228;nda i din bokf&#246;ring (se v&#228;lja kontoplan nedan). Ofta g&#246;r man en resultatbudget f&#246;r ett &#229;r i taget, men det &#228;r bra att dela upp den per m&#229;nad. D&#229; kan du f&#229; b&#228;ttre kontroll p&#229; hur f&#246;retaget g&#229;r genom j&#228;mf&#246;ra budget mot resultatet i bokf&#246;ringen l&#246;pande under &#229;ret, och dessutom f&#229;r du ett bra underlag till din likviditetsbudget. I resultatbudgeten tar du upp int&#228;kter och kostnader f&#246;r att f&#229; fram hur f&#246;retaget ber&#228;knas g&#229;. Det finns bokf&#246;ringsprogram d&#228;r du kan g&#246;ra resultatbudgeten direkt i bokf&#246;ringssystemet f&#246;r att sedan kunna f&#229; ut resultatrapporter med j&#228;mf&#246;relse mot budget. N&#228;r f&#246;retaget &#228;r ig&#229;ng ska du sedan g&#246;ra nya budgetar f&#246;r varje r&#228;kenskaps&#229;r. Om det inte sker n&#229;gra egentliga f&#246;r&#228;ndringar i f&#246;retagets verksamhet kan du j&#228;mf&#246;ra varje m&#229;nads resultat mot f&#246;reg&#229;ende &#229;rs resultat i st&#228;llet f&#246;r att g&#246;ra en ny resultatbudget.</p>
+<h3><span class="h3">Likviditetsbudget</span></h3>
+<p>Du kan sedan g&#246;ra en <a href="/blogg/finansiell-analys/sa-gor-du-en-likviditetsbudget" title="Likviditetsbudget">likviditetsbudget</a> med resultatbudgeten som underlag. Likviditetsbudgeten g&#246;r du f&#246;r att f&#229; koll p&#229; att det kommer att finnas pengar till utgifter under &#229;ret. Till skillnad fr&#229;n resultatbudgeten &#228;r det betalningarna som ska budgeteras. Oftast kommer betalningen minst en m&#229;nad efter int&#228;kten eller kostnaden, eftersom fakturor ofta betalas f&#246;rst 30 dagar efter att kundfakturan skickats eller leverant&#246;rsfakturan kommit till f&#246;retaget. Dessutom &#228;r betalningarna oftast st&#246;rre &#228;n sj&#228;lva int&#228;kten eller kostnaden, eftersom det ing&#229;r moms i betalningen men inte i int&#228;kten. Betalningen av momsen m&#229;ste ocks&#229; finnas med i likviditetsbudgeten precis som skatter, l&#246;ner, r&#228;ntor, amorteringar och andra utbetalningar. Du g&#246;r din likviditetsbudget enklast i ett kalkylprogram d&#228;r du s&#228;tter m&#229;naderna i olika kolumner, och int&#228;kter och olika kostnader p&#229; raderna. Likviditetsbudget finns s&#228;llan eller aldrig med i bokf&#246;ringsprogram f&#246;r mindre f&#246;retag.</p>
+<p><em><span class="icon-idea-mce">&#58937; </span><a href="/blogg/finansiell-analys/koll-pa-siffrorna" title="Budget &amp; f&#246;retag &#8211; 5 tips f&#246;r b&#228;ttre koll p&#229; siffrorna">Budget &amp; f&#246;retag &#8211; 5 tips f&#246;r b&#228;ttre koll p&#229; siffrorna</a></em></p>
+<h2 id="4">Vad beh&#246;ver du f&#246;r att bokf&#246;ra?</h2>
+<p>F&#246;r att b&#246;rja bokf&#246;ra beh&#246;ver du ett bokf&#246;ringsprogram eller en kassabok och n&#229;gra p&#228;rmar att f&#246;rvara dina papper i. Du beh&#246;ver minst tv&#229; p&#228;rmar f&#246;r verifikationer (s&#229;dant som bokf&#246;rs), en f&#246;r verifikationer som &#228;nnu inte &#228;r bokf&#246;rda och en f&#246;r det som &#228;r bokf&#246;rt. Om du inte har ett bokf&#246;ringssystem som inneh&#229;ller <a href="/blogg/foretagsredovisning/vad-ar-reskontra" title="Vad &#228;r reskontra?">kundreskontra</a> och leverant&#246;rsreskontra, beh&#246;ver du ocks&#229; ha olika p&#228;rmar eller flikar f&#246;r betalda och obetalda fakturor, eftersom du m&#229;ste skilja p&#229; dem n&#228;r du g&#246;r avst&#228;mningar. I programmets kundreskontra och leverant&#246;rsreskontra h&#229;ller programmet reda p&#229; vad som &#228;r betalt och obetalt. D&#229; beh&#246;ver du bara h&#229;lla koll p&#229; vad som &#228;r bokf&#246;rt och inte bokf&#246;rt. Dessutom beh&#246;ver du en skattep&#228;rm f&#246;r dokument som har med skatter att g&#246;ra, samt en datormapp och ett papperssystem f&#246;r avtal och korrespondens m.m.</p>
+<p>Det finns m&#229;nga f&#246;rdelar med att bokf&#246;ra med hj&#228;lp av ett bokf&#246;ringsprogram. Exempelvis g&#246;rs ber&#228;kningar och kontroller automatiskt - vilket minskar risken f&#246;r fel, du f&#229;r underlag till momsdeklarationen direkt ur programmet och du f&#229;r m&#246;jlighet att ta ut rapporter som visar hur det g&#229;r i ditt f&#246;retag. Var noga n&#228;r du v&#228;ljer ekonomiprogram f&#246;r din bokf&#246;ring. Vilket du ska v&#228;lja beror mycket p&#229; hur du vill arbeta och hur komplex din verksamhet &#228;r. T&#228;nk p&#229; att du <strong>enligt lag inte f&#229;r lov att sk&#246;ta din bokf&#246;ring i Excel</strong> eller liknande kalkylprogram!</p>
+<p><em><span class="icon-idea-mce">&#58937;</span>&#160;L&#228;s ocks&#229;: <a href="/blogg/foretagsredovisning/bokforing-excel" title="Bokf&#246;ring i Excel?">Bokf&#246;ring i Excel &#228;r inte till&#229;tet &#8211; vi ber&#228;ttar varf&#246;r!</a></em></p>
+<h3>Att t&#228;nka p&#229; n&#228;r du v&#228;ljer bokf&#246;ringsprogram</h3>
+<p>Webbaserade ekonomiprogram g&#246;r att du kan komma &#229;t dina uppgifter var som helst och att du slipper t&#228;nka p&#229; uppdateringar och s&#228;kerhetskopiering. Om en redovisningskonsult ska g&#246;ra delar av bokf&#246;ringen eller hj&#228;lpa dig med r&#229;dgivning och kontroll, &#228;r det bra med ett bokf&#246;ringsprogram d&#228;r b&#229;de du och redovisningsbyr&#229;n kan arbeta&#160;i samma program p&#229; n&#228;tet. Att ha fakturering och betalning av leverant&#246;rsfakturor i samma program som bokf&#246;ringen g&#246;r att stor del av bokf&#246;ringen hanteras automatiskt.</p>
+<p>Ett webbaserat bokf&#246;ringsprogram kan ha koppling till din internetbank. Hur kopplingen ser ut skiljer sig mycket mellan olika program och olika banker. Kontrollera vilka m&#246;jligheter som finns f&#246;r just din bank! Kopplingen kan vara alltifr&#229;n att du f&#229;r &#246;ver kontoutdraget till bokf&#246;ringsprogrammet, till att leverant&#246;rsfakturor du l&#228;gger in i ditt program g&#229;r direkt in i internetbanken f&#246;r betalning och att du f&#229;r gjorda betalningar direkt in i programmet.</p>
+<p>Om du &#228;r nyb&#246;rjare till bokf&#246;ring f&#229;r du god hj&#228;lp om du anv&#228;nder l&#246;sningar d&#228;r du bokf&#246;r utifr&#229;n ditt kontoutdrag fr&#229;n banken. D&#229; slipper du att t&#228;nka p&#229; debet och kredit och du minskar risken f&#246;r fel. Spiris &#228;r gjort f&#246;r att kunna bokf&#246;ra det mesta direkt fr&#229;n kontoutdraget som du f&#229;r in fr&#229;n din internetbank. Du kan f&#229; mycket hj&#228;lp med bokslut och deklaration om du har ett program som inneh&#229;ller s&#229;dana funktioner.</p>
+<p class="h4"><em><span class="icon-check-mce">&#58907;</span>&#160;S&#228;kerhetskopiera ofta om du inte har bokf&#246;ringen p&#229; n&#228;tet!</em></p>
+<p>Om du har ditt bokf&#246;ringsprogram p&#229; n&#228;tet beh&#246;ver du inte t&#228;nka p&#229; att s&#228;kerhetskopiera, eftersom alla programleverant&#246;rer ser till att det g&#246;rs regelbunden s&#228;kerhetskopiering. Men om du har din bokf&#246;ring i ett lokalt installerat program &#228;r det viktigt att du f&#246;rs&#228;krar dig om att det du bokf&#246;rt inte kan f&#246;rst&#246;ras. &#196;ven om datorerna numera &#228;r relativt stabila och det s&#228;llan h&#228;nder n&#229;got, finns det fortfarande risk f&#246;r t ex en h&#229;rddiskkrasch.</p>
+<p>D&#228;rf&#246;r m&#229;ste du se till att din bokf&#246;ring s&#228;kerhetskopieras med j&#228;mna mellanrum, s&#229; att du kan l&#228;gga tillbaka en s&#228;kerhetskopia om ditt data skulle f&#246;rst&#246;ras. Det finns vanligen s&#228;rskilda funktioner i programmen f&#246;r att g&#246;ra s&#228;kerhetskopior och f&#246;r att l&#228;sa in s&#228;kerhetskopian om det beh&#246;vs. Se till att g&#246;ra det till en vana att s&#228;kerhetskopiera minst en g&#229;ng i m&#229;naden n&#228;r m&#229;naden &#228;r avst&#228;md och klar.&#160;</p>
+<h2><strong><span class="h2">Grundl&#228;ggande bokf&#246;ringsterminologi</span></strong></h2>
+<p>H&#228;r tar vi upp n&#229;gra av de termer som alla som &#228;gnar sig &#229;t bokf&#246;ring st&#246;ter p&#229; dagligen, f&#246;ljt av enkla f&#246;rklaringar.</p>
+<h3><span class="h3">Inkomster &#8211; Utgifter</span>&#160;</h3>
+<p>Inkomster uppst&#229;r genom f&#246;rs&#228;ljning av varor eller tj&#228;nster. En f&#246;rs&#228;ljning r&#228;knas som inkomst n&#228;r du skickar en faktura till kunden eller s&#228;ljer n&#229;got kontant. Utgifter uppst&#229;r n&#228;r du k&#246;per n&#229;got till f&#246;retaget eller f&#229;r en faktura. Det kan t ex vara ink&#246;p av varor, hyror eller l&#246;ner.</p>
+<h3><span class="h3">Int&#228;kter &#8211; Kostnader</span></h3>
+<p><a href="/blogg/foretagsredovisning/vad-ar-intakt" title="Vad &#228;r int&#228;kt?">Int&#228;kter</a> och kostnader &#228;r ofta samma sak som inkomster och utgifter, men ibland skiljer det sig &#229;t. Man s&#228;ger att int&#228;kter och kostnader &#228;r periodiserade inkomster och utgifter. Det betyder att man r&#228;knar in inkomsterna och utgifterna i den period de verkligen avs&#229;g. Om du t ex levererar en vara i en period men inte fakturerar f&#246;rr&#228;n en senare period, s&#229; &#228;r int&#228;kten d&#229; varan levereras medan inkomsten inte kommer f&#246;rr&#228;n n&#228;r den faktureras. Kostnaderna uppkommer vartefter resurserna f&#246;rbrukas. Om du t ex k&#246;per varor som l&#228;ggs p&#229; lager s&#229; ligger utgiften i den period du f&#229;r fakturan p&#229; varorna, medan kostnaden h&#246;r till den period varan s&#228;ljs eftersom det &#228;r f&#246;rst d&#229; den f&#246;rbrukas. N&#228;r du g&#246;r en resultatbudget &#228;r det int&#228;kter och kostnader du r&#228;knar p&#229;.</p>
+<h3><span class="h3">Inbetalningar &#8211; Utbetalningar</span>&#160;</h3>
+<p>Inbetalningar och utbetalningar &#228;r sj&#228;lva fl&#246;det av pengar in och ut ur f&#246;retaget. Det &#228;r f&#246;rst n&#228;r du f&#229;r betalt f&#246;r en kundfaktura som det &#228;r en inbetalning. Det kan ocks&#229; vara t ex ett l&#229;n fr&#229;n en bank eller egna pengar som man f&#246;r in i f&#246;retaget. N&#228;r du betalar en leverant&#246;rsfaktura &#228;r det en utbetalning oavsett n&#228;r den f&#246;rbrukas i f&#246;retaget. Andra utbetalningar kan t ex vara betalning av l&#246;ner, skatteinbetalningar och amorteringar p&#229; l&#229;n. Det &#228;r inbetalningar och utbetalningar som du r&#228;knar p&#229; n&#228;r du g&#246;r en likviditetsbudget.</p>
+<h3>Kontoplan</h3>
+<p>I bokf&#246;ringsprogram finns f&#228;rdiga kontoplaner. Ofta kan du v&#228;lja mellan flera olika. Du v&#228;ljer kontoplan n&#228;r du l&#228;gger upp ditt f&#246;retag f&#246;rsta g&#229;ngen i programmet. Vilken du ska v&#228;lja beror p&#229; vilken f&#246;retagsform du har, t ex enskild firma eller aktiebolag. Ibland finns det ocks&#229; olika kontoplaner f&#246;r olika typer av f&#246;retag, t ex lantbruk eller f&#246;rening. N&#228;stan alla kontoplaner i svenska bokf&#246;ringsprogram &#228;r uppbyggda p&#229; samma s&#228;tt. De utg&#229;r ifr&#229;n n&#229;got som heter <a href="/blogg/foretagsredovisning/kontoplan" title="BAS-kontoplan &#8211; kontoplanen som &#228;r S K I T-l&#228;tt att f&#246;rst&#229;!">BAS-kontoplanen</a>, som &#228;r en standard f&#246;r svenska kontoplaner.</p>
+<p>BAS-kontoplanen &#228;r gjord f&#246;r att det ska vara l&#228;tt att f&#229; fram hur ekonomin i f&#246;retaget ser ut. Informationen &#228;r till nytta b&#229;de f&#246;r att du sj&#228;lv ska ha kontroll &#246;ver ditt f&#246;retag och f&#246;r att f&#229; fram uppgifter som du ska l&#228;mna till myndigheter, t ex Skatteverket. Alla konton i BAS-kontoplanen har fyra siffror och den f&#246;rsta siffran visar vilken typ av konto det &#228;r, s k&#160;<a href="/blogg/foretagsredovisning/vad-ar-kontoklass" title="Vad &#228;r en kontoklass?">kontoklass</a>.</p>
+<ul>
+<li>Kontoklass 1;&#160;<em>Tillg&#229;ngar</em>&#160;och kontoklass 2;&#160;<em>Skulder och eget kapital</em>&#160;anv&#228;nds f&#246;r att visa f&#246;retagets st&#228;llning. F&#246;renklat kan man s&#228;ga att de visar vad f&#246;retaget &#228;ger och hur man har f&#229;tt pengar till att skaffa det. Rapporten f&#246;r att visa ett f&#246;retags st&#228;llning kallas balansrapport och kontona i kontoklass 1 och 2 kallas balanskonton.</li>
+<li>Kontoklass 3;&#160;<em>Int&#228;kter</em> och kontoklass 4-8;&#160;<em>Kostnader mm</em> anv&#228;nds f&#246;r att ta fram f&#246;retagets resultat. N&#228;r int&#228;kterna minskas med kostnaderna f&#229;r man fram hur mycket vinst eller f&#246;rlust f&#246;retaget har haft under &#229;ret.</li>
+<li>Rapporten f&#246;r att visa f&#246;retagets resultat kallas resultatrapport och kontona i kontoklass 3-8 kallas resultatkonton.</li>
+</ul>
+<p><em><span class="icon-idea-mce">&#58937;</span>&#160;L&#228;s mer: <a href="/blogg/foretagsredovisning/kontoplan" title="Kontoplanen">Baskontoplanen - en kontoplan som &#228;r SKIT-l&#228;tt att f&#246;rst&#229;</a></em></p>
+<h3>Dubbel bokf&#246;ring &#8211; Debet och kredit</h3>
+<p>F&#246;r att minska risken f&#246;r fel i bokf&#246;ringen anv&#228;nds s&#229; kallad <a href="/blogg/foretagsredovisning/vad-ar-dubbel-bokforing" title="Dubbel bokf&#246;ring">dubbel bokf&#246;ring</a>. Det betyder att alla konton har tv&#229; sidor; <a href="/blogg/foretagsredovisning/vad-ar-debet" title="Vad &#228;r debet?">debet</a> och <a href="/blogg/foretagsredovisning/vad-ar-kredit" title="Vad &#228;r kredit?">kredit</a>. I bokf&#246;ringsprogram kan du ofta se det som en v&#228;nsterkolumn (debet) och en h&#246;gerkolumn (kredit). I rapporter kan man i st&#228;llet se debet som positivt tal och kredit med ett minustecken. Dubbel bokf&#246;ring inneb&#228;r att du alltid ska bokf&#246;ra lika mycket i debet som i kredit n&#228;r du bokf&#246;r en verifikation.</p>
+<p>Om du till exempel k&#246;per pennor kontant f&#246;r 60 kronor, bokf&#246;r du f&#246;rst hela beloppet som ett uttag ur kassan 60 kronor i kredit p&#229; konto <em>1910 Kassa</em>. Sedan bokf&#246;r du kostnaden p&#229; 48 kronor utan moms som debet p&#229; konto <em>6110 Kontorsmaterial</em>. Slutligen debiteras momsen 12 kronor p&#229; konto <em>2641 Debiterad ing&#229;ende moms</em>. Nu har lika mycket bokf&#246;rts i debet som i kredit och man s&#228;ger att bokf&#246;ringen <strong>balanserar</strong>.</p>
+<p>Det som h&#228;nt i f&#246;retaget &#228;r att kassan har minskat, kostnaden har &#246;kat och <a href="/blogg/skatter/vad-ar-moms" title="Vad &#228;r moms?">moms</a> &#228;r sparad som en fordran f&#246;r att senare dras av n&#228;r du deklarerar momsen. Bokf&#246;ringsprogram kontrollerar alltid att en verifikation balanserar innan du kan spara den. Det kan vara sv&#229;rt att veta om ett belopp ska bokf&#246;ras i debet eller kredit.</p>
+<p><strong><span class="icon-idea-mce">&#58937;</span>&#160;En liten lathund</strong></p>
+<p>I kontoklass 8 finns b&#229;de kostnader och int&#228;kter, t ex r&#228;ntekostnader och r&#228;nteint&#228;kter. De bokf&#246;rs precis som andra int&#228;kter och kostnader med &#246;kad kostnad i debet och &#246;kad int&#228;kt i kredit. Det finns bokf&#246;ringsprogram d&#228;r du slipper t&#228;nka p&#229; debet och kredit. D&#228;r anger du bara vad det &#228;r du vill bokf&#246;ra, t ex en kundfaktura, och sedan bokf&#246;rs det automatiskt p&#229; r&#228;tt sida.</p>
+<h3>Verifikationer</h3>
+<p>En verifikation &#228;r sj&#228;lva underlaget till det du bokf&#246;r. Det kan t ex vara en kundfaktura, ett kvitto, en leverant&#246;rsfaktura eller ett utbetalningsbesked. Denna typ av h&#228;ndelser i ett f&#246;retag kallas aff&#228;rsh&#228;ndelser inom bokf&#246;ring &#8211; och alla aff&#228;rsh&#228;ndelser ska bokf&#246;ras. Det du bokf&#246;r i ditt bokf&#246;ringsprogram kallas bokf&#246;ringspost. Att det st&#229;r verifikation, verifikationsnummer och verifikationslista i ditt bokf&#246;ringsprogram &#228;r bara en h&#228;nvisning till vilka verifikationer (underlag) som &#228;r bokf&#246;rda. Det m&#229;ste finnas en verifikation till allt som bokf&#246;rs, &#228;ven s&#229;dant som avser h&#228;ndelser som sker inom f&#246;retaget, t ex att du f&#246;r &#246;ver pengar fr&#229;n plusgirokontot till bankgirokontot eller att du g&#246;r en r&#228;ttelse.</p>
+<p>Verifikationen kan vara p&#229; papper eller i elektronisk form, exempelvis en kundfaktura som finns registrerad i ett faktureringsprogram eller ett PDF-dokument. Alla verifikationer ska enligt lag inneh&#229;lla f&#246;ljande uppgifter:</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;Datum n&#228;r den sammanst&#228;lldes</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;Datum n&#228;r aff&#228;rsh&#228;ndelsen intr&#228;ffade</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;Kort beskrivning av vad aff&#228;rsh&#228;ndelsen avser</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;Belopp och eventuell moms</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;Motpart om det finns n&#229;gon</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;Eventuell h&#228;nvisning till annat underlag, t ex avtal</p>
+<h4><em><span class="icon-generic-icon">&#59666;</span>&#160;Vad m&#229;ste finnas med p&#229; en kundfaktura?</em></h4>
+<p>En kundfaktura m&#229;ste inneh&#229;lla lite mer uppgifter &#228;n andra verifikationer f&#246;r att de ska uppfylla kraven i skattelagstiftningen. N&#228;r du g&#246;r dina kundfakturor ska du d&#228;rf&#246;r vara noga med att inkludera:</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>F&#246;retagsuppgifter</strong> &#8211; ditt f&#246;retags fullst&#228;ndiga namn, adress och momsregistreringsnummer.</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Att du &#228;r godk&#228;nd f&#246;r F-skatt</strong> (om du &#228;r det).</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Styrelsens s&#228;te</strong> om du har ett aktiebolag och s&#228;tet &#228;r p&#229;&#160;annan postadress &#228;n den du angivit f&#246;r f&#246;retaget.</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Fakturadatum </strong>&#8211;<strong>&#160;</strong>Det &#228;r det datum fakturan skrevs ut.</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Fakturanummer</strong> &#8211; alla fakturor m&#229;ste ha ett unikt fakturanummer. Numren ska vara i obruten f&#246;ljd, vilket inneb&#228;r att&#160;om du g&#246;r en faktura som sedan inte skickas iv&#228;g m&#229;ste du&#160;spara den och skriva p&#229; den att den inte anv&#228;nts (makulerats).</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Kundens fullst&#228;ndiga namn och adress</strong>. Det &#228;r viktigt att&#160;kundens namn &#228;r r&#228;tt f&#246;r att kunden ska ha r&#228;tt att dra av&#160;momsen. Om du anger b&#229;de ett f&#246;retag och ett personnamn&#160;p&#229; fakturan ska f&#246;retagsnamnet st&#229; f&#246;rst.</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Vad fakturan avser.</strong> F&#246;r varor kan det vara varubeteckning,&#160;antal och pris per styck och datum n&#228;r leveransen gjordes.&#160;F&#246;r tj&#228;nster antal timmar, pris per timme, <a href="/blogg/loner/vad-ar-utlagg" title="Vad &#228;r utl&#228;gg?">utl&#228;gg</a> och n&#228;r&#160;tj&#228;nsten utf&#246;rdes eller slutf&#246;rdes. Du kan i st&#228;llet h&#228;nvisa till&#160;en f&#246;ljesedel eller en arbetsorder, men d&#229; m&#229;ste du t&#228;nka&#160;p&#229; att &#228;ven de m&#229;ste sparas f&#246;r de &#228;r d&#229; en del av verifikationen.</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Totalbelopp</strong>&#160;&#8211; d.v.s. det belopp kunden ska betala.</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Momssatser</strong> som har anv&#228;nts p&#229; fakturan och hur mycket&#160;som &#228;r beskattningsunderlag (f&#246;rs&#228;ljningsbelopp utan&#160;moms) och momsbelopp f&#246;r varje skattesats.</p>
+<p>Ovanst&#229;ende &#228;r vad som kr&#228;vs i lagen, men det finns ocks&#229; andra uppgifter som du b&#246;r ha med p&#229; din kundfaktura:</p>
+<p><strong><span class="icon-check-mce">&#58907;</span>&#160;Ditt f&#246;retags telefonnummer och mejladress</strong> om kunden beh&#246;ver h&#246;ra av sig om det &#228;r n&#229;gra fr&#229;getecken.</p>
+<p><strong><span class="icon-check-mce">&#58907;</span>&#160;Plus- och bankgironummer</strong> beh&#246;vs f&#246;r att kunna g&#246;ra betalningen.</p>
+<p><strong><span class="icon-check-mce">&#58907;</span>&#160;F&#246;rfallodatum och dr&#246;jsm&#229;lsr&#228;nta</strong> om du inte f&#229;r betalt i tid ska du ocks&#229; ange p&#229; fakturan.</p>
+<h4><em>F&#246;renklad kundfaktura</em></h4>
+<p>I vissa fall beh&#246;ver du inte ha med alla uppgifter som normalt kr&#228;vs p&#229; en kundfaktura. Det kallas f&#246;renklad faktura och den kan du anv&#228;nda om:</p>
+<ul>
+<li>Det totala beloppet p&#229; fakturan &#228;r h&#246;gst 4 000 kronor&#160;inklusive moms, eller:</li>
+<li>Det &#228;r det normala inom branschen eller de tekniska f&#246;ruts&#228;ttningarna g&#246;r att det &#228;r sv&#229;rt att skapa en fullst&#228;ndig faktura (t ex f&#246;rs&#228;ljning i automat).</li>
+</ul>
+<p><strong>OBS!</strong>&#160;Du f&#229;r inte anv&#228;nda f&#246;renklad faktura vid handel med&#160;andra EU-l&#228;nder.</p>
+<p><br />En f&#246;renklad faktura ska inneh&#229;lla:</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;<strong>Fakturadatum</strong>.</p>
+<p><span class="icon-check-mce">&#58907;</span><strong>S&#228;ljarens identitet</strong>. Det r&#228;cker med organisationsnummer.</p>
+<p><span class="icon-check-mce">&#58907;</span><strong>Vilken typ av varor eller tj&#228;nster</strong> fakturan avser.</p>
+<p><span class="icon-check-mce">&#58907;</span><strong>Vilken moms kunden ska betala</strong> eller uppgifter som g&#246;r det m&#246;jligt att ber&#228;kna momsen.</p>
+<h2>Hur l&#228;nge f&#229;r du v&#228;nta med att bokf&#246;ra?</h2>
+<p>F&#246;r att ha bra kontroll &#246;ver hur ditt f&#246;retag g&#229;r &#228;r det bra att bokf&#246;ra l&#246;pande. Det &#228;r ocks&#229; l&#228;ttare att reda ut eventuella fr&#229;getecken om du bokf&#246;r medan du fortfarande kommer ih&#229;g aff&#228;rsh&#228;ndelsen som du ska bokf&#246;ra. Det finns regler f&#246;r n&#228;r du senast m&#229;ste bokf&#246;ra. Hur l&#228;nge du f&#229;r v&#228;nta beror bland annat p&#229; f&#246;retagets <a href="/blogg/finansiell-analys/vad-ar-omsattning" title="Vad &#228;r oms&#228;ttning?">oms&#228;ttning</a>. Observera att reglerna f&#246;r senarel&#228;ggning av bokf&#246;ring inte g&#228;ller kontanta in- och utbetalningar, som m&#229;ste bokf&#246;ras f&#246;rsta arbetsdagen efter att betalningen gjordes. Gr&#228;nser f&#246;r senarel&#228;ggning av bokf&#246;ring:</p>
+<ul>
+<li>Alla f&#246;retag f&#229;r v&#228;nta till 50 dagar efter den m&#229;nad aff&#228;rsh&#228;ndelsen intr&#228;ffade.</li>
+<li>F&#246;retag som normalt oms&#228;tter h&#246;gst 3 miljoner kronor f&#229;r v&#228;nta till 50 dagar efter det kvartal aff&#228;rsh&#228;ndelsen intr&#228;ffade.</li>
+<li>F&#246;retag som normalt oms&#228;tter h&#246;gst 1 miljon kronor och har h&#246;gst 50 verifikationer med h&#246;gst 250 aff&#228;rsh&#228;ndelser per &#229;r, f&#229;r v&#228;nta till 60 dagar efter r&#228;kenskaps&#229;rets utg&#229;ng.</li>
+<li>Enskilda n&#228;ringsidkare som normalt oms&#228;tter h&#246;gst 1 miljon kronor, har h&#246;gst 50 verifikationer med h&#246;gst 250 aff&#228;rsh&#228;ndelser och som inte har n&#229;gon EU-handel, f&#229;r v&#228;nta tills inkomstdeklarationen ska l&#228;mnas in.</li>
+</ul>
+<p>T&#228;nk p&#229; att &#228;ven om du f&#229;r v&#228;nta med sj&#228;lva bokf&#246;ringen s&#229; kr&#228;ver reglerna att du ska ha ordning p&#229; dina verifikationer &#228;ven innan de bokf&#246;rs. Det kan du g&#246;ra genom att s&#228;tta in alla verifikationer i datumordning i en p&#228;rm i v&#228;ntan p&#229; bokf&#246;ring.</p>
+<h3>Kontanta in- och utbetalningar</h3>
+<p>Alla kontanta in- och utbetalningar m&#229;ste bokf&#246;ras p&#229;f&#246;ljande arbetsdag trots senarel&#228;ggningsreglerna. Om man bara har utgifter som betalas kontant kan det vara en god id&#233; att skaffa ett kreditkort att betala med i st&#228;llet. Kreditkort r&#228;knas inte som kontanta betalningar. Enligt lagen beh&#246;ver kontanta betalningar bara grundbokf&#246;ras n&#228;stf&#246;ljande arbetsdag, vilket inneb&#228;r att de inte n&#246;dv&#228;ndigtvis m&#229;ste bokf&#246;ras i bokf&#246;ringsprogrammet, utan det r&#228;cker att f&#246;ra in dem i en liten fickkassabok. Sedan kan de bokf&#246;ras tillsammans med andra aff&#228;rsh&#228;ndelser i programmet. Om du har ett certifierat kassaregister beh&#246;ver du inte heller bokf&#246;ra de kontanta betalningarna f&#246;rr&#228;n senare i bokf&#246;ringsprogrammet.</p>
+<h3>Fakturametoden och kontantmetoden</h3>
+<p>Vanligen bokf&#246;r man sina kundfakturor med bokf&#246;ringsdatum n&#228;r man skickar dem. De bokf&#246;rs som kundfordringar och n&#228;r man sedan f&#229;r betalt bokf&#246;rs de bort fr&#229;n fordringarna. P&#229; samma s&#228;tt bokf&#246;rs leverant&#246;rsfakturor som skuld n&#228;r man f&#229;r dem och sedan bokf&#246;rs skulden bort n&#228;r man betalar dem. Det kallas fakturametoden.</p>
+<p>F&#246;retag som har mindre &#228;n 3 miljoner kronor i oms&#228;ttning kan i st&#228;llet anv&#228;nda kontantmetoden. D&#229; bokf&#246;r man fakturorna f&#246;rst vid betalningen. De finns aldrig bokf&#246;rda som fordran eller skuld under r&#228;kenskaps&#229;ret, men vid bokslutet m&#229;ste man r&#228;kna igenom hur mycket obetalt man har och bokf&#246;ra det. Du kan l&#228;sa mer om kontantmetoden i Skatteverkets broschyr &#8221;Bokf&#246;ring, bokslut och deklaration &#8211; del 1&#8221;.</p>
+<p>I v&#229;ra exempel utg&#229;r vi ifr&#229;n fakturametoden eftersom den &#228;r vanligast i bokf&#246;ringsprogram.</p>
+<h4><span class="icon-generic-icon">&#59707;</span>&#160;<em>Kom ih&#229;g:</em>&#160;<em>Det som inte &#228;r l&#229;st r&#228;knas inte som bokf&#246;rt!</em></h4>
+<p>Bokf&#246;ring som inte &#228;r l&#229;st r&#228;knas inte som bokf&#246;rd enligt Bokf&#246;ringsn&#228;mndens regler. D&#228;rf&#246;r m&#229;ste du <strong>l&#229;sa bokf&#246;ringen</strong> senast det datum du m&#229;ste ha bokf&#246;rt enligt reglerna f&#246;r senarel&#228;ggning. Var noga med att se till att allt verkligen &#228;r bokf&#246;rt och avst&#228;mt innan du l&#229;ser en m&#229;nad. Efter att du har l&#229;st kan du inte &#228;ndra eller r&#228;tta n&#229;got i den l&#229;sta m&#229;naden, utan m&#229;ste g&#246;ra &#228;ndringen i en senare ol&#229;st m&#229;nad. Du kan l&#228;sa om avst&#228;mningar i ett s&#228;rskilt avsnitt l&#228;ngre fram i texten. I bokf&#246;ringsprogram f&#229;r du ofta en varning om att du m&#229;ste l&#229;sa n&#228;r sista datum f&#246;r senarel&#228;ggning n&#228;rmar sig.</p>
+<h2 id="5">Dags att b&#246;rja bokf&#246;ra&#160;</h2>
+<h3>Ing&#229;ende balans</h3>
+<p>N&#228;r du b&#246;rjar bokf&#246;ra ska du f&#246;ra in hur f&#246;retagets st&#228;llning var n&#228;r bokf&#246;rings&#229;ret b&#246;rjade. Det kallas <a href="/blogg/foretagsredovisning/vad-ar-ingaende-balans" title="Vad &#228;r ing&#229;ende balans?">ing&#229;ende balans</a>. I den ing&#229;ende balansen visas f&#246;retagets tillg&#229;ngar, skulder och eget kapital. Det &#228;r bara balanskonton (b&#246;rjar p&#229; 1 och 2 i BAS-kontoplanen) som ska ha ing&#229;ende balans och precis som i en balansr&#228;kning ska tillg&#229;ngarna vara lika stora som skulder och eget kapital tillsammans (den ska balansera).&#160;Resultatkonton avslutas varje bokf&#246;rings&#229;r och ska d&#228;rf&#246;r inte ha n&#229;gon ing&#229;ende balans.</p>
+<p>Om du ska bokf&#246;ra i ett f&#246;retag som &#228;r ig&#229;ng &#228;r den ing&#229;ende balansen samma som det som fanns i balansr&#228;kningen i bokslutet &#229;ret innan. Det kallas <a href="/blogg/foretagsredovisning/vad-ar-utgaende-balans" title="Vad &#228;r utg&#229;ende balans?">utg&#229;ende balans</a>. Om du haft f&#246;reg&#229;ende &#229;rs bokf&#246;ring i samma program som det nya bokf&#246;rings&#229;ret, brukar den utg&#229;ende balansen f&#246;ras &#246;ver som ing&#229;ende balans i det nya &#229;ret automatiskt. Om det &#228;r f&#246;rsta &#229;ret du anv&#228;nder bokf&#246;ringsprogrammet ska du sj&#228;lv f&#246;ra in f&#246;rra &#229;rets utg&#229;ende balans.&#160;Det g&#246;r&#160;du p&#229; lite olika s&#228;tt i olika program. Titta i programhj&#228;lpen till ditt bokf&#246;ringsprogram.</p>
+<p>Om du har ett nystartat f&#246;retag ska du g&#246;ra en &#246;ppningsbalansr&#228;kning. D&#228;r tar du upp f&#246;retagets st&#228;llning n&#228;r det startade. Oftast &#228;r det tillg&#229;ngar som man ska anv&#228;nda i f&#246;retaget. Det &#228;r s&#228;llan n&#229;gra skulder som f&#246;rs in i bolaget innan det startats, men om det finns ska de ocks&#229; f&#246;ras in. Skillnaden mellan tillg&#229;ngarna och skulderna &#228;r eget kapital. Vad som ska tas med i &#246;ppningsbalansr&#228;kningen och hur olika saker ska v&#228;rderas kan du l&#228;sa om i Skatteverkets information &#8221;Bokf&#246;ring, bokslut och deklaration &#8211; del 1&#8221;. N&#228;r &#246;ppningsbalansr&#228;kningen &#228;r klar f&#246;r du in beloppen som ing&#229;ende balans i ditt bokf&#246;ringsprogram.</p>
+<h3>Aff&#228;rsh&#228;ndelser och verifikationer</h3>
+<p dir="ltr"><span>Allt som p&#229;verkar f&#246;retagets ekonomi &#228;r en aff&#228;rsh&#228;ndelse. Det kan vara att int&#228;kter eller kostnader uppkommer och att f&#246;retagets tillg&#229;ngar eller skulder f&#246;r&#228;ndras. Alla aff&#228;rsh&#228;ndelser ska bokf&#246;ras. Det g&#246;r du genom att registrera verifikationer i ditt bokf&#246;ringsprogram.&#160;</span></p>
+<p dir="ltr"><span>N&#228;r du bokf&#246;r en verifikation ska den ha ett verifikationsnummer. Numren ska vara i l&#246;pande f&#246;ljd. I bokf&#246;ringsprogram f&#229;r du verifikationsnumret automatiskt n&#228;r du bokf&#246;r en ny verifikation. Ofta kan du v&#228;lja att ha flera olika verifikationsserier, s&#229; att du t.ex. har en serie f&#246;r kundfakturor, en f&#246;r leverant&#246;rsfakturor och en f&#246;r annan bokf&#246;ring. Det g&#246;r det l&#228;ttare att hitta bland pappren eftersom du kan f&#246;rvara varje verifikationsserie i en s&#228;rskild flik eller p&#228;rm, s&#229; att du slipper att ha kundfakturor, leverant&#246;rsfakturor och annan bokf&#246;ring blandat.&#160;</span></p>
+<ol>
+<li dir="ltr"><span>Skriv verifikationsnumret &#246;verst till h&#246;ger p&#229; verifikationen och l&#229;t de bokf&#246;rda verifikationerna sitta i verifikationsnummerordning i en p&#228;rm, s&#229; &#228;r det l&#228;tt att hitta dem. </span></li>
+<li dir="ltr"><span>Vid bokf&#246;ringen av en verifikation ska du ocks&#229; ange verifikationsdatum. Det &#228;r det datum aff&#228;rsh&#228;ndelsen intr&#228;ffade, t ex fakturadatum f&#246;r en kundfaktura eller betalningsdatum f&#246;r en betalning. Ofta finns det m&#246;jlighet att skriva n&#229;gon text till verifikationen i programmet och d&#228;r kan det vara bra att beskriva vad verifikationen avser, t ex kundfaktura nr. 123. </span></li>
+<li dir="ltr"><span>Sedan &#229;terst&#229;r bara att kontera verifikationen, d v s best&#228;mma p&#229; vilka konton den ska bokf&#246;ras och vilka belopp som ska vara i debet respektive kredit.&#160;</span></li>
+</ol>
+<h2 id="6">7 vanliga bokf&#246;ringsexempel</h2>
+<p>H&#228;r f&#246;ljer n&#229;gra enkla exempel p&#229; hur du bokf&#246;r aff&#228;rsh&#228;ndelser som &#228;r vanliga i mindre f&#246;retag. Kontonumren och kontoben&#228;mningarna &#228;r tagna fr&#229;n BAS-kontoplanen. Det &#228;r inte s&#228;kert att de helt &#246;verensst&#228;mmer med de konton du har i ditt bokf&#246;ringsprogram. Detta eftersom BAS-kontoplanen har m&#229;nga fria konton d&#228;r det viktiga &#228;r att de finns i r&#228;tt kontogrupp och d&#228;rf&#246;r kan olika programleverant&#246;rer ha valt att anv&#228;nda lite olika konton inom gruppen.</p>
+<h3><span class="icon-generic-icon">&#59063;</span> Bokf&#246;ringsexempel 1: Bokf&#246;ring av leverant&#246;rsfakturor</h3>
+<p>Du har k&#246;pt arbetshandskar till f&#246;retaget och f&#229;r en leverant&#246;rsfaktura fr&#229;n Peterssons arbetskl&#228;der.</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforingsexempel-arbetshandskar.png" width="443" height="115" alt="Bokf&#246;ringsexempel arbetshandskar" /></p>
+<p>Skapa f&#246;rst en ny verifikation i programmet. Som datum anger du fakturadatumet. B&#246;rja med att bokf&#246;ra hur mycket du ska betala. Det g&#246;r du p&#229; ett konto som heter Leverant&#246;rsskuld. Eftersom det &#228;r en skuld som &#246;kar bokf&#246;r du det i kredit.</p>
+<p>I debet bokf&#246;r du sedan kostnaden (utan moms) p&#229; ett konto som passar, i detta fall Arbetskl&#228;der och skyddsmaterial. Momsen bokf&#246;rs som en fordran p&#229; Skatteverket eftersom du senare f&#229;r dra av den n&#228;r du g&#246;r momsdeklarationen.</p>
+<p>S&#229; h&#228;r ser bokf&#246;ringen av leverant&#246;rsfakturan ut:</p>
+<p><span><span><span><span><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-av-arbetshandskar.png" width="809" height="196" alt="Bokf&#246;ring av arbetshandskar" mce_epiimageresize_id="uniqName_199_1_editorFrame_mce_15" /></span></span></span></span></p>
+<p>Nu &#229;terst&#229;r bara att skriva verifikationsnumret p&#229; pappersfakturan och s&#228;tta in i verifikationsp&#228;rmen. Om du har ett ekonomiprogram som hanterar b&#229;de bokf&#246;ring och leverant&#246;rsfakturor skapas bokf&#246;ringsposterna automatiskt n&#228;r du registrerat leverant&#246;rsfakturan.</p>
+<h4>Hur bokf&#246;r man n&#228;r leverant&#246;rsfakturan betalats?</h4>
+<p>N&#228;r leverant&#246;rsfakturan betalas ska pengarna bokf&#246;ras bort fr&#229;n bankkontot och skulden till leverant&#246;ren ska bokf&#246;ras bort fr&#229;n leverant&#246;rsskulder. Eftersom all bokf&#246;ring ska ha en verifikation som bekr&#228;ftar transaktionen m&#229;ste du ha ett underlag till sj&#228;lva betalningen. Det kan t ex vara en utskrift av ditt kontoutdrag med betalningen fr&#229;n internetbanken. Du kan i st&#228;llet spara uppgifterna elektroniskt, t ex i PDF-format. T&#228;nk d&#229; p&#229; att spara filen med ett namn som inneh&#229;ller verifikationsnumret som bokf&#246;ringsposten f&#229;r i bokf&#246;ringsprogrammet, s&#229; att det g&#229;r l&#228;tt att hitta den i efterhand.</p>
+<p>Vi antar att det &#228;r leverant&#246;rsfakturan i det f&#246;rra exemplet som nu betalats. N&#228;r du tagit fram informationen om att betalningen gjorts g&#246;r du en ny verifikation i bokf&#246;ringsprogrammet och bokf&#246;r s&#229; h&#228;r:</p>
+<p>Som verifikationsdatum anger du den dagen pengarna dragits fr&#229;n ditt konto.</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/arbetshandskar-bokforing.png" width="810" height="134" alt="arbetshandskar bokf&#246;ring" mce_epiimageresize_id="uniqName_199_1_editorFrame_mce_14" /></p>
+<p>Nu har skulden tagits bort och pengarna har l&#228;mnat bankkontot. Skriv verifikationsnumret p&#229; pappersunderlaget och s&#228;tt in i p&#228;rmen med bokf&#246;rda verifikationer.</p>
+<h3><span class="icon-generic-icon">&#59063;</span>&#160;Bokf&#246;ringsexempel 2: Hur bokf&#246;r man kontantink&#246;p av kulspetspennor?</h3>
+<p>N&#228;r du k&#246;per n&#229;got f&#246;r kontanter bokf&#246;r du p&#229; n&#228;stan samma s&#228;tt som n&#228;r du bokf&#246;r en leverant&#246;rsfaktura. Du byter bara ut kontot f&#246;r leverant&#246;rsskulder mot kassa, eftersom pengarna har minskat kassan i st&#228;llet f&#246;r att skulderna har &#246;kat. Men t&#228;nk p&#229; att kontanta transaktioner kr&#228;ver att du bokf&#246;r n&#228;stkommande arbetsdag, eftersom de inte ing&#229;r i reglerna om r&#228;tt till senarel&#228;ggning av bokf&#246;ring. Oftast &#228;r det klokast att anv&#228;nda ett f&#246;retagskontokort i st&#228;llet f&#246;r d&#229; slipper man de h&#229;rdare reglerna. Om du &#228;nd&#229; har kontantkassa kan du ha en liten kassabok p&#229; kassaskrinet d&#228;r du bokf&#246;r datum, vad k&#246;pet avser, belopp och moms. D&#229; kan du v&#228;nta med att bokf&#246;ra k&#246;pet i ditt bokf&#246;ringssystem tills du bokf&#246;r det andra.</p>
+<p>Vi s&#228;ger att du k&#246;pt kulspetspennor kontant f&#246;r 100 kronor. Av det var 20 kronor moms. S&#229; h&#228;r ska du bokf&#246;ra i bokf&#246;ringsprogrammet:</p>
+<p>Verifikationsdatum &#228;r det datum d&#229; du gjorde k&#246;pet.<br /><br /><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforingsexempel-kulspetspennor.png" width="805" height="197" alt="bokf&#246;ringsexempel kulspetspennor" mce_epiimageresize_id="uniqName_199_1_editorFrame_mce_13" /></p>
+<p>Nu har kassan minskat med 100 kronor och kostnaden f&#246;r kontorsmaterial har &#246;kat med 80 kronor. Momsen &#228;r ingen kostnad eftersom du f&#229;r dra av den i n&#228;sta momsdeklaration, s&#229; den &#228;r bokf&#246;rd som en fordran p&#229; Skatteverket. Om kvittot &#228;r litet kan du h&#228;fta fast det p&#229; ett A4-papper som du skriver verifikationsnumret p&#229; innan du s&#228;tter in det i p&#228;rmen med bokf&#246;rda verifikationer. T&#228;nk p&#229; att m&#229;nga kvitton bleknar snabbt s&#229; att de inte g&#229;r att l&#228;sa. Scanna d&#228;rf&#246;r kvittona eller ta fotostatkopior, s&#229; att du &#228;r s&#228;ker p&#229; att kvittona g&#229;r att l&#228;sa under hela tiden lagen kr&#228;ver att dem sparas (f&#246;r tillf&#228;llet 7 &#229;r).</p>
+<h3><span class="icon-generic-icon">&#59063;</span> Bokf&#246;ringsexempel 3: Bokf&#246;ring av kundfakturor</h3>
+<p>N&#228;r du skickar en kundfaktura ska den bokf&#246;ras s&#229; att det syns att du f&#229;tt en int&#228;kt i f&#246;retaget och att du har en fordran p&#229; kunden. Momsen som finns p&#229; kundfakturan ska bokf&#246;ras som en skuld till Skatteverket f&#246;r att sparas tills det &#228;r dags att g&#246;ra momsdeklaration.</p>
+<p>I det h&#228;r exemplet har kunden k&#246;pt nya d&#228;ck till sin bil och f&#229;tt hj&#228;lp att s&#228;tta p&#229; dem. Du skickar en faktura till kunden som inneh&#229;ller de h&#228;r uppgifterna:</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforingsexempel-skickad-kundfaktura.png" width="443" height="120" alt="bokf&#246;ringsexempel skickad kundfaktura" /></p>
+<p>Nedan ser du hur du ska bokf&#246;ra kundfakturan.&#160;Verifikationsdatum &#228;r fakturadatumet.</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/hur-bokfor-man-kundfaktura.png" width="804" height="218" alt="Bokf&#246;ring av skickad kundfaktura" /></p>
+<p>Du har nu bokf&#246;rt att du har en fordran p&#229; kunden. Du har ocks&#229; f&#229;tt int&#228;kter i f&#246;retaget och f&#246;r att kunna f&#246;lja upp din f&#246;rs&#228;ljning lite b&#228;ttre har du delat upp int&#228;kten p&#229; vad som &#228;r f&#246;rs&#228;ljning av varor och vad som &#228;r arbete (tj&#228;nster). Momsen &#228;r bokf&#246;rd som skuld till Skatteverket s&#229; att du kan ta med den p&#229; n&#228;sta momsdeklaration. Om du har kundfakturan i ett ekonomiprogram beh&#246;ver du inte skriva ut den.</p>
+<h4>N&#228;sta steg: Betalningen av kundfakturan ska bokf&#246;ras</h4>
+<p>N&#228;r du har f&#229;tt betalt fr&#229;n kunden ska kundfordran "bokf&#246;ras bort" och pengarna g&#229; in p&#229; bankkontot. Du anv&#228;nder en utskrift av kontobeskedet fr&#229;n banken som verifikation.</p>
+<p>Bokf&#246;r enligt nedan.&#160;Skriv betalningsdatumet som verifikationsdatum och fakturanummer som verifikationstext.</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-av-betalad-kundfordran.png" width="806" height="161" alt="Hur man bokf&#246;r betalad kundfaktura" /></p>
+<p>Om du har ett bokf&#246;ringsprogram som ocks&#229; inneh&#229;ller kundreskontra (sidoordnad, mer detaljerad bokf&#246;ring) g&#246;rs det h&#228;r automatiskt n&#228;r du registrerat betalningen. Skriv verifikationsnumret uppe till h&#246;ger p&#229; kontoutdraget fr&#229;n banken och s&#228;tt in verifikationen i p&#228;rmen f&#246;r bokf&#246;rda verifikationer.</p>
+<h3><span class="icon-generic-icon">&#59063;</span> Bokf&#246;ringsexempel 4: Bokf&#246;ring av kontokortsfaktura</h3>
+<p>Det finns tv&#229; olika s&#228;tt att bokf&#246;ra kontokortsink&#246;p. Antingen kan man bokf&#246;ra kvittona som man f&#229;r vid ink&#246;pet var f&#246;r sig som skuld och sedan n&#228;r fakturan kommer boka bort den s&#229; att den blir en leverant&#246;rsskuld. Eller ocks&#229; kan man bokf&#246;ra hela kontokortsfakturan n&#228;r fakturan kommer.</p>
+<p>H&#228;r beskriver vi hur du ska g&#246;ra om du v&#228;ljer att bokf&#246;ra f&#246;rst n&#228;r fakturan kommer. Kvittona du f&#229;r vid kontokortsink&#246;p m&#229;ste sparas &#228;ven om du v&#228;ljer att bokf&#246;ra utifr&#229;n fakturan. Enda undantaget &#228;r om fakturan inneh&#229;ller alla uppgifter som en verifikation ska ha. Det inneb&#228;r bland annat att det m&#229;ste st&#229; p&#229; fakturan vad man har k&#246;pt och hur mycket, och det framg&#229;r s&#228;llan p&#229; en kontokortsfaktura. <br />I det h&#228;r exemplet har du f&#229;tt en kontokortsfaktura som inneh&#229;ller b&#229;de k&#246;p av almanacka, hotellkostnader och t&#229;gbiljetter.</p>
+<p>De h&#228;r uppgifterna finns p&#229; fakturan:</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-av-kontokortsfaktura.png" width="805" height="196" alt="Hur man bokf&#246;r kontokortsfaktura" /></p>
+<p>Som verifikationsdatum s&#228;tter du fakturadatumet. Kostnaderna ska bokf&#246;ras exklusive moms eftersom momsen ska bokf&#246;ras som ing&#229;ende moms, f&#246;r att sedan dras av n&#228;r du g&#246;r momsdeklarationen. Det &#228;r inte alltid att momsbeloppet framg&#229;r av fakturan och ibland st&#229;r det ett belopp som inte &#228;r korrekt. D&#229; m&#229;ste du titta p&#229; kvittot p&#229; ink&#246;pet f&#246;r att f&#229; fram det korrekta beloppet f&#246;r moms. T&#228;nk p&#229; att det finns s&#228;rskilda regler f&#246;r vissa varor och tj&#228;nster. Exempelvis finns det s&#228;rskilda regler f&#246;r representation. L&#228;s momsbroschyren fr&#229;n Skatteverket eller p&#229; Skatteverkets hemsida om du &#228;r os&#228;ker.</p>
+<p>S&#229; h&#228;r bokf&#246;r du:</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/hur-man-bokfor-kontokortsfaktura.png" width="804" height="254" alt="Bokf&#246;ring av kontokortsfaktura" /></p>
+<p>Nu &#228;r leverant&#246;rsskulden och kostnaderna bokf&#246;rda och momsen ligger som fordran i v&#228;ntan p&#229; momsdeklarationen. Leverant&#246;rsskulden bokf&#246;rs bort n&#228;r du betalar fakturan.</p>
+<p>H&#228;fta upp de underliggande kvittona p&#229; A4-papper om de &#228;r sm&#229; och h&#228;fta ihop alltihopa tillsammans med kontokortsfakturan. Skriv p&#229; verifikationsnumret och s&#228;tt in i p&#228;rmen f&#246;r bokf&#246;rda verifikationer.</p>
+<h3><span class="icon-generic-icon">&#59063;</span> Bokf&#246;ringsexempel 5: Bokf&#246;ring av bankl&#229;n</h3>
+<p>I det h&#228;r exemplet har du tagit ett bankl&#229;n p&#229; 50 000 kronor som du har f&#246;rt in p&#229; ditt bankkonto. D&#229; &#246;kar dina skulder men samtidigt &#246;kar dina tillg&#229;ngar eftersom pengarna s&#228;tts in p&#229; banken. Om du f&#229;r en avi fr&#229;n banken anv&#228;nder du det som verifikation, men du kan ocks&#229; anv&#228;nda ett utskrivet bankkontobesked. D&#229; ska du t&#228;nka p&#229; att det ska framg&#229; av verifikationen vilket l&#229;n pengarna avser, t ex l&#229;nenummer. Sj&#228;lva l&#229;nehandlingarna ska du ocks&#229; s&#228;tta in i en s&#228;rskild p&#228;rm d&#228;r du f&#246;rvarar avtal som du h&#228;nvisar till p&#229; verifikationerna.</p>
+<p>Verifikationsdatum &#228;r utbetalningsdatum och som verifikationstext skriver du l&#228;mpligen vilken bank och vilket l&#229;nenummer som avses.</p>
+<p>Du bokf&#246;r s&#229; h&#228;r:</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-av-banklan.png" width="806" height="164" alt="Bokf&#246;ring av bankl&#229;n" /></p>
+<p>Tillg&#229;ngarna i kontoklass 1 har &#246;kat och det har ocks&#229; skulderna i kontoklass 2. Skriv verifikationsnummer p&#229; avin eller kontobeskedet och s&#228;tt in i p&#228;rmen f&#246;r bokf&#246;rda verifikationer.</p>
+<h3><span class="icon-generic-icon">&#59063;</span>&#160;Bokf&#246;ringsexempel 6: Hur bokf&#246;r man amortering och r&#228;nta p&#229; l&#229;n?</h3>
+<p>N&#228;r du betalar amortering och r&#228;nta p&#229; l&#229;n ska de bokf&#246;ras p&#229; tv&#229; olika konton. Det beror p&#229; att amorteringen minskar skulden men r&#228;ntan &#228;r en kostnad. I det h&#228;r exemplet har du betalat 5 630 kronor till banken. Av det &#228;r 1 630 kronor r&#228;nta. Om du f&#229;tt en avi p&#229; betalningen anv&#228;nder du den som verifikation. Annars kan du anv&#228;nda en utskrift av bankkontoutdraget.</p>
+<p>Verifikationsdatum &#228;r betalningsdagen. Skriv g&#228;rna vilket l&#229;n det avser som verifikationstext.</p>
+<p>S&#229; h&#228;r bokf&#246;r du:</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-av-amortering-och-ranta.png" width="805" height="195" alt="Bokf&#246;ring av amortering och r&#228;nta" /></p>
+<p>Nu har pengarna bokf&#246;rts bort fr&#229;n ditt bankkonto, du har minskat din skuld till banken med amorteringen och r&#228;ntan &#228;r bokf&#246;rd som en kostnad. Och som vanligt ska du skriva verifikationsnummer p&#229; avin eller kontoutdraget och s&#228;tta in i p&#228;rmen f&#246;r bokf&#246;rda verifikationer.</p>
+<h3><span class="icon-generic-icon">&#59063;</span> Bokf&#246;ringsexempel 7: Bokf&#246;ring av egna ins&#228;ttningar i enskild n&#228;ringsverksamhet</h3>
+<p>N&#228;r du l&#228;gger in egna pengar i din enskilda firma ska det bokf&#246;ras precis som allt annat som ber&#246;r f&#246;retaget. I det h&#228;r fallet har du satt in 5 000 kronor p&#229; f&#246;retagets bankkonto. Anv&#228;nd en utskrift av bankkontoutdraget som verifikation. Verifikationsdatum &#228;r betalningsdagen. Bokf&#246;r s&#229; h&#228;r:<br /><br /><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/EPiServer/CMS/Content/contentassets/c32d13ebdf8048b3a9d9c512370911d5/bokforing-av-egen-insattning.png,,3024640?epieditmode=False" alt="Bokf&#246;ring av egen ins&#228;ttning" width="806" height="163" /></p>
+<p>Nu &#228;r ins&#228;ttningen p&#229; f&#246;retagets bankkonto bokf&#246;rd. Pengarna in &#228;r bokf&#246;rda i debet i kontoklass 1 eftersom det &#246;kar tillg&#229;ngarna. Som motkonto anv&#228;nder du ett konto i kontoklass 2 d&#228;r skulder finns. Kontogruppen heter eget kapital (konton som b&#246;rjar p&#229; 20) och det bokf&#246;rs p&#229; samma s&#228;tt som andra konton i kontoklass 2 skulder, d v s de &#246;kar i kredit och minskar i debet.</p>
+<p>Att egen ins&#228;ttning bokf&#246;rs p&#229; samma s&#228;tt som en skuld beror p&#229; att pengar som du sj&#228;lv s&#228;tter in i f&#246;retaget betraktas som att f&#246;retaget har en skuld till dig. Och s&#229; &#229;terst&#229;r bara att skriva verifikationsnummer p&#229; bankkontoutdraget och s&#228;tta in det i p&#228;rmen f&#246;r bokf&#246;rda verifikationer.</p>
+<h2 id="7">Bokf&#246;ra och deklarera moms</h2>
+<p>N&#228;r du ska redovisa moms beror p&#229; vilken redovisningsperiod du har. Det kan du se p&#229; ditt registreringsbevis f&#246;r moms. I momsdeklarationen ska du redovisa hur mycket du s&#229;lt och hur mycket moms du har fakturerat till dina kunder. Det kallas utg&#229;ende moms. Sedan ska du dra bort ing&#229;ende moms, det vill s&#228;ga den moms som du haft p&#229; det du k&#246;pt till f&#246;retaget. Mellanskillnaden ska betalas in till Skatteverket.</p>
+<h3>Viktigt med r&#228;tt moms</h3>
+<p>F&#246;r att redovisa korrekt moms &#228;r det viktigt att du tar ut r&#228;tt <a href="/blogg/skatter/vad-ar-utgaende-moms" title="Vad &#228;r utg&#229;ende moms?">utg&#229;ende moms</a> p&#229; dina fakturor. Allra vanligast &#228;r att du l&#228;gger p&#229; 25 % moms p&#229; det du s&#228;ljer men det finns varor som i st&#228;llet ska ha 12 % eller 6 % moms. Det finns ocks&#229; s&#228;rskilda regler f&#246;r vissa varor och tj&#228;nster, t ex om du s&#228;ljer begagnade varor (vinstmarginalbeskattning) eller s&#228;ljer varor till andra l&#228;nder.</p>
+<p>Det finns ocks&#229; olika regler f&#246;r <a href="/blogg/skatter/vad-ar-ingaende-moms" title="Vad &#228;r ing&#229;ende moms?">ing&#229;ende moms</a>. Om du k&#246;per varor i Sverige &#228;r det n&#228;stan alltid den moms som finns p&#229; fakturan eller kvittot som f&#229;r dras av. Men det finns undantagsregler d&#228;r ocks&#229;, t ex f&#246;r bilar och <a href="/blogg/skatter/representation" title="Representation &#8211; vad &#228;r det?">representation</a>. Om du k&#246;per varor eller tj&#228;nster fr&#229;n andra l&#228;nder finns det ocks&#229; s&#228;rskilda regler.</p>
+<p>H&#228;r tar vi bara upp de vanligaste formerna f&#246;r utg&#229;ende och ing&#229;ende moms. P&#229; Skatteverkets sajt kan du l&#228;sa vilka regler som g&#228;ller f&#246;r moms. Sist i den h&#228;r guiden kan du ladda ner momsbroschyrer som ocks&#229; inneh&#229;ller bra information.</p>
+<p>I exemplen p&#229; hur man bokf&#246;r kundfakturor och ink&#246;p har vi visat hur man bokf&#246;r den utg&#229;ende och ing&#229;ende momsen p&#229; s&#228;rskilda konton, f&#246;r att sedan kunna redovisa dem till Skatteverket. H&#228;r ska vi avsluta en momsredovisningsperiod, deklarera och betala momsen.</p>
+<h3>S&#229; fungerar momsdeklaration</h3>
+<p>Innan du g&#246;r din momsdeklaration &#228;r det mycket viktigt att du st&#228;mmer av dina konton p&#229; den sista dagen i momsredovisningsperioden. Du kan l&#228;sa mer om avst&#228;mning i ett s&#228;rskilt avsnitt nedan. S&#228;rskilt viktigt &#228;r det att se till att alla fakturor som ska vara med i momsdeklarationen verkligen &#228;r bokf&#246;rda och att de &#228;r bokf&#246;rda i r&#228;tt period.</p>
+<p>Sedan kontrollr&#228;knar du din f&#246;rs&#228;ljning och j&#228;mf&#246;r med den utg&#229;ende momsen. Om du t ex under redovisningsperioden har bokf&#246;rt 100 000 kronor p&#229; det f&#246;rs&#228;ljningskonto d&#228;r du bokf&#246;rt s&#229;dant som ska ha 25 % moms, ska det som finns p&#229; kontot f&#246;r utg&#229;ende moms 25 % vara 25 000 kronor - annars &#228;r det n&#229;got som blivit fel. Om det bara skiljer n&#229;gra kronor kan det vara &#246;resutj&#228;mningen och d&#229; beh&#246;ver du inte bry dig om det. I bokf&#246;ringsprogram g&#246;rs kontrollber&#228;kningarna oftast automatiskt n&#228;r du g&#246;r momsrapporten och du f&#229;r ett meddelande om n&#229;got verkar fel.</p>
+<p>N&#228;r allt &#228;r avst&#228;mt och klart ska du bokf&#246;ra om all utg&#229;ende moms och all ing&#229;ende moms till ett redovisningskonto. I m&#229;nga bokf&#246;ringsprogram skapas den h&#228;r verifikationen automatiskt n&#228;r du godk&#228;nner momsrapporten. Genom att du bokf&#246;r den verifikationen nollst&#228;lls dina konton f&#246;r utg&#229;ende och ing&#229;ende moms. Det inneb&#228;r att saldot som finns p&#229; de kontona alltid &#228;r s&#229;dant som &#228;nnu inte har deklarerats. S&#229; h&#228;r kan en verifikation f&#246;r &#246;verf&#246;ring till momsredovisningskontot se ut:</p>
+<p><strong><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-av-moms.png" width="804" height="217" alt="Bokf&#246;ring av moms" /></strong></p>
+<p>Nu har du bokat bort den utg&#229;ende och ing&#229;ende momsen och bokf&#246;rt skulden du har till Skatteverket. Eftersom momsdeklarationen bara ska ha hela kronor bokf&#246;r du bort &#246;rena till &#246;resutj&#228;mningskontot. Skulden ska st&#229; kvar p&#229; redovisningskontot tills du betalar den. Skriv ut verifikationen och s&#228;tt in i din p&#228;rm f&#246;r bokf&#246;rda verifikationer. N&#228;r momsen betalas bokf&#246;r du bort den fr&#229;n skuldkontot s&#229; h&#228;r:</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-moms.png" width="805" height="163" alt="Bokf&#246;ringsexempel moms" /></p>
+<p>Pengarna har bokf&#246;rts bort fr&#229;n ditt bankkonto och skulden till Skatteverket &#228;r bortbokad. Anv&#228;nd en utskrift av kontoutdraget fr&#229;n din bank som verifikation att ha i p&#228;rmen f&#246;r bokf&#246;rda verifikationer. Gl&#246;m inte att skriva verifikationsnumret uppe i h&#246;gra h&#246;rnet.</p>
+<h2 id="8">Bokf&#246;ra periodiseringar</h2>
+<p>Ibland betalar man f&#246;r varor och tj&#228;nster i f&#246;rv&#228;g eller levererar varor och tj&#228;nster som faktureras senare. Det kan t ex vara hyror som betalas per kvartal i f&#246;rv&#228;g eller varor du l&#228;gger i lager f&#246;r att s&#228;lja senare. Andra g&#229;nger betalar man i st&#228;llet i efterskott. Det &#228;r vanligt f&#246;r t ex bankr&#228;ntor. F&#246;r att f&#229; ett riktigt r&#228;ttvisande resultat i bokf&#246;ringen kan man g&#246;ra s&#229; kallade <a href="/blogg/foretagsredovisning/vad-ar-periodisering" title="Vad &#228;r periodisering?">periodiseringar</a>. Det finns ingen lag som s&#228;ger att sm&#229; f&#246;retag alltid m&#229;ste g&#246;ra periodiseringar under bokf&#246;rings&#229;ret, men det &#228;r l&#228;ttare att f&#246;lja resultatet om du g&#246;r det. Det kan ju vara s&#229; att en m&#229;nad ser ut att ha g&#229;tt riktigt d&#229;ligt f&#246;r f&#246;retaget, men i sj&#228;lva verket beror det p&#229; att man gjort stora ink&#246;p av lagervaror, betalat kvartalshyran i f&#246;rskott och utf&#246;rt arbete som inte faktureras f&#246;rr&#228;n m&#229;naden efter.</p>
+<h4>Periodisering p&#229;verkar resultatet</h4>
+<p>Lagervarorna finns kvar och &#228;r egentligen en tillg&#229;ng i f&#246;retaget, kvartalshyran &#228;r en kostnad som avser de tre f&#246;ljande m&#229;naderna, och det arbete man utf&#246;rt men inte fakturerat &#228;r egentligen en int&#228;kt f&#246;r m&#229;naden. N&#228;r man tar h&#228;nsyn till det kanske det visar sig att m&#229;naden har g&#229;tt riktigt bra resultatm&#228;ssigt. I andra fall kan det vara tv&#228;rtom. <br />M&#229;naden ser ut att ha g&#229;tt bra men det kan t ex bero p&#229; att man haft mycket kostnader som faktureras f&#246;rst m&#229;naden efter. D&#229; &#228;r det &#228;nnu viktigare att periodisera f&#246;r att se problemen och kunna vidta &#229;tg&#228;rder i tid.</p>
+<p>N&#228;r du g&#246;r bokslut f&#246;r bokf&#246;rings&#229;ret finns det s&#228;rskilda regler f&#246;r vilka periodiseringar som m&#229;ste g&#246;ras. I m&#229;nga bokf&#246;ringsprogram finns det funktioner som hj&#228;lper till att g&#246;ra periodiseringar. Om du har mycket lagervaror kan det vara en god id&#233; att ha ett program som hanterar lager f&#246;r att f&#229; kostnaderna p&#229; r&#228;tt period.</p>
+<p>N&#228;r du g&#246;r investeringar i t ex maskiner &#228;r det ocks&#229; en kostnad som ska f&#246;rdelas &#246;ver den tid du anv&#228;nder maskinen och det &#228;r ocks&#229; en form av periodisering. Det kallas avskrivningar och om du har m&#229;nga olika investeringar (kallas ocks&#229; anl&#228;ggningstillg&#229;ngar) kan du g&#246;ra det i ett datorprogram f&#246;r anl&#228;ggningsregister, d&#228;r du f&#229;r hj&#228;lp med bland annat periodiseringar. Om du vill periodisera s&#229; att du under hela &#229;ret f&#229;r alla int&#228;kter och kostnader p&#229; r&#228;tt m&#229;nad, best&#228;mmer du redan n&#228;r du bokf&#246;r fakturan hur den ska periodiseras. Vill du d&#228;remot periodisera n&#229;got som redan &#228;r bokf&#246;rt i efterhand, m&#229;ste du f&#246;rst bokf&#246;ra bort int&#228;kten eller kostnaden f&#246;r att sedan kunna bokf&#246;ra den p&#229; r&#228;tt period.</p>
+<h3>Exempel p&#229; bokf&#246;ring av periodisering</h3>
+<p>Vi b&#246;rjar med ett exempel d&#228;r du ska periodisera en kostnad som redan &#228;r bokf&#246;rd s&#229; att den hamnar p&#229; r&#228;tt &#229;r. Du har i december 2015 f&#229;tt och betalat en maskinhyra p&#229; 22 500 kronor som avser hela n&#228;sta &#229;r, d v s 2016. Av fakturabeloppet &#228;r 4 500 kronor moms. Fakturan &#228;r bokf&#246;rd i december 2015 och n&#228;r du g&#246;r &#229;rsbokslutet ska du periodisera kostnaden, s&#229; att den belastar 2016 i st&#228;llet f&#246;r 2015 d&#228;r kostnaden finns nu. Du anser inte att du beh&#246;ver periodisering per m&#229;nad f&#246;r att kunna ha kontroll p&#229; ekonomin, utan beh&#246;ver bara ha in int&#228;kter och kostnader p&#229; r&#228;tt &#229;r.</p>
+<p>N&#228;r du fick fakturan bokf&#246;rde du s&#229; h&#228;r.&#160;</p>
+<p><strong>Verifikationsdatum: </strong>2016-01-01 (datum i &#229;ret som kostnaden ska belasta)</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-av-periodisering.png" width="802" height="194" alt="Bokf&#246;ring av periodisering" /></p>
+<p>N&#228;r fakturan betalades bokf&#246;rdes den precis som vilken annan betalning av leverant&#246;rsfaktura som helst. Det p&#229;verkar inte periodiseringen s&#229; vi visar inte den konteringen h&#228;r.</p>
+<p>Vid &#229;rsslutet g&#246;r du en verifikation som ser ut enligt nedan.&#160;</p>
+<p><strong>Verifikationsdatum: </strong>2015-12-31 (datum i &#229;ret d&#228;r kostnaden var bokf&#246;rd)</p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-periodisering.png" width="804" height="162" alt="Bokf&#246;ring periodisering" /></p>
+<p>Nu har du minskat 2015 &#229;rs kostnader och i st&#228;llet bokf&#246;rt det p&#229; ett tillg&#229;ngskonto. Man kan s&#228;ga att maskinhyran du inte utnyttjat &#228;nnu &#228;r en fordran p&#229; f&#246;retaget som hyr ut maskinen. Momsen ska du inte boka bort f&#246;r den ska dras av i momsdeklarationen i december. T&#228;nk p&#229; att du alltid m&#229;ste ha en verifikation (ett underlag) p&#229; allt du bokf&#246;r. D&#228;rf&#246;r ska du skriva ut verifikationen fr&#229;n programmet och s&#228;tta in i din p&#228;rm f&#246;r bokf&#246;rda verifikationer. Nu ska kostnaden bokf&#246;ras s&#229; att den kommer med i kostnaderna 2016 i st&#228;llet. Bokf&#246;r s&#229; h&#228;r:</p>
+<p><strong>Verifikationsdatum: </strong>2016-01-01 (datum i &#229;ret som kostnaden ska belasta)</p>
+<p><strong><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokfora-periodisering.png" width="806" height="162" alt="Bokf&#246;ra periodisering" /></strong></p>
+<p>Nu &#228;r maskinhyran som avser 2016 bokf&#246;rd s&#229; att den belastar 2016 &#229;rs resultat. Samtidigt har du bokf&#246;rt bort fordringen du hade p&#229; leverant&#246;ren.</p>
+<p>Nedan f&#246;ljer ett exempel p&#229; periodisering av kostnader per m&#229;nad n&#228;r du bokf&#246;r fakturan.</p>
+<p>F&#246;r att f&#229; en riktigt bra kontroll p&#229; ekonomin i ditt f&#246;retag periodiserar du alla kostnader s&#229; att de belastar r&#228;tt m&#229;nad. I detta exempel f&#229;r och betalar du i december 2015 en hyresfaktura p&#229; 22 500 kronor som avser januari till mars 2016. Av fakturabeloppet &#228;r 4 500 kronor moms (lokalhyra kan ibland ha moms och ibland inte beroende p&#229; vilken hyresv&#228;rden &#228;r).</p>
+<p>N&#228;r du f&#229;r fakturan bokf&#246;r du s&#229; h&#228;r:</p>
+<p><strong>Verifikationsdatum: </strong>2015-12-15 (fakturadatum)</p>
+<p><strong><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/periodisering-bokforing.png" width="805" height="195" alt="Bokf&#246;ra periodiseringar" /></strong></p>
+<p>Leverant&#246;rsskulden &#228;r nu bokf&#246;rd i v&#228;ntan p&#229; betalning men ingen kostnad &#228;r bokf&#246;rd i december, utan i st&#228;llet finns f&#246;rutbetalda hyreskostnader p&#229; ett tillg&#229;ngskonto. Man kan s&#228;ga att hyran du inte utnyttjat &#228;nnu &#228;r en fordran p&#229; hyresv&#228;rden. Momsen ska du inte boka bort f&#246;r den ska dras av i momsdeklarationen i december. T&#228;nk &#229;terigen p&#229; att du alltid m&#229;ste ha en verifikation p&#229; allt du bokf&#246;r. D&#228;rf&#246;r ska du skriva ut verifikationen och s&#228;tta in i din p&#228;rm f&#246;r bokf&#246;rda verifikationer.</p>
+<p>N&#228;r fakturan betalas bokf&#246;rs den precis som vilken annan leverant&#246;rsfaktura som helst. Det p&#229;verkar inte periodiseringen. Nu ska hyreskostnaden bokf&#246;ras s&#229; att den kommer med i kostnaderna f&#246;r de m&#229;nader de avser. Bokf&#246;r s&#229; h&#228;r:</p>
+<p><strong>Verifikationsdatum: </strong>2016-01-01 (m&#229;naden som kostnaden ska belasta)</p>
+<p><strong><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/bokforing-periodisering-hyreskostnad.png" width="804" height="161" alt="Periodisering hyreskostnad exempel" /></strong></p>
+<p><br />Hyreskostnaden som avser januari &#228;r nu bokf&#246;rd s&#229; att den belastar januaris resultat. Kostnaden &#228;r en tredjedel av hyreskostnaden p&#229; fakturan eftersom fakturan avs&#229;g 3 m&#229;nader. Samtidigt har du minskat det som var bokf&#246;rt som f&#246;rutbetalda hyreskostnader i dina tillg&#229;ngar, s&#229; att det bara &#228;r hyran som avser februari och mars som finns kvar d&#228;r.</p>
+<p>Du g&#246;r p&#229; samma s&#228;tt med hyran som avser februari och mars, men med verifikationsdatum i de m&#229;naderna. N&#228;r mars &#228;r slut har hela fakturans hyreskostnad f&#246;rdelats ut och du har inte kvar n&#229;got fr&#229;n den fakturan p&#229; kontot f&#246;r f&#246;rutbetalda hyreskostnader.</p>
+<h2 id="9">Avst&#228;mningar och uppf&#246;ljning av bokf&#246;ring</h2>
+<p>Det &#228;r viktigt att bokf&#246;ringen blir r&#228;tt eftersom det &#228;r d&#228;rifr&#229;n du f&#229;r ut rapporter om hur f&#246;retaget g&#229;r. Dessutom &#228;r den underlag f&#246;r dina momsdeklarationer och skattedeklarationer. F&#246;r att kontrollera att bokf&#246;ringen &#228;r korrekt beh&#246;ver du g&#246;ra avst&#228;mningar.</p>
+<h3>Avst&#228;mning</h3>
+<p>Avst&#228;mning i bokf&#246;ringen inneb&#228;r att man kontrollerar saldon p&#229; olika konton. Exempelvis j&#228;mf&#246;r man saldot p&#229; kontot <em>Bank</em> med saldot som finns p&#229; kontoutdraget fr&#229;n banken, och kontot <em>Kassa</em> j&#228;mf&#246;rs med vad som verkligen finns i kassan. Det &#228;r vanligen balanskonton som st&#228;ms av och du ser l&#228;ttast saldot p&#229; en viss dag genom att titta p&#229; balansr&#228;kningen.</p>
+<p>Du ska inte v&#228;nta tills det &#228;r dags f&#246;r bokslut med att st&#228;mma av! Du kan f&#229; missvisande resultat fr&#229;n bokf&#246;ringsprogrammet under &#229;ret om det &#228;r fel. Det &#228;r ocks&#229; v&#228;ldigt mycket enklare att hitta fel om man ska leta i en m&#229;nad &#228;n om man beh&#246;ver leta i hela &#229;ret.</p>
+<p>Det &#228;r en bra id&#233; att spara dina avst&#228;mningar i en s&#228;rskild p&#228;rm d&#228;r du skriver datum f&#246;r avst&#228;mning och vem som har gjort den. Den kan sedan vara till nytta f&#246;r dig och f&#246;r den som kanske hj&#228;lper till med bokslut eller deklaration, eftersom du kan se n&#228;r avst&#228;mning senast gjorts och om det eventuellt var n&#229;gon avvikelse redan d&#229;.</p>
+<p><strong>H&#228;r beskrivs de avst&#228;mningar som &#228;r ett minimum f&#246;r din bokf&#246;ring:</strong></p>
+<ul>
+<li>Bankkontot ska st&#228;mmas av varje m&#229;nad. N&#228;r du &#228;r f&#228;rdig med m&#229;nadens bokf&#246;ring tar du ett kontoutdrag fr&#229;n banken och kontrollerar att saldot p&#229; bokf&#246;ringskontot den siste i m&#229;naden &#246;verensst&#228;mmer med bankens konto p&#229; samma dag. Det h&#228;r &#228;r den enklaste av alla avst&#228;mningar och genom att st&#228;mma av det f&#246;rs&#228;krar du dig om att alla in- och utbetalningar finns med i din bokf&#246;ring. &#196;ven om du utnyttjar senarel&#228;ggningsreglerna s&#229; att du inte bokf&#246;r s&#229; ofta som en g&#229;ng i m&#229;naden, ska du n&#228;r du bokf&#246;rt f&#228;rdigt en m&#229;nad g&#246;ra den h&#228;r avst&#228;mningen. D&#229; &#228;r det mycket l&#228;ttare att hitta och r&#228;tta eventuella fel.</li>
+<li>Kassan &#228;r ocks&#229; ett konto som ska st&#228;mmas av ofta. Vid avst&#228;mning r&#228;knas pengarna och j&#228;mf&#246;rs med saldot p&#229; kassakontot i bokf&#246;ringen. Om du inte bokf&#246;r kassatransaktionerna i ditt bokf&#246;ringsprogram varje dag, utan bara grundbokf&#246;r i ett certifierat <a href="/blogg/forsaljning-marknadsforing/vad-ar-kassaregister" title="Vad &#228;r ett kassaregister?">kassaregister</a> eller en kassabok, st&#228;mmer du av mot saldot i grundbokf&#246;ringen. Hur ofta avst&#228;mning beh&#246;vs beror p&#229; hur mycket och till vad kassan anv&#228;nds. Om du har kontantf&#246;rs&#228;ljning b&#246;r kassan st&#228;mmas av varje dag. Har du d&#228;remot bara en handkassa p&#229; n&#229;gra hundra f&#246;r att ha till fikabr&#246;d, frim&#228;rken och liknande sm&#229; ink&#246;p kan den st&#228;mmas av mer s&#228;llan.</li>
+<li><a href="/blogg/foretagsredovisning/vad-ar-kundfordran" title="Vad &#228;r en kundfordran?">Kundfordringar</a> och <a href="/blogg/fakturering/vad-ar-leverantorsskuld" title="Vad &#228;r en leverant&#246;rsskuld?">leverant&#246;rsskulder</a> m&#229;ste st&#228;mmas av med j&#228;mna mellanrum, helst varje m&#229;nad. Det g&#246;rs genom att man r&#228;knar samman alla obetalda fakturor p&#229; en viss dag och j&#228;mf&#246;r med saldot p&#229; kontot i bokf&#246;ringen. Innan du g&#246;r din momsdeklaration m&#229;ste kundfordringar och leverant&#246;rsskulder st&#228;mmas av per den sista dagen i momsperioden. Annars riskerar du att momsdeklarationen blir fel och d&#229; kan du f&#229; extraarbete med att r&#228;tta och skicka in ny momsrapport.</li>
+</ul>
+<p>Det kan finnas andra konton som anv&#228;nds mycket eller d&#228;r det finns stor risk f&#246;r fel som beh&#246;ver st&#228;mmas av med j&#228;mna mellanrum i just ditt f&#246;retag. Resultatkonton brukar inte st&#228;mmas av under &#229;ret mer &#228;n att man kontrollr&#228;knar f&#246;rs&#228;ljningen mot momsen innan man g&#246;r sin momsdeklaration. Vid bokslutet st&#228;ms alla balanskonton och vissa resultatkonton av f&#246;r att man ska vara s&#228;ker p&#229; att bokslut och inkomstdeklaration ska bli r&#228;tt.</p>
+<h3>Vad g&#246;r du om du hittar fel vid avst&#228;mningen?</h3>
+<p>Om saldot p&#229; kontot inte &#246;verensst&#228;mmer med vad som borde vara d&#228;r vid avst&#228;mningen &#228;r det dags att b&#246;rja leta fel. N&#228;r du letar efter fel &#228;r det oftast b&#228;st att anv&#228;nda en lista som visar allt som finns bokf&#246;rt p&#229; kontot d&#228;r felet finns. Namnet p&#229; den rapporten varierar lite mellan olika program. Vanliga namn &#228;r huvudbok eller kontoanalys. Oftast kan man sj&#228;lv best&#228;mma mellan vilka datum man vill ha rapporten. Du beh&#246;ver bara leta efter fel i bokf&#246;ringen som &#228;r gjorda efter att kontot st&#228;mdes av senast och fram till och med den dag du vill ha som avst&#228;mningsdag, t ex m&#229;nadsslutet.</p>
+<p>H&#228;r &#228;r n&#229;gra tips om hur du kan att hitta felet:</p>
+<ul>
+<li><strong>F&#246;rs&#228;kra dig om att du tittar p&#229; samma datum f&#246;r kontosaldot i bokf&#246;ringsprogrammet och f&#246;r avst&#228;mningsunderlaget.</strong> Avst&#228;mningar g&#246;rs ofta f&#246;r hela m&#229;nader, men sj&#228;lva arbetet med avst&#228;mning g&#246;rs inte f&#246;rr&#228;n flera dagar efter m&#229;nadsslutet n&#228;r allt som tillh&#246;r m&#229;naden som ska st&#228;mmas av &#228;r bokf&#246;rt. Om du t ex &#228;r klar med bokf&#246;ringen f&#246;r januari den 10:e februari tittar du p&#229; saldot som fanns den 31:e januari p&#229; kontoutdraget fr&#229;n banken och j&#228;mf&#246;r med vad som fanns bokf&#246;rt p&#229; ditt konto f&#246;r Bank samma dag.</li>
+<li><strong>Om det var l&#228;nge sedan du st&#228;mde av kontot kan det vara en god id&#233; att g&#246;ra avst&#228;mning p&#229; ett tidigare datum</strong> f&#246;r att du ska kunna begr&#228;nsa arbetet med att leta fel. Ta reda p&#229; n&#228;r det st&#228;mde senast. Om det inte st&#228;mde p&#229; den tidigare avst&#228;mningsdagen ska du skriva upp hur stor differensen var f&#246;r att kunna se om det varit samma fel under flera m&#229;nader eller om storleken p&#229; felet varierat, vilket tyder p&#229; att det finns m&#229;nga fel. Om du inte gjort n&#229;gra avst&#228;mningar tidigare under bokf&#246;rings&#229;ret ska du kontrollera s&#229; att ing&#229;ende balans &#228;r korrekt. Den ska vara samma som utg&#229;ende balans f&#246;reg&#229;ende bokf&#246;rings&#229;r och det m&#229;ste vara avst&#228;mt, s&#229; att du vet att det som var p&#229; kontot vid &#229;rsskiftet verkligen st&#228;mde.</li>
+<li><strong>Leta efter exakt det belopp som differensen uppg&#229;r till.</strong> D&#229; kan du hitta felet om det bara finns ett fel och att felet beror p&#229; att n&#229;got som skulle vara bokf&#246;rt p&#229; ett annat konto hamnat fel.</li>
+<li><strong>Prova att dela differensen p&#229; kontot med 2 och leta efter det beloppet</strong>, om det &#228;r s&#229; att du av misstag bokf&#246;rt i kredit i st&#228;llet f&#246;r i debet eller tv&#228;rtom. Att du ska leta efter halva beloppet beror p&#229; att differensen blir dubbelt s&#229; stor n&#228;r du bokf&#246;r p&#229; fel sida. J&#228;mf&#246;r med att du ska skriva 8-3=5 men att du skriver fel tecken (debet i st&#228;llet f&#246;r kredit) och f&#229;r 8+3=11. Differensen blir d&#229; 11-5=6, d v s dubbelt s&#229; stor som det tal (3) du satte fel tecken p&#229;.</li>
+<li><strong>Om du har ett avst&#228;mningsunderlag d&#228;r alla transaktioner framg&#229;r p&#229; samma s&#228;tt som p&#229; kontot i bokf&#246;ringen</strong>, kan du kontrollera post f&#246;r post att det &#228;r samma p&#229; b&#229;da st&#228;llena. Det g&#246;r du l&#228;ttast genom att bocka av p&#229; en utskrift av kontotransaktionerna.</li>
+<li><strong>Om det &#228;r kundfordringar eller leverant&#246;rsskulder som inte st&#228;mmer</strong> kan det exempelvis bero p&#229; att n&#229;gon faktura eller betalning av faktura inte blivit bokf&#246;rd, eller blivit bokf&#246;rd p&#229; fel datum. Hur du l&#228;ttast st&#228;mmer av kundfordringar och leverant&#246;rsskulder beror p&#229; om du sk&#246;ter det manuellt eller har reskontra i ett ekonomiprogram. Vissa bokf&#246;ringsprogram &#228;r byggda s&#229; att det inte kan bli n&#229;gon skillnad mellan reskontran och bokf&#246;ring. Andra program har s&#228;rskilda funktioner f&#246;r att g&#246;ra avst&#228;mningar.</li>
+</ul>
+<h3>R&#228;tta bokf&#246;ringsfel</h3>
+<p>N&#228;r du hittar fel, t ex vid avst&#228;mning, m&#229;ste det r&#228;ttas i bokf&#246;ringen. I en del ekonomiprogram kan man anv&#228;nda s&#229; kallade prelimin&#228;ra verifikationer, d&#228;r du kan g&#246;ra &#228;ndringar fram till att du l&#229;ser m&#229;naden. Verifikationer som ing&#229;r i en l&#229;st m&#229;nad m&#229;ste du r&#228;tta med en &#228;ndringsverifikation. D&#228;rf&#246;r &#228;r det v&#228;ldigt viktigt att du st&#228;mmer av bokf&#246;ringen ordentligt innan du l&#229;ser en m&#229;nad, s&#229; att du inte riskerar att hitta fel i efterhand.</p>
+<p>N&#228;r du ska g&#246;ra en &#228;ndringsverifikation skapar du en ny verifikation i bokf&#246;ringsprogrammet. M&#229;nga bokf&#246;ringsprogram har en s&#228;rskild funktion som hj&#228;lper dig att skapa &#228;ndringsverifikationer (i vissa program heter det r&#228;ttningsverifikation i st&#228;llet).</p>
+<p>&#196;ndringsverifikationen ska ha verifikationsdatum i den m&#229;nad du h&#229;ller p&#229; att bokf&#246;ra n&#228;r du uppt&#228;cker felet. Det m&#229;ste framg&#229; av &#228;ndringsverifikationen vilket verifikationsnummer som r&#228;ttas, d.v.s. vilken verifikation felet fanns p&#229;. P&#229; den felaktiga verifikationen m&#229;ste det g&#229; att se att den &#228;r r&#228;ttad och p&#229; vilken verifikation r&#228;ttelsen finns. Oftast sk&#246;ter bokf&#246;ringsprogrammet det. Sedan ska du r&#228;tta till felet s&#229; att det blir r&#228;tt p&#229; alla konton.</p>
+<p>Oftast &#228;r det enklast att helt enkelt &#8221;v&#228;nda&#8221; p&#229; den felaktigt bokf&#246;rda verifikationen, d v s att du bokf&#246;r den igen p&#229; samma konton p&#229; &#228;ndringsverifikationen, men p&#229; motsatt sida. Det som var i debet ska d&#229; vara i kredit och det som var i kredit ska vara i debet. M&#229;nga bokf&#246;ringsprogram kan g&#246;ra det automatiskt &#229;t dig. P&#229; s&#229; s&#228;tt har du &#8221;nollst&#228;llt&#8221; den felaktiga verifikationen och kan bokf&#246;ra den som den egentligen skulle vara.</p>
+<p><em><span class="icon-idea-mce">&#58937;</span>&#160;Relaterad l&#228;sning: <a href="/blogg/foretagsredovisning/fel-i-bokforingen" title="Fel i bokf&#246;ringen? S&#229; undviker du dem!">Fel i bokf&#246;ringen? S&#229; undviker du dem!</a></em></p>
+<h3>Exempel p&#229; r&#228;ttning av bokf&#246;ringsfel</h3>
+<p>S&#229; h&#228;r kan en bokf&#246;ringsr&#228;ttning se ut:</p>
+<p>N&#228;r du bokf&#246;rde hyran f&#246;r kontorslokalen i januari blev det b&#229;de fel konto och fel belopp. Du uppt&#228;cker av olika sk&#228;l inte felet f&#246;rr&#228;n i juni och januaris bokf&#246;ring &#228;r l&#229;st.</p>
+<p>S&#229; h&#228;r s&#229;g den felaktiga verifikationen ut:</p>
+<p><strong>Verifikationsnummer: </strong>A23<strong> </strong><br /><strong>Verifikationsdatum: </strong>2016-01-31<strong> </strong><br /><strong>Verifikationstext: </strong><em>Hyra mars</em></p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/rattning-av-bokforing.png" width="391" height="162" alt="Exempel p&#229; r&#228;ttning av bokf&#246;ring" /></p>
+<p>H&#228;r har du valt fel konto. Det skulle ju vara hyra. Beloppet &#228;r ocks&#229; fel. Skulle varit 8 200 kronor.</p>
+<p>Du skapar en s&#229; kallad&#160;<em>&#228;ndringsverifikation</em> i ditt bokf&#246;ringsprogram. Den ser ut s&#229; h&#228;r:</p>
+<p><strong>Verifikationsnummer: </strong>A61<br /><strong>Verifikationsdatum: </strong>2016-06-03<br /><strong>Verifikationstext: </strong><em>&#196;ndringsverifikation: R&#228;ttar verifikation A 23</em></p>
+<p><img src="https://cdn.vismaspcs.se/globalassets/icons-visma/preloader.gif" class=" lazy " data-src="/globalassets/sfl/bokforing/ratta-fel-bokforing.png" width="392" height="224" alt="&#196;ndringsverifikation av bokf&#246;ringsfel" /></p>
+<p>Konto Debet Kredit 5020 El f&#246;r belysning 8 000,00 1930 Bank 8 000,00 5010 Lokalhyra 8 200,00 1930 Bank 8 200,00 Summa 16 200,00 16 200,00</p>
+<p><br />H&#228;r har den felaktiga verifikationen f&#246;rst "nollst&#228;llts" genom att samma kontering lagts in, men med omv&#228;nt tecken. Det inneb&#228;r i detta exempel att 5020 bokf&#246;rts i kredit och 1930 i debet med samma belopp som p&#229; den felaktiga verifikationen. D&#228;refter l&#228;ggs konteringen in med r&#228;tt konto och r&#228;tt belopp s&#229; som den skulle varit fr&#229;n b&#246;rjan.</p>
+<p>N&#228;r du gjort &#228;ndringsverifikationen klart ska du skriva ut den och s&#228;tta in i p&#228;rmen f&#246;r bokf&#246;rda verifikationer eftersom reglerna s&#228;ger att du alltid m&#229;ste ha ett underlag till allt du bokf&#246;r.</p>
+<h2 id="10">F&#246;lj upp f&#246;retagets resultat i bokf&#246;ringen</h2>
+<p>Bokf&#246;ringen &#228;r ett bra verktyg f&#246;r att f&#246;lja upp hur det g&#229;r i f&#246;retaget. De viktigaste rapporterna &#228;r balansrapport och resultatrapport. Ta upp dem p&#229; bildsk&#228;rmen eller skriv ut dem efter att du &#228;r klar med m&#229;nadens bokf&#246;ring. Rapporterna f&#246;r sm&#229; f&#246;retag &#228;r ofta ganska enkla att f&#246;rst&#229;. Titta p&#229; siffrorna och t&#228;nk efter vad de st&#229;r f&#246;r. Unders&#246;k och ta reda p&#229; mer om det finns konton och siffror du inte f&#246;rst&#229;r.</p>
+<p>I sm&#229; f&#246;retag r&#228;cker det ofta att man skriver ut rapporter fr&#229;n bokf&#246;ringen utan att g&#246;ra justeringar, t ex f&#246;r att f&#246;ra int&#228;kter och kostnader till r&#228;tt period. I lite mer omfattande verksamheter kan det d&#228;remot beh&#246;vas att int&#228;kter och kostnader f&#246;rs om s&#229; att de belastar den period de verkligen avser.</p>
+<h3>Resultatrapport</h3>
+<p>I resultatrapporten kan du se int&#228;kter och kostnader. L&#228;ngst ner visas periodens resultat. Ofta skriver man ut den f&#246;r en m&#229;nad i taget, men den kan ocks&#229; skrivas ut f&#246;r hela r&#228;kenskaps&#229;ret. Genom att titta p&#229; siffrorna l&#228;r du dig en hel del om ditt f&#246;retag:</p>
+<p>Hur mycket har f&#246;retaget s&#229;lt f&#246;r? J&#228;mf&#246;r med budget, hur mycket det var f&#246;rra m&#229;naden eller samma m&#229;nad f&#246;reg&#229;ende &#229;r. Hur h&#246;ga &#228;r de olika typerna av kostnader? Var det som du har r&#228;knat med eller &#228;r det n&#229;got som kostat mycket mer &#228;n du t&#228;nkt dig? Finns det kostnader som du inte r&#228;knat med alls? &#196;r skillnaderna mot budget s&#229; stora att du beh&#246;ver r&#228;kna om budgeten?</p>
+<h3>Balansrapport</h3>
+<p>I balansrapporten kan du se vilka tillg&#229;ngar f&#246;retaget har och hur du f&#229;tt ihop pengar till det (skulder och eget kapital). Skillnaden mellan tillg&#229;ngarna och skulder tillsammans med eget kapital &#228;r &#229;rets resultat. Om du skriver ut resultatrapport f&#246;r hela r&#228;kenskaps&#229;ret &#228;r resultatet d&#228;r samma som resultatet i balansrapporten. Det beror p&#229; att f&#246;r&#228;ndringar i skillnad mellan f&#246;retagets tillg&#229;ngar och skulder alltid beror p&#229; att man haft int&#228;kter och kostnader.</p>
+<p>Balansrapporten visar hur det s&#229;g ut p&#229; ett visst datum, t ex att det fanns 56 000 kronor p&#229; banken och 173 kronor i kassan en viss dag. Det kallas balansr&#228;kningens utg&#229;ende balans och dagen balansr&#228;kningen avser kallas balansdagen. Det som fanns innan bokf&#246;rings&#229;ret b&#246;rjade kallas ing&#229;ende balans, t ex att det vid &#229;rets b&#246;rjan fanns 16 000 kronor p&#229; banken och 540 kronor i kassan. Skillnaden mellan utg&#229;ende balans och ing&#229;ende balans &#228;r bokf&#246;rings&#229;rets f&#246;r&#228;ndring, i exemplet har bankkontot &#246;kat med 40 000 kronor och kassan har minskat med 367 kronor.</p>
+<p>Ta en ordentlig titt p&#229; balansrapporten ocks&#229;. Hur mycket finns p&#229; bankkontot? Och leverant&#246;rsskulderna, hur stora &#228;r de? Finns det tillr&#228;ckligt med pengar f&#246;r att betala dem under n&#228;rmaste m&#229;naden? Kundfordringarna &#228;r ocks&#229; viktiga i det h&#228;r sammanhanget. Hur stora &#228;r de? Det &#228;r ju pengar som borde komma in under den n&#228;rmaste tiden s&#229; att de kan anv&#228;ndas till att betala skulderna. Hur ser det ut p&#229; momssidan? Blir det en stor inbetalning till Skatteverket och finns det pengar s&#229; att det r&#228;cker till det?</p>
+<p>Som du ser finns det mycket information om ditt f&#246;retag i resultat- och balansrapporterna. Men f&#246;r att du ska ha riktig nytta av dem &#228;r det viktigt att du f&#229;r informationen s&#229; tidigt som m&#246;jligt. D&#228;rf&#246;r &#228;r det bra att bokf&#246;ra regelbundet under bokf&#246;rings&#229;ret, s&#229; att du kan f&#229; ut aktuella rapporter och kanske vidta &#229;tg&#228;rder som beh&#246;vs f&#246;r att ditt f&#246;retag ska g&#229; bra.</p>
+<h3>S&#229; h&#228;r &#228;r resultatrapporten och balansrapporten uppbyggda</h3>
+<p>Balans- och resultatrapporter &#228;r uppbyggda p&#229; ett standardiserat s&#228;tt. BAS-kontoplanen f&#246;ljer samma struktur f&#246;r att det ska vara l&#228;tt att k&#228;nna igen sig. N&#228;r man gjort bokslutet byter rapporterna namn till <em>Resultatr&#228;kning</em> och <em>Balansr&#228;kning</em>.</p>
+<p>S&#229; h&#228;r &#228;r rapporterna uppbyggda. Inom parantes st&#229;r vilken <a href="/blogg/foretagsredovisning/vad-ar-kontoklass" title="Vad &#228;r en kontoklass?">kontoklass</a> kontona tillh&#246;r i BAS-kontoplanen, d v s vilken siffra kontonumren b&#246;rjar p&#229;:</p>
+<h4>Resultatrapport</h4>
+<ul>
+<li>+ R&#246;relsens int&#228;kter (kontoklass 3)</li>
+<li>&#8211; Kostnader f&#246;r varor, material och vissa k&#246;pta tj&#228;nster (kontoklass 4)</li>
+<li>&#8211; &#214;vriga externa kostnader (kontoklass 5 och 6)</li>
+<li>&#8211; Kostnader f&#246;r personal, avskrivningar mm (kontoklass 7)</li>
+<li>+/- Finansiella och andra int&#228;kter och kostnader (kontoklass 8)</li>
+<li><strong>= Periodens resultat</strong></li>
+</ul>
+<h4><strong>Balansrapport</strong></h4>
+<p><em>Tillg&#229;ngar (kontoklass 1) inneh&#229;ller bland annat:</em></p>
+<ul>
+<li>Byggnader och mark</li>
+</ul>
+<ul>
+<li>Maskiner och inventarier</li>
+<li>Lager</li>
+<li>Kundfordringar</li>
+<li>&#214;vriga kortfristiga fordringar</li>
+<li>F&#246;rutbetalda kostnader och upplupna int&#228;kter</li>
+</ul>
+<ul>
+<li>Kassa och bank</li>
+</ul>
+<p><em>Eget kapital och skulder (kontoklass 2) inneh&#229;ller bland annat:</em></p>
+<ul>
+<li>Eget kapital</li>
+<li>Obeskattade reserver</li>
+<li>L&#229;ngfristiga skulder</li>
+<li>Leverant&#246;rsskulder</li>
+<li>Skatteskulder</li>
+<li>Moms och s&#228;rskilda punktskatter</li>
+<li><a href="https://forum.vismaspcs.se/t5/Tips-om-bokforing/Bokfora-upplupna-kostnader-och-forutbetalda-intakter/ta-p/177458" title="Bokf&#246;ra upplupna kostnader och f&#246;rutbetalda int&#228;kter">Upplupna kostnader och f&#246;rutbetalda int&#228;kter</a></li>
+</ul>
+<p><strong>Skillnaden mellan tillg&#229;ngar och skulder &#228;r &#229;rets resultat.</strong></p>
+<h2 id="11">Avsluta bokf&#246;rings&#229;ret</h2>
+<p>Varje bokf&#246;rings&#229;r ska avslutas med ett &#229;rsbokslut eller en &#229;rsredovisning p&#229; den sista dagen i bokf&#246;rings&#229;ret (balansdagen). Om du ska avsluta ditt bokf&#246;rings&#229;r med ett &#229;rsbokslut eller en &#229;rsredovisning beror p&#229; hur mycket ditt f&#246;retag oms&#228;tter och vilken bolagsform det &#228;r. Enskilda n&#228;ringsidkare, handelsbolag, ideella f&#246;reningar och stiftelser f&#229;r avsluta sitt bokf&#246;rings&#229;r med &#229;rsbokslut.</p>
+<p>Enda undantagen &#228;r om de &#228;r s&#229; stora att de r&#228;knas som st&#246;rre f&#246;retag eller om de &#228;r moderbolag i en st&#246;rre koncern. D&#229; m&#229;ste de g&#246;ra en hel &#229;rsredovisning. Riktigt sm&#229; enskilda n&#228;ringsidkare och ideella f&#246;reningar som oms&#228;tter h&#246;gst 3 miljoner kronor kan g&#246;ra ett s&#229; kallat f&#246;renklat &#229;rsbokslut. Aktiebolag och ekonomiska f&#246;reningar ska alltid g&#246;ra en &#229;rsredovisning oavsett om de &#228;r st&#246;rre eller mindre.</p>
+<h3>&#197;rsbokslut och &#229;rsredovisning</h3>
+<p>Ett &#229;rsbokslut best&#229;r av en balansr&#228;kning, en resultatr&#228;kning och en sammanst&#228;llning av st&#228;llda s&#228;kerheter och ansvarsf&#246;rbindelser (t ex att man g&#229;tt i borgen f&#246;r n&#229;gon eller har en f&#246;retagsinteckning). D&#228;rut&#246;ver ska man upplysa om vilka v&#228;rderingsregler som anv&#228;nts. Det g&#246;r man ofta som s k noter till balans- och resultatr&#228;kningen. &#197;rsbokslutet ska skrivas under och anv&#228;nds sedan som underlag f&#246;r inkomstdeklarationen. En &#229;rsredovisning ska ut&#246;ver &#229;rsbokslutet inneh&#229;lla en <a href="/blogg/foretagsredovisning/vad-ar-forvaltningsberattelse" title="Vad &#228;r en f&#246;rvaltningsber&#228;ttelse?">f&#246;rvaltningsber&#228;ttelse</a>. I den beskriver man i ord de viktigaste h&#228;ndelserna under &#229;ret. D&#228;r ing&#229;r ocks&#229; n&#229;gra uppgifter som m&#229;ste vara med enligt lag, t ex f&#246;rslag p&#229; hur vinsten ska disponeras. &#197;rsredovisningen skrivs sedan under och skickas in till Bolagsverket och blir en offentlig handling.</p>
+<h4><em><span class="icon-idea-mce">&#58937;</span>&#160;T&#228;nk p&#229; detta</em></h4>
+<p>Det finns regler f&#246;r hur balans- och resultatr&#228;kningen ska se ut i &#229;rsbokslutet. F&#246;r de sm&#229; enskilda n&#228;ringsidkare som kan anv&#228;nda f&#246;renklat &#229;rsbokslut ser de n&#228;stan ut exakt som inkomstdeklarationen till Skatteverket. Oftast finns lagstadgade uppst&#228;llningar f&#246;r balans- och resultatr&#228;kning i ditt bokf&#246;ringsprogram. T&#228;nk bara p&#229; att det i &#229;rsredovisningen ska heta balansr&#228;kning och resultatr&#228;kning f&#246;r att Bolagsverket ska godk&#228;nna dem. <br />Ofta heter de rapporter man skriver ut under l&#246;pande &#229;r balansrapport och resultatrapport. Vissa bokf&#246;ringsprogram byter namn p&#229; rapporten n&#228;r bokf&#246;rings&#229;ret l&#229;ses. Fr&#229;n andra ekonomiprogram kan du beh&#246;va ta ut balans- och resultatrapporten och sj&#228;lv d&#246;pa om dem till balansr&#228;kning och resultatr&#228;kning.</p>
+<p>Bokf&#246;ringsn&#228;mnden har ocks&#229; regler f&#246;r hur <a href="/blogg/foretagsredovisning/vad-ar-tillgang" title="Vad &#228;r en tillg&#229;ng?">tillg&#229;ngar</a> och skulder ska v&#228;rderas i bokslutet. F&#246;r mindre bolag finns det f&#246;renklingsregler som bland annat inneb&#228;r att man inte beh&#246;ver periodisera s&#229;dant som kommer varje &#229;r, t ex f&#246;rs&#228;kringspremier som betalas i december varje &#229;r men avser &#229;ret efter. Det finns ocks&#229; beloppsgr&#228;nser f&#246;r vad som beh&#246;ver periodiseras. Ofta beh&#246;ver inte belopp under 5 000 kronor periodiseras alls. Reglerna f&#246;r &#229;rsbokslut och &#229;rsredovisning kan du l&#228;sa p&#229; Bokf&#246;ringsn&#228;mndens sajt. Om du &#228;r os&#228;ker p&#229; vilken av v&#228;gledningarna som du ska anv&#228;nda kan du l&#228;sa vidare h&#228;r.</p>
+<p>Det finns bokslutsprogram som kan hj&#228;lpa till att g&#246;ra bokslut. Om du har en okomplicerad verksamhet och kan t&#228;nka dig att l&#228;gga lite tid p&#229; att s&#228;tta dig in i regler, l&#228;r du dig mycket p&#229; att g&#246;ra bokslutet sj&#228;lv. Ett annat alternativ &#228;r att g&#246;ra s&#229; mycket som m&#246;jligt sj&#228;lv och f&#229; hj&#228;lp med r&#229;dgivning och delar som k&#228;nns sv&#229;ra. P&#229; det s&#228;ttet l&#228;r du dig mer och mer om ekonomin i ditt f&#246;retag och kan g&#246;ra allt st&#246;rre delar av bokslutet sj&#228;lv. Om du inte vill l&#228;gga tid p&#229; att g&#246;ra bokslut kan du anlita en redovisningskonsult f&#246;r att g&#246;ra hela bokslutet. Med ett bokf&#246;ringsprogram p&#229; n&#228;tet kan ofta b&#229;de du och din redovisningskonsult arbeta i ditt f&#246;retags bokf&#246;ring. Om den m&#246;jligheten inte finns kan du i de flesta bokf&#246;ringsprogram skapa filer med din bokf&#246;ring som sedan skickas &#246;ver till redovisningskonsulten.</p>
+<h3>F&#246;rbered bokslutet och g&#246;r bokslutsbilagor</h3>
+<p>Vid &#229;rsavslutet ska alla balanskonton periodiseras och st&#228;mmas av innan man skriver ut sin balansr&#228;kning och resultatr&#228;kning. Var noga med att allt som ska faktureras verkligen &#228;r fakturerat och bokf&#246;rt, och att alla leverant&#246;rsfakturor p&#229; s&#229;dant som &#228;r levererat under &#229;ret har kommit och &#228;r bokf&#246;rda. Det &#228;r en bra id&#233; att se till att balansr&#228;kningen st&#228;mmer innan du skriver ut resultatr&#228;kningen, eftersom n&#228;stan alla r&#228;ttelser, periodiseringar och v&#228;rderingar i balansr&#228;kningen p&#229;verkar resultatet.</p>
+<p>Det &#228;r klokt att ha en s&#228;rskild p&#228;rm f&#246;r sitt bokslut. F&#246;rutom balansr&#228;kning, resultatr&#228;kning och annat som ing&#229;r i bokslutet ska det finnas underlag, som visar vad saldot p&#229; balanskontona (tillg&#229;ngar, skulder och eget kapital) best&#229;r av. Det kallas bokslutsbilagor och det kan t ex vara:</p>
+<ul>
+<li>En lista med alla kundfakturor som var obetalda p&#229; balans- dagen f&#246;r att visa vad kundfordringskontot best&#229;r av.</li>
+<li>En lista med alla leverant&#246;rsfakturor som var obetalda p&#229; balansdagen f&#246;r att visa vad leverant&#246;rsskuldkontot best&#229;r av.</li>
+<li>Kontrollbesked fr&#229;n banken f&#246;r att bekr&#228;fta det som &#228;r bokf&#246;rt som pengar p&#229; bankkontot och tagna l&#229;n.</li>
+<li>Lista med artiklar i lager med antal och v&#228;rde p&#229; varje artikel f&#246;r att visa vad som finns bokf&#246;rt p&#229; lagerkontot.</li>
+<li>Lista p&#229; maskiner och inventarier f&#246;retaget &#228;ger f&#246;r att visa vad som finns bokf&#246;rt p&#229; de kontona.</li>
+</ul>
+<p>Om du har t ex kundreskontra, leverant&#246;rsreskontra, lagerredovisning, l&#246;neprogram eller anl&#228;ggningsregister i ditt ekonomisystem, kan du ofta f&#229; ut rapporter som kan anv&#228;ndas som bokslutsbilagor d&#228;rifr&#229;n. Andra bokslutsbilagor f&#229;r du utifr&#229;n t ex kontrolluppgifter fr&#229;n banken eller skatteuppgifter fr&#229;n Skatteverket. I de fall du g&#246;r egna ber&#228;kningar f&#246;r att f&#229; fram vad som ska vara bokf&#246;rt p&#229; n&#229;got konto anv&#228;nder du det som bokslutsbilaga.</p>
+<p>&#196;ven om du v&#228;ljer att l&#228;mna bokslutsarbetet och deklarationen till en redovisningsbyr&#229; &#228;r det bra att g&#246;ra s&#229; mycket avst&#228;mningar och bokslutsbilagor som m&#246;jligt sj&#228;lv. Det &#228;r ofta det arbetet som tar mycket tid och om bokslutet &#228;r v&#228;l f&#246;rberett kan kostnaden h&#229;llas nere.</p>
+<h4>Bokf&#246;rings&#229;r/r&#228;kenskaps&#229;r</h4>
+<p>F&#246;retagets bokf&#246;ring delas in i olika bokf&#246;rings&#229;r. Det kallas ocks&#229; <a href="/blogg/foretagsredovisning/vad-ar-rakenskapsar" title="Vad &#228;r ett r&#228;kenskaps&#229;r?">r&#228;kenskaps&#229;r</a>. Oftast &#228;r ett bokf&#246;rings&#229;r 12 m&#229;nader, men n&#228;r ett f&#246;retag startar kan det vara kortare eller l&#228;ngre (h&#246;gst 18 m&#229;nader). Ofta &#228;r bokf&#246;rings&#229;ret lika med kalender&#229;ret januari till december, men vissa f&#246;retag, t ex aktiebolag, kan ha ett s&#229; kallat <a href="/blogg/foretagsredovisning/vad-ar-brutet-rakenskapsar" title="Vad &#228;r brutet r&#228;kenskaps&#229;r?">brutet r&#228;kenskaps&#229;r</a> som b&#246;rjar den 1:e i vilken m&#229;nad som helst och avslutas 12 m&#229;nader senare.</p>
+<h4>Vad r&#228;knas som &#8221;st&#246;rre f&#246;retag&#8221; i &#229;rsavslutsreglerna?</h4>
+<p>De allra flesta f&#246;retagen i Sverige r&#228;knas som mindre f&#246;retag. F&#246;r att r&#228;knas som st&#246;rre f&#246;retag ska man uppfylla minst tv&#229; av f&#246;ljande villkor:</p>
+<p><span class="icon-check-mce">&#58907;</span>&#160;Mer &#228;n 50 anst&#228;llda <br /><span class="icon-check-mce">&#58907;</span>&#160;<a href="/blogg/finansiell-analys/vad-ar-nettoomsattning" title="Vad &#228;r nettooms&#228;ttning?">Nettooms&#228;ttning</a> &#246;ver 80 miljoner kronor <br /><span class="icon-check-mce">&#58907;</span>&#160;<a href="/blogg/foretagsredovisning/vad-ar-balansomslutning" title="Vad &#228;r balansomslutning?">Balansomslutning</a> &#246;ver 40 miljoner kronor</p>
+<p>De som <strong>inte</strong> &#228;r st&#246;rre f&#246;retag enligt de h&#228;r reglerna r&#228;knas som mindre f&#246;retag.</p>
+<h2 id="12">Spara r&#228;kenskapsinformationen</h2>
+<p>Bokf&#246;ringslagen och skattereglerna s&#228;ger att r&#228;kenskapsinformation m&#229;ste sparas i 7 &#229;r efter att bokf&#246;rings&#229;ret avslutats. Den ska sparas p&#229; ett tryggt s&#228;tt och vara ordnad s&#229; att det &#228;r l&#228;tt att hitta i den. Spara varje &#229;rs r&#228;kenskapsinformation f&#246;r sig. Den ska enligt huvudregeln sparas i Sverige, men det finns vissa undantagsregler. Reglerna f&#246;r arkivering av r&#228;kenskapsinformation finns i Bokf&#246;ringsn&#228;mndens v&#228;gledning &#8221;Bokf&#246;ring&#8221;.</p>
+<h3>Vad &#228;r r&#228;kenskapsinformation?</h3>
+<p>R&#228;kenskapsinformation &#228;r allt som har betydelse f&#246;r din bokf&#246;ring. Det &#228;r t ex kundfakturor, leverant&#246;rsfakturor, kvitton, besked om in- och utbetalningar och andra verifikationer. Dessutom &#228;r den l&#246;pande bokf&#246;ringen i programmet, kontoplanen, viktiga avtal, &#229;rsbokslut och &#229;rsredovisning r&#228;kenskapsinformation som ska sparas.</p>
+<p>Det finns lag p&#229; att alla bokf&#246;ringsprogram m&#229;ste inneh&#229;lla behandlingshistorik som visar f&#246;r&#228;ndringar som p&#229;verkar bokf&#246;ringen. Behandlingshistoriken &#228;r r&#228;kenskapsinformation som ska sparas. Lagen s&#228;ger ocks&#229; att det ska finnas dokumentation som visar hur bokf&#246;ringsprogrammet fungerar.</p>
+<p>Oftast r&#228;cker det med de hj&#228;lptexter som finns i programmen, men om man har flera olika program i sitt ekonomisystem eller specialbyggda program kan man beh&#246;va g&#246;ra egen dokumentation p&#229; det.</p>
+<p>Eftersom allt som p&#229;verkar bokf&#246;ringen ska sparas kan det finnas annat som ocks&#229; &#228;r r&#228;kenskapsinformation. Exempelvis kan f&#246;ljesedlar vara r&#228;kenskapsinformation om fakturan inte inneh&#229;ller alla uppgifter som m&#229;ste finnas p&#229; en verifikation. Det vanligaste fallet &#228;r att det bara st&#229;r varor enligt f&#246;ljesedel XXX p&#229; fakturan. D&#229; m&#229;ste f&#246;ljesedeln sparas eftersom det &#228;r d&#228;r det framg&#229;r vad det &#228;r som fakturerats, och hur mycket &#228;r uppgifter som m&#229;ste framg&#229; av en verifikation.</p>
+<p>L&#246;nebesked &#228;r ett annat exempel p&#229; r&#228;kenskapsinformation som m&#229;ste sparas, eftersom det &#228;r underlag till bokf&#246;ringen av l&#246;nerna. Ibland &#228;r det sv&#229;rt att avg&#246;ra vad som m&#229;ste sparas. D&#229; &#228;r det b&#228;ttre att spara f&#246;r mycket &#228;n f&#246;r lite.</p>
+
+  <div class="col-col-12">
+    <div class="h-100">
+      <div class=" h-100">
+        <div class="h-100" style="display: flex; flex-direction: column;">
+          <div class="">
+            <div>
+<!--lazyimages-->
+<div class="p-2 p-md-3 bg-color-secondary-10 my-2 border-rounded">
+<h5>&#196;ndringar i Bokf&#246;ringslagen</h5>
+<p>Regeringen har beslutat om att fysiska kvitton inte ska beh&#246;va sparas om de finns digitalt. Det g&#228;ller &#228;ven om en digital bild tagits p&#229; kvittot. F&#246;r&#228;ndringen i lagen b&#246;rjade g&#228;lla fr&#229;n den 1 juli 2024.</p>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<h3>I vilken form ska r&#228;kenskapsinformation sparas?</h3>
+<p>R&#228;kenskapsinformation kan sparas p&#229; papper eller i elektronisk form. Elektronisk form kan t ex vara kundfakturor i faktureringsprogrammet, den l&#246;pande bokf&#246;ringen i ditt bokf&#246;ringsprogram eller PDF-dokument med fakturor. Om du sparar r&#228;kenskapsinformationen i elektronisk form m&#229;ste du kunna skriva ut den i l&#228;sbart skick. Det &#228;r viktigt att t&#228;nka p&#229; om du byter ekonomiprogram.</p>
+<p><em><span class="icon-idea-mce">&#58937;</span>&#160;L&#228;s mer! Detta g&#228;ller f&#246;r att <a href="/blogg/foretagsredovisning/arkivering-bokforing" title="Spara bokf&#246;ring">spara bokf&#246;ring</a></em></p>
+<h2>Sammanfattning</h2>
+<p>Tack f&#246;r att du har tagit del av v&#229;r bokf&#246;ringsguide! Nu hoppas vi att du har nya och fr&#228;scha kunskaper om vad du beh&#246;ver f&#246;r att sk&#246;ta din l&#246;pande bokf&#246;ring, hur ett bokslut g&#229;r till, samt hur du ska hantera dina papper och andra underlag f&#246;r att din bokf&#246;ring ska fungera smidigt i vardagen.</p>
+<p>Du kommer att m&#228;rka att det mesta i bokf&#246;ringen &#228;r st&#228;ndigt &#229;terkommande kontor&#246;relser. Med tiden kommer du automatiskt att veta p&#229; vilket konto olika int&#228;kter och kostnader h&#246;r hemma. Bokf&#246;ringen kommer att bli ett viktigt verktyg som hj&#228;lper dig att n&#229; &#228;nnu b&#228;ttre resultat. Lycka till p&#229; din resa som f&#246;retagare!</p>
+<p><em><span class="icon-idea-mce">&#58937;</span>&#160;Tips! Om du k&#228;nner att det h&#228;r med bokf&#246;ring verkar kr&#229;ngligt rekommenderar vi att du kikar p&#229; <a href="/kontakt/hitta-redovisningsbyra/bokforingshjalp" title="Bokf&#246;ringshj&#228;lp - f&#229; hj&#228;lp med bokf&#246;ring online">bokf&#246;ringshj&#228;lp</a>!</em></p>
+                        </div>
+
+                        <div class="sfl--article--author">
+                            
+    <div class="sfl--author p-2 bg-color-neutral-100 border-rounded">
+        <div class="row align-items-center justify-content-evenly">
+            <div class="col-12 col-md-3 col-xl-4 text-center">
+                <img src="/globalassets/___spiris-bilder/blogg/hero/redaktion_spiris_transparent.png" alt="Redaktionen" class="rounded-circle mb-2 mb-md-0 object-fit-cover" width="180" height="180"  />
+            </div>
+            <div class="col-12 col-md-8 col-xl-7">
+                <p><a href="/blogg/forfattare/redaktionen" title="Redaktionen">Redaktionen</a></p>
+                <p class="small">H&#xE4;r arbetar experter, journalister och skribenter med att ta fram aktuell och intressant information f&#xF6;r dig som ska starta eller driver f&#xF6;retag. &#xA;&#xA;V&#xE5;ra artiklar uppdateras l&#xF6;pande men uppt&#xE4;cker du n&#xE5;got fel &#xE4;r du v&#xE4;lkommen att kontakta oss. </p>
+                <p><a title="Email Redaktionen" href="/cdn-cgi/l/email-protection#f0929c9f9797b0838099829983de8395"><span class="__cf_email__" data-cfemail="2a4846454d4d6a595a4358435904594f">[email&#160;protected]</span></a></p>
+            </div>
+        </div>
+    </div>
+
+                        </div>
+
+                </article>
+
+                
+
+
+
+                
+
+
+
+                <div class="d-block d-lg-none">
+
+
+
+<div class="sfl--content-area"><div class="block  sflarticlepaginatorblock col-12 ">
+
+    <section class="sfl--article-paginator p-2 p-lg-3 border-rounded bg-color-neutral-100" aria-labelledby="paginator-header">
+        <header>
+            <h2 id="paginator-header" class="h4 mt-0" >Relaterade artiklar</h2>
+        </header>
+        <div class="sfl--article-paginator--mobile">
+            <div class="sfl--article-listing " data-animate-mode="manual" >
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/lagar-regler/bokforingsbrott" title="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar">
+                    <figure>
+                        <img alt="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar" class="lazy backgroundLazySize" data-src="/globalassets/img/sfl/md-bokforingsbrott.jpg" src="/imgs/preloader.gif" title="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                Vad innebär egentligen ett bokföringsbrott? Det är fullt förståeligt att du företagare är orolig över den här typen av funderingar. Här får du svar!
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Budgetering (tips)" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/finansiell-analys/koll-pa-siffrorna" title="Budgetering (tips)">
+                    <figure>
+                        <img alt="Budgetering (tips)" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/finansiell-analys/md-foretagsbudget.jpg" src="/imgs/preloader.gif" title="Budgetering (tips)"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Budgetering (tips)
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                Här lär vi dig att bli bättre på budgetering genom att förstå KPIerna.
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Digitala kvitton - 7 f&#xF6;rdelar" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/teknik-sakerhet/digitala-kvitton" title="Digitala kvitton - 7 f&#xF6;rdelar">
+                    <figure>
+                        <img alt="Digitala kvitton - 7 f&#xF6;rdelar" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/teknik--sakerhet/md-digitala-kvitton.jpg" src="/imgs/preloader.gif" title="Digitala kvitton - 7 f&#xF6;rdelar"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Digitala kvitton - 7 f&#xF6;rdelar
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                 Läs om fördelarna med att skaffa digitala kvitton för ditt företag här.
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="L&#xE4;mna in &#xE5;rsredovisning digitalt" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/teknik-sakerhet/digital-inlamning-av-arsredovisning" title="L&#xE4;mna in &#xE5;rsredovisning digitalt">
+                    <figure>
+                        <img alt="L&#xE4;mna in &#xE5;rsredovisning digitalt" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/teknik--sakerhet/md-digital-arsredovisning-online.jpg" src="/imgs/preloader.gif" title="L&#xE4;mna in &#xE5;rsredovisning digitalt"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            L&#xE4;mna in &#xE5;rsredovisning digitalt
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                Digital inlämning av årsredovisningen är ger färre fel och sparar både tid och papper. 
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Baskontoplanen (guide)" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/foretagsredovisning/kontoplan" title="Baskontoplanen (guide)">
+                    <figure>
+                        <img alt="Baskontoplanen (guide)" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/foretagsredovisning/md-kontoplan.jpg" src="/imgs/preloader.gif" title="Baskontoplanen (guide)"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Baskontoplanen (guide)
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                I denna guide hjälper vi dig att förstå logiken i BAS kontoplan, bl a med en enkel minnesregel.
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+            </div>
+        </div>
+    </section>
+
+</div><div class="block  sflimageandtextblock col-12 ">
+
+<div class="sfl--image-and-text-block p-0 border-rounded" data-background-theme-color="secondary-10"  >
+    <div class="row row-eq-height">
+        <div class="col-12 align-self-center sfl--image-and-text-block--bg-image ">
+            <div class="p-2 p-lg-3">
+                    <h2 class="sfl--image-and-text-block--header h5 mt-0" style="color: #000000;">Smartare bokf&#xF6;ring</h2>
+                    <p class="sfl--image-and-text-block--intro" style="color: #000000;">Med hj&#xE4;lp av smart teknik g&#xF6;r vi bokf&#xF6;ring, fakturering och l&#xF6;ner sj&#xE4;lvk&#xF6;rande.</p>
+
+                    <p>
+
+
+
+<a 
+   id=""
+   class="default btn btn-secondary-dark   "
+   href="/ekonomiplattform/bokforing-fakturering"
+   target=""
+   title="Bokf&#xF6;ringsprogram - Prova gratis"
+   rel=""
+   data-testid=""
+   data-trk="blogg-liten-provagratis"
+   data-position=""
+   aria-label=""
+   >
+    Prova gratis
+</a>
+
+</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+        </div>
+
+    </div>
+</div>
+</div><div class="block  sflimageandtextblock col-12 ">
+
+<div class="sfl--image-and-text-block p-0 border-rounded" data-background-theme-color="secondary-10"  >
+    <div class="row row-eq-height">
+        <div class="col-12 align-self-center sfl--image-and-text-block--bg-image ">
+            <div class="p-2 p-lg-3">
+                    <h2 class="sfl--image-and-text-block--header h5 mt-0" style="color: #000000;">F&#xF6;lj v&#xE5;rt nyhetsbrev</h2>
+                    <p class="sfl--image-and-text-block--intro" style="color: #000000;">Tips, inspiration och aktuellt f&#xF6;r dig som f&#xF6;retagare. </p>
+
+                    <p>
+
+
+
+<a  data-type='single-column-page' 
+   id=""
+   class="default btn btn-secondary-dark   "
+   href="/nyhetsbrev/signup-foretag"
+   target=""
+   title="F&#xF6;lj Spiris nyhetsbrev f&#xF6;r f&#xF6;retag"
+   rel=""
+   data-testid=""
+   data-trk="blogg-liten-nyhetsbrev"
+   data-position=""
+   aria-label=""
+   >
+    F&#xF6;lj
+</a>
+
+</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+        </div>
+
+    </div>
+</div>
+</div></div>                    
+
+
+                </div>
+
+            </div>
+
+            <aside class="col-lg-4 col-xxl-3 sfl--article--sidebar d-none d-lg-block" aria-label="Yta för annonser och fler artiklar">
+
+
+
+<div class="sfl--content-area"><div class="block  sflarticlepaginatorblock col-12 ">
+
+    <section class="sfl--article-paginator p-2 p-lg-3 border-rounded bg-color-neutral-100" aria-labelledby="paginator-header">
+        <header>
+            <h2 id="paginator-header" class="h4 mt-0" >Relaterade artiklar</h2>
+        </header>
+        <div class="sfl--article-paginator--mobile">
+            <div class="sfl--article-listing " data-animate-mode="manual" >
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/lagar-regler/bokforingsbrott" title="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar">
+                    <figure>
+                        <img alt="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar" class="lazy backgroundLazySize" data-src="/globalassets/img/sfl/md-bokforingsbrott.jpg" src="/imgs/preloader.gif" title="Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Bokf&#xF6;ringsbrott, vad &#xE4;r det? Ekobrottsmyndigheten svarar
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                Vad innebär egentligen ett bokföringsbrott? Det är fullt förståeligt att du företagare är orolig över den här typen av funderingar. Här får du svar!
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Budgetering (tips)" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/finansiell-analys/koll-pa-siffrorna" title="Budgetering (tips)">
+                    <figure>
+                        <img alt="Budgetering (tips)" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/finansiell-analys/md-foretagsbudget.jpg" src="/imgs/preloader.gif" title="Budgetering (tips)"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Budgetering (tips)
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                Här lär vi dig att bli bättre på budgetering genom att förstå KPIerna.
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Digitala kvitton - 7 f&#xF6;rdelar" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/teknik-sakerhet/digitala-kvitton" title="Digitala kvitton - 7 f&#xF6;rdelar">
+                    <figure>
+                        <img alt="Digitala kvitton - 7 f&#xF6;rdelar" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/teknik--sakerhet/md-digitala-kvitton.jpg" src="/imgs/preloader.gif" title="Digitala kvitton - 7 f&#xF6;rdelar"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Digitala kvitton - 7 f&#xF6;rdelar
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                 Läs om fördelarna med att skaffa digitala kvitton för ditt företag här.
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="L&#xE4;mna in &#xE5;rsredovisning digitalt" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/teknik-sakerhet/digital-inlamning-av-arsredovisning" title="L&#xE4;mna in &#xE5;rsredovisning digitalt">
+                    <figure>
+                        <img alt="L&#xE4;mna in &#xE5;rsredovisning digitalt" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/teknik--sakerhet/md-digital-arsredovisning-online.jpg" src="/imgs/preloader.gif" title="L&#xE4;mna in &#xE5;rsredovisning digitalt"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            L&#xE4;mna in &#xE5;rsredovisning digitalt
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                Digital inlämning av årsredovisningen är ger färre fel och sparar både tid och papper. 
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+        <article class="col-12 sfl--article-listing--article" aria-labelledby="Baskontoplanen (guide)" >
+            <header>
+                <a class="text-decoration-none" href="/blogg/foretagsredovisning/kontoplan" title="Baskontoplanen (guide)">
+                    <figure>
+                        <img alt="Baskontoplanen (guide)" class="lazy backgroundLazySize" data-src="/globalassets/img/___spiris-bilder/blogg/hero/foretagsredovisning/md-kontoplan.jpg" src="/imgs/preloader.gif" title="Baskontoplanen (guide)"></img>
+                    </figure>
+
+                    <div class="textWrapper">
+                        <h3 class="h5">
+                            Baskontoplanen (guide)
+                        </h3>
+
+                            <p class="sfl--article-listing--article--intro">
+                                I denna guide hjälper vi dig att förstå logiken i BAS kontoplan, bl a med en enkel minnesregel.
+                            </p>
+                    </div>
+                </a>
+            </header>
+        </article>
+            </div>
+        </div>
+    </section>
+
+</div><div class="block  sflimageandtextblock col-12 ">
+
+<div class="sfl--image-and-text-block p-0 border-rounded" data-background-theme-color="secondary-10"  >
+    <div class="row row-eq-height">
+        <div class="col-12 align-self-center sfl--image-and-text-block--bg-image ">
+            <div class="p-2 p-lg-3">
+                    <h2 class="sfl--image-and-text-block--header h5 mt-0" style="color: #000000;">Smartare bokf&#xF6;ring</h2>
+                    <p class="sfl--image-and-text-block--intro" style="color: #000000;">Med hj&#xE4;lp av smart teknik g&#xF6;r vi bokf&#xF6;ring, fakturering och l&#xF6;ner sj&#xE4;lvk&#xF6;rande.</p>
+
+                    <p>
+
+
+
+<a 
+   id=""
+   class="default btn btn-secondary-dark   "
+   href="/ekonomiplattform/bokforing-fakturering"
+   target=""
+   title="Bokf&#xF6;ringsprogram - Prova gratis"
+   rel=""
+   data-testid=""
+   data-trk="blogg-liten-provagratis"
+   data-position=""
+   aria-label=""
+   >
+    Prova gratis
+</a>
+
+</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+        </div>
+
+    </div>
+</div>
+</div><div class="block  sflimageandtextblock col-12 ">
+
+<div class="sfl--image-and-text-block p-0 border-rounded" data-background-theme-color="secondary-10"  >
+    <div class="row row-eq-height">
+        <div class="col-12 align-self-center sfl--image-and-text-block--bg-image ">
+            <div class="p-2 p-lg-3">
+                    <h2 class="sfl--image-and-text-block--header h5 mt-0" style="color: #000000;">F&#xF6;lj v&#xE5;rt nyhetsbrev</h2>
+                    <p class="sfl--image-and-text-block--intro" style="color: #000000;">Tips, inspiration och aktuellt f&#xF6;r dig som f&#xF6;retagare. </p>
+
+                    <p>
+
+
+
+<a  data-type='single-column-page' 
+   id=""
+   class="default btn btn-secondary-dark   "
+   href="/nyhetsbrev/signup-foretag"
+   target=""
+   title="F&#xF6;lj Spiris nyhetsbrev f&#xF6;r f&#xF6;retag"
+   rel=""
+   data-testid=""
+   data-trk="blogg-liten-nyhetsbrev"
+   data-position=""
+   aria-label=""
+   >
+    F&#xF6;lj
+</a>
+
+</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+        </div>
+
+    </div>
+</div>
+</div></div>                
+
+
+            </aside>
+        </div>
+    </div>
+</main>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+    
+    var id = "1343588892";
+    var url = "tracking.spiris.se";
+
+    var vs = vs || {};
+    vs.eloqua = vs.eloqua || {};
+    vs.eloqua.EloquaSiteID = vs.eloqua.EloquaSiteID || {};
+    vs.eloqua.EloquaSiteID = id;
+    vs.eloqua.TrackingDomainUrl = url;
+
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', vs.eloqua.EloquaSiteID]);
+    _elqQ.push(['elqUseFirstPartyCookie', vs.eloqua.TrackingDomainUrl]);
+    _elqQ.push(['elqTrackPageViewOptinAll']);
+    _elqQ.push(['elqTrackPageView']);
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//img.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+
+            var s2 = document.createElement('script');
+            s2.type = 'text/javascript';
+            s2.async = true;
+            s2.src = window.location.origin + '/js/vendors/IDBBN/data-look-up-2.1.3.js';
+            var x2 = document.getElementsByTagName('script')[0];
+            x2.parentNode.insertBefore(s2, x2);
+
+            var s3 = document.createElement('script');
+            s3.type = 'text/javascript';
+            s3.async = true;
+            s3.src = '//www.youtube.com/iframe_api';
+            var x3 = document.getElementsByTagName('script')[0];
+            x3.parentNode.insertBefore(s3, x3);
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener('DOMContentLoaded', async_load, false);
+        }
+        else if (window.attachEvent) {
+            window.attachEvent('onload', async_load);
+        }
+    })();
+</script>
+    </div>
+
+    <link rel="stylesheet" href="/Campaign/css/noa-footer.ne6mrryv40.css" />
+
+<footer b-i23ah1ztqo="" class="noa-bg-gradient-footer">
+    <div b-i23ah1ztqo="" class="footer container">
+        <div b-i23ah1ztqo="" class="row">
+            <figure b-i23ah1ztqo="" class="footer--visma noa-my-4">
+                <img class="noa-logo" src="https://assets.spiris.se/campaign/images/logo.eqcs07crjh.svg" width="114.24" height="32" alt="Visma Spiris logotyp">
+            </figure>
+        </div>
+        <div b-i23ah1ztqo="" class="d-lg-none row-md accordion visible-xs-accordion visible-sm-accordion border-bottom border-dark text-dark" id="accordionMobileFooter">
+            <div b-i23ah1ztqo="" class="col-12 col-md accordion-item">
+                <h5 b-i23ah1ztqo="" class="accordion-header noa-m-0 border-top border-dark">
+                    <button b-i23ah1ztqo="" class="noa-px-0 noa-py-1 noa-menu-md accordion-button collapsed text-start noa-py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColumnOne" aria-expanded="false" aria-controls="collapseColumnOne">
+                        Upptäck
+                    </button>
+                </h5>
+                <div b-i23ah1ztqo="" id="collapseColumnOne" class="accordion-collapse collapse" data-bs-parent="#accordionMobileFooter">
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/priser" title="Priser och lösningar">Priser</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/prova-gratis" title="Prova program för bokföring och fakturering gratis">Prova gratis</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/boka-radgivning" title="Boka rådgivning">Boka rådgivning</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div b-i23ah1ztqo="" class="col-12 col-md accordion-item">
+                <h5 b-i23ah1ztqo="" class="noa-menu-md accordion-header noa-m-0 border-top border-dark">
+                    <button b-i23ah1ztqo="" class="noa-px-0 noa-py-1 noa-menu-md accordion-button collapsed text-start noa-py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColumnTwo" aria-expanded="false" aria-controls="collapseColumnTwo">
+                        För dig som är
+                    </button>
+                </h5>
+                <div b-i23ah1ztqo="" id="collapseColumnTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMobileFooter">
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/redovisningsbyra" title="Redovisningsprogram">Redovisningsbyrå</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/forening" title="Bokföringsprogram för förening">Förening</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/skola" title="Våra erbjudanden för skolor">Skola</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div b-i23ah1ztqo="" class="col-12 col-md accordion-item">
+                <h5 b-i23ah1ztqo="" class="noa-menu-md accordion-header noa-m-0 border-top  border-dark">
+                    <button b-i23ah1ztqo="" class="noa-px-0 noa-py-1  noa-menu-md accordion-button collapsed text-start noa-py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColumnThree" aria-expanded="false" aria-controls="collapseColumnThree">
+                        Spiris
+                    </button>
+                </h5>
+                <div b-i23ah1ztqo="" id="collapseColumnThree" class="accordion-collapse collapse" data-bs-parent="#accordionMobileFooter">
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss" title="Om Spiris">Om Spiris</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/lediga-jobb" title="Lediga jobb på Spiris">Lediga jobb</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/hallbarhet" title="Hållbarhet på Spiris">Hållbarhet</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/arbetsplats-i-varldsklass" title="Arbetsplats i världsklass">En arbetsplats i världsklass</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/samhallsengagemang" title="Samhällsengagemang">Samhällsengagemang</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/nyhetsrum" title="Senaste nytt från Spiris">Nyhetsrum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div b-i23ah1ztqo="" class="col-12 col-md accordion-item">
+                <h5 b-i23ah1ztqo="" class="noa-menu-md accordion-header noa-m-0 border-top  border-dark">
+                    <button b-i23ah1ztqo="" class="noa-px-0 noa-py-1 noa-menu-md accordion-button collapsed text-start noa-py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColumnFour" aria-expanded="false" aria-controls="collapseColumnFour">
+                        Support
+                    </button>
+                </h5>
+                <div b-i23ah1ztqo="" id="collapseColumnFour" class="accordion-collapse collapse" data-bs-parent="#accordionMobileFooter">
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/support/ladda-ner-och-uppdatera" title="Ladda ner och uppdatera program">Ladda ner och uppdatera</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/support/ladda-ner-teamviewer" title="Ladda ner TeamViewer och dela din skärm">Dela din skärm</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/support/driftinformation" title="Spiris Driftinformation">Driftinformation</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/villkor/abonnemang-fakturafragor" title="Abonnemang och fakturafrågor">Abonnemang &amp; fakturafrågor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div b-i23ah1ztqo="" class="d-none d-lg-block">
+            <div b-i23ah1ztqo="" class="row">
+                <div b-i23ah1ztqo="" class="col-6 col-md">
+                    <h5 b-i23ah1ztqo="" class="noa-menu-md">
+                        Upptäck
+                    </h5>
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/priser" title="Priser och lösningar">Priser</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/prova-gratis" title="Prova program för bokföring och fakturering gratis">Prova gratis</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/boka-radgivning" title="Boka rådgivning">Boka rådgivning</a></li>
+                    </ul>
+                </div>
+                <div b-i23ah1ztqo="" class="col-6 col-md">
+                    <h5 b-i23ah1ztqo="" class="noa-menu-md">
+                        För dig som är
+                    </h5>
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/redovisningsbyra" title="Redovisningsprogram">Redovisningsbyrå</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/forening" title="Bokföringsprogram för förening">Förening</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/skola" title="Våra erbjudanden för skolor">Skola</a></li>
+                    </ul>
+                </div>
+                <div b-i23ah1ztqo="" class="col-6 col-md">
+                    <h5 b-i23ah1ztqo="" class="noa-menu-md">
+                        Spiris
+                    </h5>
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss" title="Om Spiris">Om Spiris</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/lediga-jobb" title="Lediga jobb på Spiris">Lediga jobb</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/hallbarhet" title="Hållbarhet på Spiris">Hållbarhet</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/arbetsplats-i-varldsklass" title="Arbetsplats i världsklass">En arbetsplats i världsklass</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/om-oss/samhallsengagemang" title="Samhällsengagemang">Samhällsengagemang</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/nyhetsrum" title="Senaste nytt från Spiris">Nyhetsrum</a></li>
+                    </ul>
+                </div>
+                <div b-i23ah1ztqo="" class="col-6 col-md">
+                    <h5 b-i23ah1ztqo="" class="noa-menu-md">
+                        Support
+                    </h5>
+                    <ul b-i23ah1ztqo="" class="list-unstyled text-small">
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/support/ladda-ner-och-uppdatera" title="Ladda ner och uppdatera program">Ladda ner och uppdatera</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/support/ladda-ner-teamviewer" title="Ladda ner TeamViewer och dela din skärm">Dela din skärm</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/support/driftinformation" title="Spiris Driftinformation">Driftinformation</a></li>
+                        <li b-i23ah1ztqo="" class="noa-mb-3"><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/villkor/abonnemang-fakturafragor" title="Abonnemang och fakturafrågor">Abonnemang &amp; fakturafrågor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div b-i23ah1ztqo="" class="legal">
+            <ul b-i23ah1ztqo="" class="list-unstyled legal-links-container">
+                <li b-i23ah1ztqo=""><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/datasakerhet/dataskydd" title="Dataskydd">Dataskydd</a></li>
+                <li b-i23ah1ztqo=""><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/datasakerhet/integritetspolicy" title="Spiris Integritetspolicy">Integritetspolicy</a></li>
+                <li b-i23ah1ztqo=""><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/villkor" title="Villkor vid köp av ekonomiplattform">Villkor</a></li>
+                <li b-i23ah1ztqo=""><a b-i23ah1ztqo="" class="noa-body-md text-decoration-none text-dark" href="/datasakerhet/cookies" title="Information om cookies på Spiris webbplats">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="/Campaign/js/site.ayrpswdwb6.js"></script>
+
+    <script defer="defer" src="/Util/Find/epi-util/find.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){if(typeof FindApi === 'function'){var api = new FindApi();api.setApplicationUrl('/');api.setServiceApiBaseUrl('/find_v2/');api.processEventFromCurrentUri();api.bindWindowEvents();api.bindAClickEvent();api.sendBufferedEvents();}})
+</script>
+
+    
+    
+
+        <script>
+    function SetScrollUp() {
+        $.scrollUp({
+            scrollImg: true,
+            zIndex: 10,
+        });
+
+        $('#scrollUp').attr('aria-label', 'Gå till toppen');
+    }
+    var waitForJQuerySetScrollup = setInterval(function () {
+        if (window.jQuery && $().scrollUp) {
+            SetScrollUp();
+            clearInterval(waitForJQuerySetScrollup);
+        }
+    }, 100);
+</script>
+
+
+</body>
+</html>

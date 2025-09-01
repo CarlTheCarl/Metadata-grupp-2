@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata-sökmotor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Metadata Sökmotor</h1>
+    <div class="container">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="🔍 Sök..." required> 
+            <button type="submit" id="searchBtn">Sök</button>
+        </form>
+
+        <div class="filter-wrapper">
+            <button type="button" id="filterBtn">Filtrera</button>
+            <div class="category-wrapper">
+                <div class="category-scroll" id="categoryScroll">
+                    <span class="category">Allt</span>
+                    <span class="category">Bilder</span>
+                    <span class="category">Videor</span>
+                    <span class="category">Korta videor</span>
+                    <span class="category">Nyheter</span>
+                    <span class="category">Böcker</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
