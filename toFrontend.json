@@ -1,0 +1,43 @@
+{
+    "categories": {
+        "Movies": [
+            {
+                "ID": 1,
+                "TITLE": "heyokoveyko",
+                "LENGTH": 653,
+                "other": "xyz"
+            },
+            {
+                "ID": 2,
+                "TITLE": "inteheykoveyko",
+                "LENGTH": 234,
+                "rating": 3.5,
+                "other": "ert"
+            }
+        ],
+        "Books": [
+            {
+                "ID" : 1,
+                "TITLE" : 0,
+                "author_first_name": 0,
+                "author_last_name": 0,
+                "isbn": 0,
+                "category": 0,
+                "number_of_pages": 0,
+                "packaging": 0,
+                "revision_number": 0,
+                "number_of_lends": 0,
+                "type": 0,
+                "release_date": 0
+            }
+        ],
+        "Pictures": [
+            {
+                "ID": 1,
+                "TITLE": "heyokoveyko",
+                "file_size": 653,
+                "other": "xyz"
+            }
+        ]
+    }
+}
