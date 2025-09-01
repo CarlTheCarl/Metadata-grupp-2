@@ -1,3 +1,9 @@
-node_modules
+# Login Information to Database
 connection.json
 credentials.json
+
+node_modules/
+retrieval/yolo/yolov8_onnx_nodejs-main/
+retrieval/get_pdf/pdfs/
+retrieval/get_images/images/
+retrieval/get_pdf/small_subset_pdfs
