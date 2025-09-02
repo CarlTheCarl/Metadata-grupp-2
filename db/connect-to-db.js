@@ -26,7 +26,7 @@ const db = await mysql.createConnection({
 
 // Creates a listening routes for incoming searcher: /search?term=[search term]
 app.get('/search', async(req, res) => {
-  const searchTerm = req.query.term
+  const searchTerm = req.query.term //the .term part determins the url after "search?"
 
   if (!searchTerm) {
     return res.status(400).json({ error: 'Missing search term' });
