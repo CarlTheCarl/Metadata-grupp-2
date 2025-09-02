@@ -1,4 +1,4 @@
-import { search, safeSearch } from 'duckduckgo-scrape';
+import { search, safeSearch } from 'duck-duck-scrape';
 // const duckduckgoSearch = require("duckduckgo-search");
 import axios from 'axios';
 import fs from 'fs/promises';
