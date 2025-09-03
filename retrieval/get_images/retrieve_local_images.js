@@ -3,9 +3,9 @@ import path from 'path';
 import { createInterface } from 'readline';
 import { createWriteStream, existsSync, mkdirSync } from 'fs';
 import sizeOf from 'image-size';
-import { ExifReader } from 'exifr';
-import exif from 'exif-reader';
-import exif from 'exif-reader';
+import pkg from 'exifr';
+
+const { ExifReader } = pkg;
 
 // --- Logging Setup ---
 const LOG_DIR = 'logs';

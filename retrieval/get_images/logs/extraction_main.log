@@ -1,0 +1,6 @@
+[2025-09-03T12:38:56.908Z] [INFO] image_metadata Starting scan in directory: testpics
+[2025-09-03T12:38:56.909Z] [INFO] image_metadata getImageFiles. Successfully retrieving testpics
+[2025-09-03T12:38:56.910Z] [INFO] image_metadata Found 2 image files.
+[2025-09-03T12:38:56.910Z] [ERROR] image_metadata Error processing file testpics/no_metadata_testpic_dogs.jpeg: exif is not defined
+[2025-09-03T12:38:56.911Z] [ERROR] image_metadata Error processing file testpics/contains_metadata_testpic_peephole.jpg: exif is not defined
+[2025-09-03T12:38:56.912Z] [INFO] image_metadata CSV file saved as image_metadata.csv
