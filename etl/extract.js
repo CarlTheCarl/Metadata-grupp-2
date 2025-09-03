@@ -14,7 +14,7 @@ export async function extract(filePath) {
 
         return {
             filename,
-            category: 'pdf',
+            // category: 'pdf',
             content: jsonContent
         };
     } catch (error) {
