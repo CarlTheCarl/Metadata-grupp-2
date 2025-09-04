@@ -18,3 +18,4 @@ package-lock.json
 
 # This is output from retrieve_pdf.js for easier copy into LLM
 retrieval/get_pdf/output.txt
+etl/output.txt
