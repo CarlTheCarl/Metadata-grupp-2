@@ -1,6 +1,5 @@
 import { readFile } from 'node:fs/promises';
 import mysql from 'mysql2/promise';
-import { readFile } from 'node:fs/promises';
 import { parse } from 'csv-parse/sync'; // Install with: npm install csv-parse
 
 // Load MySQL credentials from file
@@ -14,16 +13,32 @@ async function loadCredentials() {
     }
 }
 
+// Retrieve urls matching each filename
+// TODO: Move to extract.js
+async function getUrlFromCsv(csvFilePath, pdfFilename) {
+    try {
+        const csvContent = await readFile(csvFilePath, 'utf-8');
+        const records = parse(csvContent, { columns: true });
+        const record = records.find(r => r.filename === pdfFilename);
+        return record ? record.url : null;
+    } catch (error) {
+        console.error('Error reading CSV:', error);
+        return null;
+    }
+}
+
+// Clean and extract first 250 words or less from pdf_text
+// TODO: Move to extract.js
+function getFirst250Words(text) {
+    const cleanedText = text.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
+    const words = cleanedText.split(' ');
+    return words.slice(0, 250).join(' ');
+}
+
 // Test the MySQL connection
 export async function testConnection() {
     // Load the credentials through function call
     const credentials = await loadCredentials();
-    // console.log(
-    //     credentials.host,
-    //     credentials.user,
-    //     credentials.password,
-    //     credentials.database
-    // );
 
     // Initialise connection variable
     let connection;
