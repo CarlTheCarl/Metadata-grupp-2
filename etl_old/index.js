@@ -1,4 +1,4 @@
-import 'dotenv/config';
+// import 'dotenv/config';
 import { extractAll } from './extract.js';
 import { transformAll } from './transform.js';
 import { connect, insertMany } from './load.js';

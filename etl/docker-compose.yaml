@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_grupp2
+    environment:
+      MYSQL_DATABASE: grupp2-metadata
+      MYSQL_USER: mysqluser
+      MYSQL_PASSWORD: mysqlpssword
+      MYSQL_ROOT_PASSWORD: rootpassword  # Always set a root password for security
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql  # Persist data between container restarts
+    restart: unless-stopped  # Automatically restart unless explicitly stopped
+
+volumes:
+  mysql_data:
