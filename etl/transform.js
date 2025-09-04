@@ -63,7 +63,7 @@ export async function transform(extractedData, csvFilePath) {
             filename: pdf.filename,
             url: url,
             filesize: pdf.size,
-            num_pages: numpages;
+            num_pages: numpages,
             first_part_of_text: firstPartOfText,
             pdf_created: pdfCreated,
             authors: authors,

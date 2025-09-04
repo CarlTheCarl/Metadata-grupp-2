@@ -106,10 +106,9 @@ process.on('SIGINT', async () => {
     process.exit();
 });
 
-// Example usage
-(async () => {
-    const result = await testConnection();
-    console.log(result);
-    // Uncomment to test the select query
-    await testSelect();
-})();
+// // Uncomment to include testing
+// (async () => {
+//     const result = await testConnection();
+//     console.log(result);
+//     await testSelect();
+// })();
