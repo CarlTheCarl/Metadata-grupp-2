@@ -1,0 +1,9 @@
+This is how i need the appendix to look like later on:
+
+in your example it is .pdf but in the final code it has to be like a refill station for metadata of one of several file type groups:
+
+documents: pdf, xls, xlsx, doc, docx, txt, md (please add to this list)
+
+pictures: [a list of 5 - 10 picture endings]
+
+sound files: [a list of 2-6 sound file endings] # I recognise having difficulties finding sound files through a search engine. Do you have any other ideas?
