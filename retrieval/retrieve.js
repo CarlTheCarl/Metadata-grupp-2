@@ -29,8 +29,12 @@ async function saveToCsv(newUrls, filename) {
         append: true,
     });
 
+    // For comparison a list of exisiting URLs is read
     const existingUrls = readExistingUrls(filename);
-    const uniqueUrls = [...new Set(newUrls)].filter(url => !existingUrls.has(url));
+    // Removes duplicates from newUrls and converts the Set back to an array:
+    const uniqueUrls = [...new Set(newUrls)]
+    // Further filters the array to only include URLs that are not already in existingUrls:
+        .filter(url => !existingUrls.has(url));
 
     if (uniqueUrls.length > 0) {
         const records = uniqueUrls.map(url => ({ url }));
