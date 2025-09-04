@@ -1,12 +1,12 @@
 import { readFile } from 'node:fs/promises';
 import mysql from 'mysql2/promise';
 
+// Load MySQL credentials from file
 async function loadCredentials() {
     try {
         // for local development:
         const creds = await readFile('./local_credentials.json', 'utf-8');
-
-
+        // // for production
         // const creds = await readFile('../connection.json', 'utf-8');
         return JSON.parse(creds);
     } catch (e) {
@@ -15,45 +15,47 @@ async function loadCredentials() {
     }
 }
 
+// Create a connection pool (reused for all queries)
+const pool = mysql.createPool(await loadCredentials());
+
+// Test the MySQL connection using the pool
 export async function testConnection() {
-    const credentials = await loadCredentials();
-    console.log(credentials.host, credentials.user, credentials.password, credentials.database)
     let connection;
     try {
-        console.log("Attempting connect to MySQL...")
-        connection = await mysql.createConnection({
-            host: credentials.host,
-            user: credentials.user,
-            password: credentials.password,
-            database: credentials.database,
-        });
-
-
-
+        console.log("Attempting to connect to MySQL...");
+        connection = await pool.getConnection();
         return "connection ok";
     } catch (e) {
         return `The following error occurred: ${e}`;
     } finally {
-        if (connection) await connection.end();
+        if (connection) connection.release(); // Release back to pool
     }
 }
 
+// Test-select: Query and output results from `test-names`
+export async function testSelect() {
+    let connection;
+    try {
+        connection = await pool.getConnection();
+        const query = "SELECT * FROM `test-names`";
+        const [rows] = await connection.query(query);
+        console.log("Query results from `test-names`:");
+        console.table(rows); // Pretty-print the results
+    } catch (error) {
+        console.error('Error in testSelect:', error);
+        throw error;
+    } finally {
+        if (connection) connection.release(); // Release back to pool
+    }
+}
+
+// Insert data into the appropriate table based on category
 export async function load(transformedData, category) {
     const { content } = transformedData;
-    const credentials = await loadCredentials();
     let connection;
-
     try {
-        connection = await mysql.createConnection({
-            host: credentials.host,
-            port: credentials.port,
-            user: credentials.user,
-            password: credentials.password,
-            database: credentials.database,
-        });
-
+        connection = await pool.getConnection();
         const tableName = `${category}s`;
-
         // Create table if not exists
         await connection.execute(`
             CREATE TABLE IF NOT EXISTS \`${tableName}\` (
@@ -69,7 +71,6 @@ export async function load(transformedData, category) {
                 post_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
             )
         `);
-
         // Insert each PDF's data
         for (const pdf of content) {
             const query = `
@@ -87,7 +88,6 @@ export async function load(transformedData, category) {
                 pdf.authors,
                 JSON.stringify(pdf.rest_of_metadata)
             ];
-
             await connection.execute(query, values);
             console.log(`Inserted ${pdf.filename} into ${tableName} table.`);
         }
@@ -95,8 +95,21 @@ export async function load(transformedData, category) {
         console.error('Error in load:', error);
         throw error;
     } finally {
-        if (connection) await connection.end();
+        if (connection) connection.release(); // Release back to pool
     }
 }
 
-// testConnection();
+// Graceful shutdown on SIGINT (CTRL+C)
+process.on('SIGINT', async () => {
+    await pool.end();
+    console.log('\nPool closed. Exiting.');
+    process.exit();
+});
+
+// Example usage
+(async () => {
+    const result = await testConnection();
+    console.log(result);
+    // Uncomment to test the select query
+    await testSelect();
+})();
