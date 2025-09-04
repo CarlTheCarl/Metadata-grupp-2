@@ -5,7 +5,7 @@
     import pdfParse from "pdf-parse/lib/pdf-parse.js"
 
     // ---- directory constants ----
-    const DIRECTORY = "small_subset_pdfs/";
+    const DIRECTORY = "./pdfs/";
 
     // Save full path
     const files = await fs.readdirSync(DIRECTORY)
