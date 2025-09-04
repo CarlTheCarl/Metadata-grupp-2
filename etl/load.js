@@ -4,10 +4,7 @@ import mysql from 'mysql2/promise';
 // Load MySQL credentials from file
 async function loadCredentials() {
     try {
-        // for local development:
         const creds = await readFile('./local_credentials.json', 'utf-8');
-        // // for production
-        // const creds = await readFile('../connection.json', 'utf-8');
         return JSON.parse(creds);
     } catch (e) {
         console.error(`Something went wrong: \n${e}`);
@@ -15,11 +12,25 @@ async function loadCredentials() {
     }
 }
 
-// Create a connection pool (reused for all queries)
-const pool = mysql.createPool(await loadCredentials());
+// Main function to run all operations and close the pool
+async function main() {
+    const pool = mysql.createPool(await loadCredentials());
+    try {
+        const result = await testConnection(pool);
+        console.log(result);
+        // Uncomment to test the select query
+        // await testSelect(pool);
+        // Example: await load(transformedData, 'pdf', pool);
+    } catch (error) {
+        console.error('Fatal error:', error);
+    } finally {
+        await pool.end();
+        console.log('Pool closed.');
+    }
+}
 
 // Test the MySQL connection using the pool
-export async function testConnection() {
+async function testConnection(pool) {
     let connection;
     try {
         console.log("Attempting to connect to MySQL...");
@@ -28,35 +39,34 @@ export async function testConnection() {
     } catch (e) {
         return `The following error occurred: ${e}`;
     } finally {
-        if (connection) connection.release(); // Release back to pool
+        if (connection) connection.release();
     }
 }
 
 // Test-select: Query and output results from `test-names`
-export async function testSelect() {
+async function testSelect(pool) {
     let connection;
     try {
         connection = await pool.getConnection();
         const query = "SELECT * FROM `test-names`";
         const [rows] = await connection.query(query);
         console.log("Query results from `test-names`:");
-        console.table(rows); // Pretty-print the results
+        console.table(rows);
     } catch (error) {
         console.error('Error in testSelect:', error);
         throw error;
     } finally {
-        if (connection) connection.release(); // Release back to pool
+        if (connection) connection.release();
     }
 }
 
 // Insert data into the appropriate table based on category
-export async function load(transformedData, category) {
+export async function load(transformedData, category, pool) {
     const { content } = transformedData;
     let connection;
     try {
         connection = await pool.getConnection();
         const tableName = `${category}s`;
-        // Create table if not exists
         await connection.execute(`
             CREATE TABLE IF NOT EXISTS \`${tableName}\` (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -71,7 +81,6 @@ export async function load(transformedData, category) {
                 post_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
             )
         `);
-        // Insert each PDF's data
         for (const pdf of content) {
             const query = `
                 INSERT INTO \`${tableName}\`
@@ -95,20 +104,9 @@ export async function load(transformedData, category) {
         console.error('Error in load:', error);
         throw error;
     } finally {
-        if (connection) connection.release(); // Release back to pool
+        if (connection) connection.release();
     }
 }
 
-// Graceful shutdown on SIGINT (CTRL+C)
-process.on('SIGINT', async () => {
-    await pool.end();
-    console.log('\nPool closed. Exiting.');
-    process.exit();
-});
-
-// // Uncomment to include testing
-// (async () => {
-//     const result = await testConnection();
-//     console.log(result);
-//     await testSelect();
-// })();
+// Run the main function
+main().catch(console.error);
