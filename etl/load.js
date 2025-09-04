@@ -5,10 +5,14 @@ import mysql from 'mysql2/promise';
  * Loads MySQL credentials from a JSON file.
  * @returns {Promise<Object>} Credentials object.
  */
-async function loadCredentials() {
+export async function loadCredentials() {
     try {
-        // Load credentials from local file
+        // Load credentials from local file, uncomment but choose only one of these:
         const creds = await readFile('./local_credentials.json', 'utf-8');
+
+        // Load Credentials for production server
+        // const creds = await readFile('../connection.json', 'utf-8');
+
         return JSON.parse(creds);
     } catch (e) {
         console.error(`Failed to load credentials: \n${e}`);
@@ -85,6 +89,17 @@ export async function load(transformedData, category, pool) {
 
         // Insert each PDF's data
         for (const pdf of content) {
+            // check if the filename already exists in db
+            const [existing] = await connection.execute(
+                'SELECT id FROM pdfs WHERE filename = ?',
+                [pdf.filename]
+            );
+            if (existing.length > 0) {
+                console.log(`Skipping ${pdf.filename}, alreade exists in table ${tableName}`);
+                continue;
+            }
+
+            // Inser if not exists
             const query = `
                 INSERT INTO \`${tableName}\`
                 (filename, url, filesize, num_pages, first_part_of_text, pdf_created, authors, rest_of_metadata)
@@ -98,7 +113,7 @@ export async function load(transformedData, category, pool) {
                 pdf.first_part_of_text || null,
                 pdf.pdf_created || null,
                 pdf.authors || null,
-                JSON.stringify(pdf.rest_of_metadata) || null
+                pdf.all_metadata || null
             ];
             await connection.execute(query, values);
             console.log(`Inserted ${pdf.filename} into ${tableName} table.`);
