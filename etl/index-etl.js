@@ -1,12 +1,12 @@
 import { extract } from './extract.js';
 import { transform } from './transform.js';
-import { load, testConnection, testSelect } from './load.js';
+import { load, testConnection, testSelect, loadCredentials } from './load.js';
 import mysql from 'mysql2/promise';
 import { readFile } from 'node:fs/promises';
 
 // File paths and metadata
 const datafile_directory = 'datafiles/';
-const metadata_json_filename = 'pdf_metadata_1756802965122.json';
+const metadata_json_filename = 'pdf_metadata_1757011672019.json';
 const metadata_filePath = datafile_directory + metadata_json_filename;
 const metadata_first_ = metadata_json_filename.indexOf("_");
 const category = metadata_json_filename.substring(0, metadata_first_);
@@ -18,7 +18,9 @@ const url_file_list = datafile_directory + "pdfs.csv";
  */
 async function runETL() {
     // Load credentials and create a connection pool
-    const creds = JSON.parse(await readFile('./local_credentials.json', 'utf-8'));
+    // const creds = JSON.parse(await readFile('./local_credentials.json', 'utf-8'));
+    const creds = await loadCredentials();
+    // console.log(creds);
     const pool = mysql.createPool(creds);
 
     try {
@@ -27,7 +29,12 @@ async function runETL() {
         console.log(result);
 
         // Optional: Test a SELECT query
-        await testSelect(pool);
+        try {
+            await testSelect(pool);
+            console.log("testSelect Succeeded!")
+        } catch(testSelectError) {
+            console.log("Not critical error but test 'select * from `test-names`' failed", testSelectError)
+        } 
 
         // Stage 1: Extract metadata from JSON file
         const extractedData = await extract(metadata_filePath);

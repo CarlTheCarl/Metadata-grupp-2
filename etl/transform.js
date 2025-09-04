@@ -11,7 +11,9 @@ function getFirst250Words(text) {
 
 // Helper function to get URL from CSV records
 function getUrlFromRecords(records, pdfFilename) {
-    const record = records.find(r => r.filename === pdfFilename);
+    console.log(`All CSV records: `, records); //log all the records for debugging
+    const record = records.find(r => r.filename.trim().toLowerCase() === pdfFilename.trim().toLowerCase());
+    console.log(`Matching record for ${pdfFilename} would be ${record}`)
     return record ? record.url : null;
 }
 
@@ -54,10 +56,7 @@ export async function transform(extractedData, csvFilePath) {
         const authors = pdf.metadata.pdf_info.Author;
 
         // Extract number of pages
-        const numpages = pdf.metadata.pdf_info.numpages;
-
-        // Prepare rest_of_metadata (exclude extracted fields)
-        const { pdf_info, pdf_text, ...restOfMetadata } = pdf.metadata;
+        const numpages = pdf.metadata.numpages;
 
         return {
             filename: pdf.filename,
@@ -67,7 +66,7 @@ export async function transform(extractedData, csvFilePath) {
             first_part_of_text: firstPartOfText,
             pdf_created: pdfCreated,
             authors: authors,
-            rest_of_metadata: restOfMetadata,
+            all_metadata: JSON.stringify(pdf),
         };
     });
 
