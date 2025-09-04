@@ -1,5 +1,6 @@
 import { extract } from './extract.js';
 import { transform } from './transform.js';
+import { load  } from './load.js';
 
 // Replace with your file path
 const CSV_DIRECTORY = 'csv/'; // Relative to this file location
@@ -16,12 +17,13 @@ async function runETL() {
     try {
         // Stage 1: Extract
         const extractedData = await extract(filePath);
+        // console.log(extractedData);
 
         // Stage 2: Transform
-        transform(extractedData);
+        // transform(extractedData);
 
         // Stage 3: Load
-        
+        const loadData = await load(extractedData, category)
 
         console.log('ETL process completed!');
     } catch (error) {
@@ -29,4 +31,4 @@ async function runETL() {
     }
 }
 
-// runETL();
+runETL();
