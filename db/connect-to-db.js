@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 // Reads the credentials JSON file
-const jsonText = await readFile('../connection.json', 'utf-8');
+const jsonText = await readFile('./connection.json', 'utf-8');
 const data = JSON.parse(jsonText);
 
 // Logs the the ip and name of the connected MySQL server
@@ -32,18 +32,26 @@ app.get('/search', async(req, res) => {
     return res.status(400).json({ error: 'Missing search term' });
   }
 
-  const sql = `
-  SELECT * FROM \`test-hbg-grupp2\`
-  WHERE firstName LIKE ?
-  OR lastName LIKE ?
-  OR email LIKE ?
+    const sql = `
+    (SELECT id, firstName AS field1, lastName AS field2, email AS field3, 'test-hbg-grupp2' AS source
+     FROM \`test-hbg-grupp2\`
+     WHERE firstName LIKE ? OR lastName LIKE ? OR email LIKE ?)
+
+    UNION ALL
+
+    (SELECT id, filename AS field1, first_part_of_text AS field2, NULL AS field3, 'pdfs' AS source
+     FROM pdfs
+     WHERE filename LIKE ? OR first_part_of_text LIKE ?)
   `;
 
   //Alows the search to be fuzzy instead of strict
   const param = `%${searchTerm}%`; 
 
  try {
-    const [results] = await db.execute(sql, [param, param, param]);
+    const [results] = await db.execute(sql, [
+  param, param, param, // for test-hbg-grupp2
+  param, param         // for pdfs
+]);
     res.json(results);
   } catch (err) {
     console.error('Query failed:', err);
