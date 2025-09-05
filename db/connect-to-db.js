@@ -60,7 +60,7 @@ app.get('/search', async(req, res) => {
     `;
     searchParams = [param, param, param];
   }
-  else if (source == "pfd") {
+  else if (source == "pdf") {
       sql = `
       SELECT *
       FROM pdfs
