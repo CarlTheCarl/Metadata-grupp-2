@@ -7,8 +7,8 @@ const searchQuery = "hej";
 //   safeSearch: SafeSearchType.OFF
 // });
 
-const searchResults = await searchImages(searchQuery
-    // SafeSearchType.OFF
+const searchResults = await search(searchQuery,
+    SafeSearchType.OFF
 );
 
 console.log(searchResults);
