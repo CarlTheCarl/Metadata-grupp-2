@@ -1,19 +1,19 @@
 // Import the database driver
 import mysql from 'mysql2/promise';
 import { readFile } from 'fs/promises';
-//import promptSync from 'prompt-sync';
 import express from 'express'
 
+// Initilize Express app with port 3000
 const app = express();
 const port = 3000;
 
-//const prompt = promptSync();
-
-// Read the JSON file manually
-const jsonText = await readFile('../connection.json', 'utf-8');
+// Reads the credentials JSON file
+const jsonText = await readFile('./connection.json', 'utf-8');
 const data = JSON.parse(jsonText);
 
-console.log(`hostname ${data.host}`); // output 'testing'
+// Logs the the ip and name of the connected MySQL server
+console.log(`MySQL Server: ${data.host}`); // output 'testing'
+console.log(`Database: ${data.database} `)
 
 // Create a connection 'db' to the database
 const db = await mysql.createConnection({
@@ -24,23 +24,34 @@ const db = await mysql.createConnection({
     database: data.database
 });
 
+// Creates a listening routes for incoming searcher: /search?term=[search term]
 app.get('/search', async(req, res) => {
-  const searchTerm = req.query.term
+  const searchTerm = req.query.term //the .term part determins the url after "search?"
 
   if (!searchTerm) {
     return res.status(400).json({ error: 'Missing search term' });
   }
 
-  const sql = `
-  SELECT * FROM \`test-hbg-grupp2\`
-  WHERE firstName LIKE ?
-  OR lastName LIKE ?
-  OR email LIKE ?
+    const sql = `
+    (SELECT id, firstName AS field1, lastName AS field2, email AS field3, 'test-hbg-grupp2' AS source
+     FROM \`test-hbg-grupp2\`
+     WHERE firstName LIKE ? OR lastName LIKE ? OR email LIKE ?)
+
+    UNION ALL
+
+    (SELECT id, filename AS field1, first_part_of_text AS field2, NULL AS field3, 'pdfs' AS source
+     FROM pdfs
+     WHERE filename LIKE ? OR first_part_of_text LIKE ?)
   `;
 
-  const param = `%${searchTerm}%`;
+  //Alows the search to be fuzzy instead of strict
+  const param = `%${searchTerm}%`; 
+
  try {
-    const [results] = await db.execute(sql, [param, param, param]);
+    const [results] = await db.execute(sql, [
+  param, param, param, // for test-hbg-grupp2
+  param, param         // for pdfs
+]);
     res.json(results);
   } catch (err) {
     console.error('Query failed:', err);
@@ -52,31 +63,3 @@ app.get('/search', async(req, res) => {
 app.listen(port, 'localhost', () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
-
-// // A small function for a query
-// async function query(sql){
-//    let result = await db.execute(sql);
-//    return result[0];
-// }
-
-// //const searchTerm = prompt("enter search term: ")
-
-// const sql = `
-//   SELECT * FROM \`test-hbg-grupp2\`
-//   WHERE firstName LIKE ?
-//      OR lastName LIKE ?
-//      OR email LIKE ?
-// `;
-
-// const param = `%${searchTerm}%`;
-
-// const [allPersons] = await db.execute(sql, [param, param, param]);
-// console.log('allPersons', allPersons);
-
-//  db.end(err => {
-//     if (err) {
-//       console.error('Error closing the connection:', err);
-//     } else {
-//       console.log('Connection closed.');
-//     }
-//   });
