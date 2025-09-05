@@ -10,10 +10,10 @@ export async function extract(filePath) {
         // 
         const content = await readFile(filePath, 'utf-8');
         const jsonContent = JSON.parse(content);
-        const filename = basename(filePath);
+        const csv_filename = basename(filePath);
 
         return {
-            filename,
+            csv_filename: csv_filename,
             // category: 'pdf',
             content: jsonContent
         };
