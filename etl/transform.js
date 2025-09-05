@@ -9,12 +9,25 @@ function getFirst250Words(text) {
     return words.slice(0, 250).join(' ');
 }
 
-// Helper function to get URL from CSV records
-function getUrlFromRecords(records, pdfFilename) {
-    console.log(`All CSV records: `, records); //log all the records for debugging
-    const record = records.find(r => r.filename.trim().toLowerCase() === pdfFilename.trim().toLowerCase());
-    console.log(`Matching record for ${pdfFilename} would be ${record}`)
-    return record ? record.url : null;
+/**
+ * Extracts URLs from a CSV file and matches them to PDF filenames.
+ * @param {string} csvFilePath - Path to the CSV file.
+ * @param {string} pdfFilename - Filename of the PDF.
+ * @returns {Promise<string|null>} - The matched URL or null.
+ */
+async function getUrlFromCsv(csvFilePath, pdfFilename) {
+    const csvContent = await readFile(csvFilePath, 'utf-8');
+    const lines = csvContent.split('\n').map(line => line.trim()).filter(line => line);
+
+    // Skip header if present
+    const urls = lines.slice(1).map(line => {
+        const fields = line.split(',').map(field => field.trim().replace(/^"|"$/g, ''));
+        return fields[0]; // Assuming the URL is the first (and only) field
+    });
+
+    // Match URL to filename
+    const matchedUrl = urls.find(url => url.includes(pdfFilename));
+    return matchedUrl || null;
 }
 
 function parsePdfDate(pdfDate) {
@@ -37,27 +50,19 @@ function parsePdfDate(pdfDate) {
 export async function transform(extractedData, csvFilePath) {
     const { content } = extractedData;
 
-    // Read the CSV file once
-    const csvContent = await readFile(csvFilePath, 'utf-8');
-    const records = parse(csvContent, { columns: true });
-
     // Transform each PDF metadata object
-    const transformedData = content.map(pdf => {
+    const transformedData = await Promise.all(content.map(async (pdf) => {
         // Extract the first 250 words from pdf_text
         const firstPartOfText = getFirst250Words(pdf.metadata.pdf_text);
-
         // Find the URL for this PDF filename
-        const url = getUrlFromRecords(records, pdf.filename);
-
+        const url = await getUrlFromCsv(csvFilePath, pdf.filename);
         // Extract creation date
         const pdfCreated = parsePdfDate(pdf.metadata.pdf_info.CreationDate);
-
         // Extract authors
         const authors = pdf.metadata.pdf_info.Author;
-
         // Extract number of pages
-        const numpages = pdf.metadata.numpages;
-
+        const numpages = pdf.metadata.pdf_info.numpages;
+        // Prepare rest_of_metadata (include all metadata)
         return {
             filename: pdf.filename,
             url: url,
@@ -66,12 +71,13 @@ export async function transform(extractedData, csvFilePath) {
             first_part_of_text: firstPartOfText,
             pdf_created: pdfCreated,
             authors: authors,
-            all_metadata: JSON.stringify(pdf),
+            rest_of_metadata: pdf.metadata,
         };
-    });
+    }));
 
     return {
         filename: extractedData.filename,
         content: transformedData,
     };
 }
+
