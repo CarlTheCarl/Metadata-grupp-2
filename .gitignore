@@ -21,3 +21,6 @@ package-lock.json
 retrieval/get_pdf/output.txt
 etl/output.txt
 
+# This directory can be downloaded from
+# https://www.dropbox.com/scl/fi/bfrdfd0etkdffx7fpmlj4/retrieval_images.zip?rlkey=p6u1gp5362m6ofv7dxlw818jl&st=yqk2j0nd&dl=0
+retrieval/get_img_metadata/images
