@@ -1,26 +1,27 @@
-# Login Information to Database
+###--- Login Information to Database ---###
 connection.json
 credentials.json
 
-node_modules/
+
+###--- Retrieval ---###
 # retrieval/yolo/yolov8_onnx_nodejs-main/
 retrieval/get_pdf/pdfs/
-retrieval/practice_code/get_pdf/pdfs/
-retrieval/practice_code/get_images/images/
-
-# for test purposes this directory exists
-# retrieval/get_pdf/small_subset_pdfs
-
-#This will be automatically created when running "npm install"
-package-lock.json
-
-# Mac specific
-.DS_Store
-
-# This is output from retrieve_pdf.js for easier copy into LLM
-retrieval/get_pdf/output.txt
-etl/output.txt
-
+# retrieval/practice_code/
 # This directory can be downloaded from
 # https://www.dropbox.com/scl/fi/bfrdfd0etkdffx7fpmlj4/retrieval_images.zip?rlkey=p6u1gp5362m6ofv7dxlw818jl&st=yqk2j0nd&dl=0
 retrieval/get_img_metadata/images
+# This is output from retrieve_pdf.js for easier copy into LLM
+retrieval/get_pdf/output.txt
+etl/output.txt
+# for test purposes this directory exists
+# retrieval/get_pdf/small_subset_pdfs
+
+
+###--- Node specific ---###
+#This will be automatically created when running "npm install"
+package-lock.json
+node_modules/
+
+
+###--- Mac specific ---###
+.DS_Store
