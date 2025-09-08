@@ -15,7 +15,7 @@ retrieval/get_pdf/output.txt
 etl/output.txt
 # for test purposes this directory exists
 # retrieval/get_pdf/small_subset_pdfs
-
+retrieval/get_img_metadata/darknet/
 
 ###--- Node specific ---###
 #This will be automatically created when running "npm install"
@@ -25,3 +25,7 @@ node_modules/
 
 ###--- Mac specific ---###
 .DS_Store
+retrieval/output.html
+.gitignore
+retrieval/get_img_metadata/output_img_object_detection.csv
+retrieval/get_img_metadata/predictions.jpg
