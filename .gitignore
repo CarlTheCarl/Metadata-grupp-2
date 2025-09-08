@@ -15,3 +15,6 @@ package-lock.json
 
 # Mac specific
 .DS_Store
+
+# Environment variables
+.env
