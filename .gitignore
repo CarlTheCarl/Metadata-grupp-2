@@ -7,6 +7,7 @@ node_modules/
 retrieval/get_pdf/pdfs/
 retrieval/practice_code/get_pdf/pdfs/
 retrieval/practice_code/get_images/images/
+retrieval/practice_code/get_sound/test_sound
 
 # for test purposes this directory exists
 # retrieval/get_pdf/small_subset_pdfs
