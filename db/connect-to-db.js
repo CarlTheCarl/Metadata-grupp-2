@@ -7,6 +7,8 @@ import express from 'express'
 const app = express();
 const port = 3000;
 
+app.use(express.static("presentation"))
+
 // Reads the credentials JSON file
 const jsonText = await readFile('./connection.json', 'utf-8');
 const data = JSON.parse(jsonText);
