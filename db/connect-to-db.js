@@ -6,6 +6,8 @@ import express from 'express'
 // Initilize Express app with port 3000
 const app = express();
 const port = 3000;
+// use a static html-file, set new root
+app.use(express.static("presentation"));
 
 // Reads the credentials JSON file
 const jsonText = await readFile('./connection.json', 'utf-8');
@@ -13,7 +15,7 @@ const data = JSON.parse(jsonText);
 
 // Logs the the ip and name of the connected MySQL server
 console.log(`MySQL Server: ${data.host}`); // output 'testing'
-console.log(`Database: ${data.database} `)
+console.log(`Database: ${data.database} `);
 
 // Create a connection 'db' to the database
 const db = await mysql.createConnection({
