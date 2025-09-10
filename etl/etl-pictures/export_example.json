@@ -1,0 +1,20 @@
+[
+    {
+        "filename" : "filnamn1.jpeg",
+        "filetype" : "jpg",
+        "filesize" : 12345,
+        "metadata" : {}
+    },
+    {
+        "filename" : "filnamn2.jpg",
+        "filetype" : "jpg",
+        "filesize" : 23456,
+        "metadata" : {
+            "camera_lens" : "enourmous",
+            "great_picture" : false,
+            "camera_data" : {
+                "colour" : "black"
+            }
+        }
+    }
+]
