@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata Sökmotor</title>
+    </head>
+<body>
+
+    <header>
+        <h1>Metadata Sökmotor</h1>
+    </header>
+
+    <main>
+        <form action="/search" method="get">
+            
+            <label for="search-input" class="visually-hidden">Sök efter metadata</label>
+            
+            <input type="text" id="search-input" name="q" placeholder="Sök..." aria-label="Sökfält för metadata">
+            
+            <button type="submit">Sök</button>
+        </form>
+
+        <nav class="filters">
+            <a href="#" aria-label="Visa alla resultat">Alla</a>
+            <a href="#" aria-label="Visa endast bilder">Bilder</a>
+            <a href="#" aria-label="Visa endast videor">Videor</a>
+            <a href="#" aria-label="Visa endast PDF-dokument">PDF</a>
+            <a href="#" aria-label="Visa endast musik">Musik</a>
+        </nav>
+
+        <section class="results">
+            <p>Inga resultat hittades.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
