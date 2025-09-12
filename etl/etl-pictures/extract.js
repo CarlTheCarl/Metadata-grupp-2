@@ -66,8 +66,8 @@ export async function extractMetadata(directory) {
                 } else if (metadata != undefined) {
                     numberOfMetadataFilesNotUndefined += 1;
 
-                    const regex = /^[IMG]/;
-                    if (image == regex.test(image)) {
+                    const regex = /(IMG_7009)/;
+                    if (regex.test(image)) {
                         console.log(image, " has valid metadata, ", metadata);
                     }
                     // console.log(metadata);
@@ -99,11 +99,11 @@ export async function extractMetadata(directory) {
             // });
         }
     }
-    console.log("Number of undefined = ", numberOfUndefined);
-    console.log("Number of defined = ", numberOfMetadataFiles);
-    console.log("Number of numberOfMetadataFilesNotUndefined = ", numberOfMetadataFilesNotUndefined);
-    console.log("Number of more_software_colon_google = ", more_software_colon_google);
-    console.log("Number of error_files = ", erronousFiles);
+    // console.log("Number of undefined = ", numberOfUndefined);
+    // console.log("Number of defined = ", numberOfMetadataFiles);
+    // console.log("Number of numberOfMetadataFilesNotUndefined = ", numberOfMetadataFilesNotUndefined);
+    // console.log("Number of more_software_colon_google = ", more_software_colon_google);
+    // console.log("Number of error_files = ", erronousFiles);
 }
 
 // console.log(fs.stat(join(default_directory, )))
