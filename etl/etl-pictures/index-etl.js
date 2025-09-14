@@ -1,5 +1,5 @@
 import { extractMetadata } from './extract.js';
-// import { transform } from './transform-pictures.js';
+// import { transform } from './transform.js';
 import { load, testConnection, testSelect } from './load.js';
 import mysql from 'mysql2/promise';
 import { readFile, readdir } from 'node:fs/promises';
@@ -50,7 +50,7 @@ async function loadCredentials() {
 async function runEtl(){
   try {
     // extract metadata
-    const metadata_json = await extractMetadata();
+    const extractedMetadata = await extractMetadata();
     // console.log(metadata_json);
 
     //--- INSERT METADATA into mySQL server ---
@@ -66,12 +66,12 @@ async function runEtl(){
     console.table(testReadResults);
 
     // Load data into mySQL
-    // ...
+    await load(extractedMetadata, "pictures", pool);
 
   } catch(etlRunningErr) {
     console.log("ETL process failed: ", etlRunningErr);
   } finally { 
-          // --- Finally close pool ---
+    // --- Finally close pool ---
     try {
       if (pool) {
         await pool.end();

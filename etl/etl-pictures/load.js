@@ -62,7 +62,8 @@ export async function testSelect(pool) {
  * @param {Object} pool - MySQL connection pool.
  */
 export async function load(transformedData, category, pool) {
-    const { content } = transformedData;
+    // const { content } = transformedData;
+    // console.log(transformedData);
     let connection;
     try {
         connection = await pool.getConnection();
@@ -75,35 +76,37 @@ export async function load(transformedData, category, pool) {
                 filename VARCHAR(255) NOT NULL,
                 url VARCHAR(255),
                 filesize INT,
-                num_pages INT,
-                first_part_of_text TEXT,
-                pdf_created DATETIME,
-                authors VARCHAR(255),
-                rest_of_metadata JSON,
-                post_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+                picture_size VARCHAR(255),
+                creation_date DATETIME,
+                modified_date DATETIME,
+                gps_latitude FLOAT,
+                gps_longitude FLOAT,
+                all_metadata JSON,
+                post_created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                INDEX gps_data_index (gps_latitude, gps_longitude)
             )
         `);
 
-        // Insert each PDF's data
-        for (const pdf of content) {
-            const query = `
-                INSERT INTO \`${tableName}\`
-                (filename, url, filesize, num_pages, first_part_of_text, pdf_created, authors, rest_of_metadata)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            `;
-            const values = [
-                pdf.filename || null,
-                pdf.url || null,
-                pdf.filesize || null,
-                pdf.num_pages || null,
-                pdf.first_part_of_text || null,
-                pdf.pdf_created || null,
-                pdf.authors || null,
-                JSON.stringify(pdf.rest_of_metadata) || null
-            ];
-            await connection.execute(query, values);
-            console.log(`Inserted ${pdf.filename} into ${tableName} table.`);
-        }
+    //     // Insert each PDF's data
+    //     for (const pdf of content) {
+    //         const query = `
+    //             INSERT INTO \`${tableName}\`
+    //             (filename, url, filesize, num_pages, first_part_of_text, pdf_created, authors, rest_of_metadata)
+    //             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    //         `;
+    //         const values = [
+    //             pdf.filename || null,
+    //             pdf.url || null,
+    //             pdf.filesize || null,
+    //             pdf.num_pages || null,
+    //             pdf.first_part_of_text || null,
+    //             pdf.pdf_created || null,
+    //             pdf.authors || null,
+    //             JSON.stringify(pdf.rest_of_metadata) || null
+    //         ];
+    //         await connection.execute(query, values);
+    //         console.log(`Inserted ${pdf.filename} into ${tableName} table.`);
+    //     }
     } catch (error) {
         console.error('Error in load:', error);
         throw error;
