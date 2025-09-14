@@ -38,8 +38,12 @@ let pool;
  */
 async function loadCredentials() {
     try {
-        // Load credentials from local file
-        const creds = await readFile('etl/etl-pictures/local_credentials.json', 'utf-8');
+        // // Load credentials from local file
+        // const creds = await readFile('etl/etl-pictures/local_credentials.json', 'utf-8');
+
+        // Load credentials from remote server file
+        const creds = await readFile('connection.json', 'utf-8');
+
         return JSON.parse(creds);
     } catch (e) {
         console.error(`Failed to load credentials: \n${e}`);
