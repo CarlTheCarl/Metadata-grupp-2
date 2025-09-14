@@ -67,18 +67,19 @@ export async function load(transformedData, category, pool) {
     let connection;
     try {
         connection = await pool.getConnection();
-        const tableName = `${category}s`;
+        const tableName = category;
 
         // Create table if it doesn't exist
         await connection.execute(`
-            CREATE TABLE IF NOT EXISTS \`${tableName}\` (
+            CREATE TABLE IF NOT EXISTS ${tableName} (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 filename VARCHAR(255) NOT NULL,
                 url VARCHAR(255),
                 filesize INT,
-                picture_size VARCHAR(255),
-                creation_date DATETIME,
-                modified_date DATETIME,
+                picture_height INT,
+                picture_width INT,
+                created_locally DATETIME,
+                modified_locally DATETIME,
                 gps_latitude FLOAT,
                 gps_longitude FLOAT,
                 all_metadata JSON,
@@ -87,26 +88,32 @@ export async function load(transformedData, category, pool) {
             )
         `);
 
+
     //     // Insert each PDF's data
-    //     for (const pdf of content) {
-    //         const query = `
-    //             INSERT INTO \`${tableName}\`
-    //             (filename, url, filesize, num_pages, first_part_of_text, pdf_created, authors, rest_of_metadata)
-    //             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-    //         `;
-    //         const values = [
-    //             pdf.filename || null,
-    //             pdf.url || null,
-    //             pdf.filesize || null,
-    //             pdf.num_pages || null,
-    //             pdf.first_part_of_text || null,
-    //             pdf.pdf_created || null,
-    //             pdf.authors || null,
-    //             JSON.stringify(pdf.rest_of_metadata) || null
-    //         ];
-    //         await connection.execute(query, values);
-    //         console.log(`Inserted ${pdf.filename} into ${tableName} table.`);
-    //     }
+        for (let file of transformedData) {
+            const query = `
+                INSERT INTO ${tableName}
+                (filename, url, filesize, picture_height, picture_width, created_locally,
+                modified_locally, gps_latitude, gps_longitude, all_metadata)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            `;
+
+            const values = [
+                file.filename || null,
+                file.url || null,
+                file.filesize || null,
+                file.picture_height || null,
+                file.picture_width || null,
+                file.created_locally || null,
+                file.modified_locally || null,
+                file.gps_latitude || null,
+                file.gps_longitude || null,
+                JSON.stringify(file.metadata) || null
+            ];
+            await connection.execute(query, values);
+
+            console.log(`Inserted ${file.filename} into ${tableName} table.`);
+        }
     } catch (error) {
         console.error('Error in load:', error);
         throw error;
