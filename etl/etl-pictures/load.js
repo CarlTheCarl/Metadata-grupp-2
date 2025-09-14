@@ -45,7 +45,8 @@ export async function testSelect(pool) {
         const query = "SELECT * FROM `test-names`";
         const [rows] = await connection.query(query);
         console.log("Query results from `test-names`:");
-        console.table(rows); // Pretty-print results
+        // console.table(rows); // Pretty-print results
+        return rows;
     } catch (error) {
         console.error('Error in testSelect:', error);
         throw error;
