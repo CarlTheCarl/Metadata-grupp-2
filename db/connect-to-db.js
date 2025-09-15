@@ -76,7 +76,15 @@ app.get('/search', async(req, res) => {
       WHERE title LIKE ? OR artists LIKE ? OR album LIKE ? OR  genres LIKE ?
     `;
     searchParams = [param, param, param, param];
-  } else {
+  } else if (source == "sound") {
+      sql = `
+      SELECT *
+      FROM books
+      WHERE book_title LIKE ? OR author_first_name LIKE ? OR author_last_name LIKE ? OR  isbn LIKE ? OR genre LIKE ?
+    `;
+    searchParams = [param, param, param, searchTerm, param];
+    // id,book_title,author_first_name,author_last_name,isbn,type,number_of_pages,revision_number,number_of_lends,release_date,genre
+  }else {
     // Invalid source value
     return res.status(400).json({ error: 'Invalid source parameter. Use "test", "pdf", or omit for both.' });
   }
