@@ -6,6 +6,7 @@ import * as musicMetadata from 'music-metadata';
 import mysql from 'mysql2/promise';
 import { readFile } from 'fs/promises';
 import path from 'path';
+import { resolve } from 'path'
 
 let db;
 let requiredFieldMissing = false;
@@ -37,6 +38,7 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
           duration DECIMAL(6,2),
           year INT,
           filesize INT,
+          url VARCHAR(255),
           UNIQUE(title, artists, album)
       )
   `;
@@ -47,8 +49,8 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
     );
 
     const insertQuery = `
-      INSERT IGNORE INTO sounds (title, artists, album, genres, duration, year, filesize)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
+      INSERT IGNORE INTO sounds (title, artists, album, genres, duration, year, filesize, url)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     `;
 
   for (let [index, file] of files.entries()) {
@@ -78,6 +80,7 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
       const year = metadata.common.year || null
       const stats = fs.statSync(filePath)
       const filesize = stats.size || null
+      const url  = path.resolve(filePath);
 
       if (requiredFieldMissing){
         console.log(`Missing required fields, skipped:  ${title} by ${artists} (${album})`)
@@ -91,7 +94,8 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
       genres,
       duration,
       year,
-      filesize
+      filesize,
+      url
     ]);
 
     if (result.affectedRows === 0) {
