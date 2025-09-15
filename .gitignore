@@ -13,6 +13,7 @@ retrieval/get_img_metadata/images
 # This is output from retrieve_pdf.js for easier copy into LLM
 retrieval/get_pdf/output.txt
 etl/output.txt
+retrieval/practice_code/get_sound/test_sound
 # for test purposes this directory exists
 # retrieval/get_pdf/small_subset_pdfs
 retrieval/get_img_metadata/darknet/
