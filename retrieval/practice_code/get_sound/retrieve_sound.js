@@ -36,6 +36,7 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
           genres VARCHAR(255), 
           duration DECIMAL(6,2),
           year INT,
+          filesize INT,
           UNIQUE(title, artists, album)
       )
   `;
@@ -46,8 +47,8 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
     );
 
     const insertQuery = `
-      INSERT IGNORE INTO sounds (title, artists, album, genres, duration, year)
-      VALUES (?, ?, ?, ?, ?, ?)
+      INSERT IGNORE INTO sounds (title, artists, album, genres, duration, year, filesize)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
     `;
 
   for (let [index, file] of files.entries()) {
@@ -74,7 +75,9 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
       const duration = rawDuration != null
         ? Number(rawDuration.toFixed(2))
         : null;
-      const year = metadata.common.year || null;
+      const year = metadata.common.year || null
+      const stats = fs.statSync(filePath)
+      const filesize = stats.size || null
 
       if (requiredFieldMissing){
         console.log(`Missing required fields, skipped:  ${title} by ${artists} (${album})`)
@@ -87,7 +90,8 @@ const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
       album,
       genres,
       duration,
-      year
+      year,
+      filesize
     ]);
 
     if (result.affectedRows === 0) {
