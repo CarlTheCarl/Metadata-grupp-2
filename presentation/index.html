@@ -10,10 +10,9 @@
 
     <h1>Metadata Sökmotor</h1>
     <div class="container">
-        <form id="searchForm">
             <input type="text" id="searchInput" placeholder="🔍 Sök..." required> 
-            <button type="submit" id="searchBtn">Sök</button>
-        </form>
+            <!-- <button onclick="search()">Search</button> -->
+            <button id="searchBtn" onclick="search()">Sök</button>
 
         <div class="filter-wrapper">
             <button type="button" id="filterBtn">Filtrera</button>
@@ -31,6 +30,14 @@
         <div id="results"></div>
     </div>
     <script src="script.js"></script>
+    <!-- <script>
+        async function search() {
+            const query = document.getElementById('searchInput').value;
+            const response = await fetch(`http://localhost:3000/search?term=${query}`);
+            const results = await response.json();
+            document.getElementById('results').innerHTML = JSON.stringify(await results);
+        }
+    </script> -->
 </body>
 </html>
 
