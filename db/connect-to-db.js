@@ -69,6 +69,13 @@ app.get('/search', async(req, res) => {
       WHERE filename LIKE ? OR first_part_of_text LIKE ?
     `;
     searchParams = [param, param];
+  }  else if (source == "sound") {
+      sql = `
+      SELECT *
+      FROM sounds
+      WHERE title LIKE ? OR artists LIKE ? OR album LIKE ? OR  genres LIKE ?
+    `;
+    searchParams = [param, param, param, param];
   } else {
     // Invalid source value
     return res.status(400).json({ error: 'Invalid source parameter. Use "test", "pdf", or omit for both.' });
