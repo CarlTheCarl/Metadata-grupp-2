@@ -21,3 +21,6 @@ package-lock.json
 retrieval/get_pdf/output.txt
 etl/output.txt
 
+retrieval/get_img_metadata/darknet
+retrieval/get_img_metadata/images
+retrieval/get_img_metadata/predictions.jpg
