@@ -96,7 +96,7 @@ export async function extractMetadata(directory = default_directory) {
 
             oneImgMetadata = {
                 filename: image,
-                url: null,
+                url: join(directory, image),
                 filesize: stats.size,
                 picture_height: img_dimensions.height,
                 picture_width: img_dimensions.width,
