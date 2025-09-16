@@ -11,7 +11,7 @@ import { resolve } from 'path'
 let db;
 let requiredFieldMissing = false;
 let requiredFieldMissingText = "";
-const musicfolder = 'retrieval/practice_code/get_sound/test_sound'
+const musicfolder = 'etl/get_sound/test_sound'
 
  try {
   
