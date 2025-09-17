@@ -6,9 +6,10 @@ import fs, { rename } from 'fs';
 import { join } from 'path';
 import { imageSizeFromFile } from 'image-size/fromFile';
 import imageSize from 'image-size';
+import path from 'path';
 
 // defaults
-const default_directory = 'retrieval/get_img_metadata/images';
+const default_directory = '../../retrieval/get_img_metadata/images';
 
 // export async function getListOfFiles(directory){
 //     // give me a list of all files in the image folder
