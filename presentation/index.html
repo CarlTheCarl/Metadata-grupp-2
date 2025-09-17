@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <h1>Metadata Sökmotor</h1>
     <div class="container">
-            <input type="text" id="searchInput" placeholder="🔍 Sök..." required> 
-            <!-- <button onclick="search()">Search</button> -->
-            <button id="searchBtn" onclick="search()">Sök</button>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="🔍 Sök..." required>
+            <button type="submit" id="searchBtn">Sök</button>
+        </form>
 
         <div class="filter-wrapper">
             <button type="button" id="filterBtn">Filtrera</button>
@@ -21,25 +21,15 @@
                     <span class="category">Bilder</span>
                     <span class="category">Böcker</span>
                     <span class="category">Musik</span>
-                    <span class="category">Nyheter</span>
-                    <span class="category">Personer</span>
+                    <span class="category">Filmer</span>
+                    <span class="category">Dokument</span>
                 </div>
             </div>
         </div>
-        
+
         <div id="results"></div>
     </div>
+   <!-- <script type="module" src="js/main.js"></script> -->
     <script src="script.js"></script>
-    <!-- <script>
-        async function search() {
-            const query = document.getElementById('searchInput').value;
-            const response = await fetch(`http://localhost:3000/search?term=${query}`);
-            const results = await response.json();
-            document.getElementById('results').innerHTML = JSON.stringify(await results);
-        }
-    </script> -->
 </body>
 </html>
-
-
-

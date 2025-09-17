@@ -7,11 +7,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     margin-top: 8vh;
 }
-
 /* Rubrik */
 h1 {
     font-size: 3rem;
@@ -20,7 +18,6 @@ h1 {
     font-weight: 600;
     color: #094c52;
 }
-
 /* Sökruta och sök-knapp */
 form {
     display: flex;
@@ -30,23 +27,21 @@ form {
     margin-bottom: 40px;
     width: 100%;
 }
-
 input#searchInput {
     padding: 20px;
     width: 60%;
     font-size: 1.2rem;
     border: none;
-    border-radius: 50px; 
+    border-radius: 50px;
     outline: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border: 1px solid #ccc;
 }
-
 button#searchBtn {
     padding: 20px 40px;
     font-size: 1.2rem;
     border: none;
-    border-radius: 50px; 
+    border-radius: 50px;
     background: #094c52;
     color: white;
     cursor: pointer;
@@ -54,12 +49,9 @@ button#searchBtn {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     margin-left: 20px; /* Mellanrum mellan sökfältet och knappen */
 }
-
 button#searchBtn:hover {
     background: #022a2d;
 }
-
-
 /* Resultatkort */
 #results {
     display: flex;
@@ -68,7 +60,6 @@ button#searchBtn:hover {
     gap: 20px;
     margin-top: 30px;
 }
-
 .result-card {
     background: white;
     color: #094c52;
@@ -79,23 +70,19 @@ button#searchBtn:hover {
     text-align: left;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .result-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
-
 .result-card h2 {
     margin: 0 0 10px;
     font-size: 1.3rem;
 }
-
 .result-card p {
     margin: 0;
     font-size: 1rem;
     color: #555;
 }
-
 /* Filter och kategorier */
 .filter-wrapper {
     display: none; /* döljs tills sökning sker */
@@ -105,11 +92,9 @@ button#searchBtn:hover {
     margin: 10px auto 0 auto; /* centrerad horisontellt */
     gap: 15px;
 }
-
 .filter-wrapper.visible {
     display: flex;
 }
-
 #filterBtn {
     display: none; /* döljs tills sökning sker */
     padding: 15px 25px;
@@ -123,11 +108,9 @@ button#searchBtn:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     margin-right: auto;
 }
-
 #filterBtn:hover {
     background: #b8d8d8;
 }
-
 /* Filtermeny */
 .filter-menu {
     display: none;
@@ -139,18 +122,15 @@ button#searchBtn:hover {
     border-radius: 8px;
     z-index: 10;
 }
-
 .filter-menu h3 {
     margin: 0 0 10px;
     font-size: 1.1rem;
 }
-
 .filter-menu label {
     font-size: 0.95rem;
     display: block;
     margin-bottom: 5px;
 }
-
 .filter-menu button {
     margin-top: 10px;
     padding: 8px 15px;
@@ -162,18 +142,15 @@ button#searchBtn:hover {
     cursor: pointer;
     transition: 0.3s ease;
 }
-
 .filter-menu button:hover {
     background: #022a2d;
 }
-
 /* Kategorirullning */
 .category-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-
 .category-scroll {
     display: flex;
     gap: 15px;
@@ -184,34 +161,33 @@ button#searchBtn:hover {
     padding-bottom: 10px;
     box-sizing: border-box;
 }
-
 /* scrollbar */
 .category-scroll::-webkit-scrollbar {
     height: 10px;
 }
-
 .category-scroll::-webkit-scrollbar-thumb {
     background-color: #094c52;
     border-radius: 10px;
     border: 3px solid #e0ecec;
 }
-
 .category-scroll::-webkit-scrollbar-track {
-    background: #e0ecec;
+    background: #bfd1d1;
     border-radius: 10px;
 }
-
 .category {
     font-size: 1.1rem;
     color: #094c52;
     cursor: pointer;
     flex: 0 0 auto;
 }
-
 .category:hover {
     text-decoration: underline;
 }
-
+.category.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #094c52;
+}
 /* "Visa fler"-knappen */
 #showMoreBtn {
     padding: 15px 30px;
@@ -226,11 +202,9 @@ button#searchBtn:hover {
     margin: 20px auto;
     display: block;
 }
-
 #showMoreBtn:hover {
     background: #022a2d;
 }
-
 #scrollTopBtn {
     position: fixed;
     bottom: 30px;
@@ -246,11 +220,9 @@ button#searchBtn:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     z-index: 100;
 }
-
 #scrollTopBtn:hover {
     background: #022a2d;
 }
-
 /* Historik-dropdown */
 .history-dropdown {
     position: absolute;
@@ -264,7 +236,6 @@ button#searchBtn:hover {
     overflow-y: auto;
     display: none;
   }
-
   /* Rubrik "Tidigare sökningar" */
 .history-dropdown::before {
     content: "Tidigare sökningar";
@@ -276,16 +247,89 @@ button#searchBtn:hover {
     border-bottom: 1px solid #e0e0e0;
     text-align: left;
 }
-
   .history-item {
     padding: 8px 16px;
     cursor: pointer;
     color: #094c52;
     text-align: left;
   }
-  
+
   .history-item:hover {
     background-color: #f1f3f4;
   }
-  
 
+/* Sliders */
+.filter-slider {
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Återställ-knapp */
+#resetFilter {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: none;
+    background: #555;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 10px;
+}
+#resetFilter:hover {
+    background: #333;
+}
+
+
+/* Dropdown för exkludera kategorier */
+.exclude-dropdown-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.exclude-dropdown-button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.exclude-dropdown-button:hover {
+    background-color: #f1f1f1;
+}
+
+#excludeDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#excludeDropdownContent label {
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#excludeDropdownContent label:hover {
+    background-color: #e1e1f1;
+}
+
+#excludeDropdownContent input {
+    margin-right: 8px;
+}
+
+#excludeDropdownContent input:checked + label {
+    font-weight: bold;
+}

@@ -9,8 +9,6 @@ const port = 3000;
 // use a static html-file, set new root
 app.use(express.static("presentation"));
 
-app.use(express.static("presentation"))
-
 // Reads the credentials JSON file
 const jsonText = await readFile('./connection.json', 'utf-8');
 const data = JSON.parse(jsonText);
@@ -57,7 +55,7 @@ app.get('/search', async(req, res) => {
 
     UNION ALL
 
-    (SELECT id, title AS field1, artists AS field2, album AS field3, 'sounds' AS source
+    (SELECT NULL AS id, title AS field1, artists AS field2, album AS field3, 'sounds' AS source
      FROM sounds
      WHERE title LIKE ? OR artists LIKE ? OR album LIKE ? OR genres LIKE ?)
 
@@ -69,7 +67,7 @@ app.get('/search', async(req, res) => {
 
     UNION ALL
 
-    (SELECT id, imdb_id AS field1, title AS field2, director AS field3, 'movies' AS source
+    (SELECT NULL AS id, imdb_id AS field1, title AS field2, director AS field3, 'movies' AS source
      FROM movies
      WHERE imdb_id LIKE ? OR title LIKE ? OR director LIKE ? OR genre LIKE ?)
 
@@ -92,7 +90,7 @@ app.get('/search', async(req, res) => {
     // movies
     searchTerm, param, param, param,
     // pictures
-    param, param
+    //param, param
   ];
 }
 else if (source == "test") {
