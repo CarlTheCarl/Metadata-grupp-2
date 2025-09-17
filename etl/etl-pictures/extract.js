@@ -6,9 +6,17 @@ import fs, { rename } from 'fs';
 import { join } from 'path';
 import { imageSizeFromFile } from 'image-size/fromFile';
 // import imageSize from 'image-size';
+import { platform } from 'node:process';
 
 // defaults
-const default_directory = 'retrieval/get_img_metadata/images';
+let default_directory;
+// Set path to correct value based on system type
+if (platform == 'win32') {
+    default_directory = 'retrieval\get_img_metadata\images'; 
+} else {
+    default_directory = 'retrieval/get_img_metadata/images';
+}
+// const default_directory = 'retrieval/get_img_metadata/images';
 
 // export async function getListOfFiles(directory){
 //     // give me a list of all files in the image folder
