@@ -7,12 +7,13 @@ import { join } from 'path';
 import { imageSizeFromFile } from 'image-size/fromFile';
 // import imageSize from 'image-size';
 import { platform } from 'node:process';
+import path from 'path';
 
 // defaults
 let default_directory;
 // Set path to correct value based on system type
 if (platform == 'win32') {
-    default_directory = 'retrieval\get_img_metadata\images'; 
+    default_directory = path.win32.basename('retrieval\\get_img_metadata\\images'); 
 } else {
     default_directory = 'retrieval/get_img_metadata/images';
 }
